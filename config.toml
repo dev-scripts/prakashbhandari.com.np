@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://incomparable-strudel-63ad22.netlify.app/'
 title = "Prakash's Blog"
 theme = "bootstrap"
 # Pagination
