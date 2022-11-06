@@ -3,7 +3,7 @@ mainSections = ["posts", "docs"] # Default to ["posts"].
 # titleSeparator = "|" # Title separator. Default to "-".
 
 description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
-keywords = "Hugo, Bootstrap, Blog Theme"
+keywords = "Prakash Bhandari, Bootstrap, Blog Theme"
 # images = ["site-feature-image.jpg"]
 
 # metaRobots = "noindex, nofollow" # Default value for Meta Tag "robots"
