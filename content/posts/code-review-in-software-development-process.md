@@ -8,6 +8,10 @@ tags = [
     "Code Review",
     "Git",
 ]
+categories = [
+  "Code Review",
+  "Git",
+]
 images = [
   "images/posts/code-review-process-in-software-development/code-review-process.png"
 ]
