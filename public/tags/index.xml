@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Prakash&#39;s Blog</title>
-    <link>http://www.prakashbhandari.com.np/tags/</link>
+    <link>https://incomparable-strudel-63ad22.netlify.app/tags/</link>
     <description>Recent content in Tags on Prakash&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020-2022 Prakash Bhandari. All Rights Reserved.
 </copyright>
-    <lastBuildDate>Sun, 06 Nov 2022 11:00:52 +1100</lastBuildDate><atom:link href="http://www.prakashbhandari.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Nov 2022 11:00:52 +1100</lastBuildDate><atom:link href="https://incomparable-strudel-63ad22.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
 
