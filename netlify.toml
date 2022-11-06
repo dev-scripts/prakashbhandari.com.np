@@ -1,4 +1,5 @@
 [build]
+command = "npm run build"
 publish = "public"
 
 [build.environment]
@@ -8,13 +9,13 @@ HUGO_ENABLEGITINFO = "true"
 GO_VERSION = "1.19.3"
 
 [context.production]
-command = "npm install && npm run build && hugo --minify --theme=bootstrap"
+command = "npm install && hugo --minify --theme=bootstrap"
 
 [context.production.environment]
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "npm install && npm run build && hugo --minify --theme=bootstrap -b=$DEPLOY_PRIME_URL"
+command = "npm install && hugo --minify --theme=bootstrap -b=$DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "/*"
