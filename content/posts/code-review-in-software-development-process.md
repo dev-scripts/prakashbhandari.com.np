@@ -84,13 +84,11 @@ Code review always brings the development team together and closer. Also, it hel
 ### Higher Quantity Code and cost reduction
 Code reviews help to maintain a higher quality code. This process helps to identify the bugs and security issues at an early stage, which positively impacts the time  spent in handling technical debt (also known as design debt or code debt, but can be also related to other technical endeavors) after release. Technical debt is the cost a software company has to pay because of poor development processes within its existing codebase. These debts should be resolved as quickly as possible otherwise a company has to bear a big cost.
 
-
 According to Codacy "Software developers spend more than 26% of their time working on code debt and on bug fixing."
 
 ## Do code reviews take the time or save time?
 
 According to Atlassian agile coach documentation "When done right, code reviews save time in the long run." This clarifies that code review is not a waste of time.
-
 
 In summary,  the code review process plays a vital role to write a quality code and develop bug-free software. It has tons of benefits for both organizations as well as developers.  Moreover, this process minimizes cost, saves time, reduces the risk, and brings the development team together for better planning and quality work.
 
