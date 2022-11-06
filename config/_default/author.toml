@@ -1,9 +1,9 @@
 name = "Prakash Bhandari"
 avatar = "images/profile.jpeg" # Avatar image. Default to "images/profile.webp".
-bio = "Software Engineer."
+bio = "Software Engineer"
 # company = 'Company'
 # company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
-location = "Sudney Australia"
+location = "Sydney, Australia"
 # alternatives:
 # location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
 # location = "<a href='https://www.google.com/maps/search/Earth'>Earth</a>"
