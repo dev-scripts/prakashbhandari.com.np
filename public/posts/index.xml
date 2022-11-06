@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Prakash&#39;s Blog</title>
+    <link>http://www.prakashbhandari.com.np/posts/</link>
+    <description>Recent content in Posts on Prakash&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2020-2022 Prakash Bhandari. All Rights Reserved.
+</copyright>
+    <lastBuildDate>Sun, 06 Nov 2022 11:00:52 +1100</lastBuildDate><atom:link href="http://www.prakashbhandari.com.np/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Review in Software Development Process</title>
+      <link>http://www.prakashbhandari.com.np/posts/code-review-in-software-development-process/</link>
+      <pubDate>Sun, 06 Nov 2022 11:00:52 +1100</pubDate>
+      
+      <guid>http://www.prakashbhandari.com.np/posts/code-review-in-software-development-process/</guid>
+      <description><![CDATA[<p>In the Software Development process, code review is one of the major processes. It plays a vital role in developing quality software and reducing human errors. This article highlights the significance of code review and tries to answer</p>]]></description>
+    <enclosure url="http://www.prakashbhandari.com.np/images/posts/code-review-process-in-software-development/code-review-process.png" length="94939" type="image/.png" />
+    </item>
+    
+  </channel>
+</rss>
+

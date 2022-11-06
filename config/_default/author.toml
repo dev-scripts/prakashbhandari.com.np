@@ -1,0 +1,17 @@
+name = "Prakash Bhandari"
+avatar = "images/profile.jpeg" # Avatar image. Default to "images/profile.webp".
+bio = "Software Engineer."
+# company = 'Company'
+# company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
+location = "Sudney Australia"
+# alternatives:
+# location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
+# location = "<a href='https://www.google.com/maps/search/Earth'>Earth</a>"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
+
+[params]
+  #layout = "compact"
+
+[social]
+  email = "thebhandariprakash@gmail.com"
+  linkedin="ppp"
