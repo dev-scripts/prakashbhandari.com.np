@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://incomparable-strudel-63ad22.netlify.app/sitemap.xml
