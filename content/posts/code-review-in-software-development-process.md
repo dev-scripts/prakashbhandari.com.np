@@ -71,7 +71,7 @@ Code review  provides a large number of benefits for a company dealing with code
 
 ![benifit of code review](images/posts/code-review-process-in-software-development/benifit-of-code-review.png#center)
 
-1. ### Knowledge Sharing 
+### Knowledge Sharing 
 In a perfect world, the author will create the pull request (PR) (on bitbucket/GitHub) for code that needs to be reviewed and reviewers will go through each line of code. This process encourages the sharing of ideas, experiences, and knowledge across the team where both authors and reviewers can learn from each other.
 
 Also, Code Review helps people to learn about new logic, concepts and methods of writing a code which they might not have experienced before.
