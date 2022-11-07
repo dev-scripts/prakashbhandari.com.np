@@ -17,7 +17,7 @@ images = [
 
 +++
 
-I had done presentation wihin the API development team in my work place on ***"{API} Design Best Practices"*** while creating the APIs that is consumed by the clients. The main purpose of this presentation was to bring ease and smoothness in API development and implementation. I have shared the slide in slideshare.net. <!--more-->   
+I had done presentation wihin the API development team in my work place on ***"{API} Design Best Practices"***  that is consumed by the clients (web app, device app and other third party API consumer). The main purpose of this presentation was to bring ease and smoothness in API development and implementation. I have shared the slide in slideshare.net. <!--more-->   
 
 Here is full slide.
 
