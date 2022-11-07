@@ -16,7 +16,7 @@ palette = "purple" # Default palette. Optional. You'll need to clear the browser
 palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 
-comment = false
+comment = true
 
 # color = "dark" # light, dark or auto. Default to auto.
 
@@ -79,9 +79,9 @@ viewer = true # Image Viewer
   # taxonomiesToggle = false # Disable taxonomy toggle
   # taxonomiesToggleArchives = false # Don't show the archives on taxonomies toggle widget.
   # categories = true # Enable categories widget
-   tags = true # Enable tags widget
+  # tags = true # Enable tags widget
   # series = true # Enable series widget
-   authors = true # Enable authors widget
+  # authors = true # Enable authors widget
   # postsToggle = false # Disable posts toggle
    featuredPosts = true # Enable featured posts widget
   # recentPosts = true # Enable featured posts widget
@@ -134,8 +134,8 @@ viewer = true # Image Viewer
   # sa = true # Adaptations must be shared under the same terms.
 
 [utterances]
-    repo = "dev-scripts/prakashbhandari.com.np" # Replace with your repository.
-  # issueTerm = "pathname" # pathname, url, title, og:title
+  repo = "dev-scripts/prakashbhandari.com.np" # Replace with your repository.
+  issueTerm = "pathname" # pathname, url, title, og:title
   # label = "comment"
   # By default, light and dark mode correspond to github-light and github-dark, respectively.
   # Optional values: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
