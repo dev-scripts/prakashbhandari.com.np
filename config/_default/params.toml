@@ -6,9 +6,8 @@ keywords = "Prakash Bhandari, Prakash's Blog, Software Engineering"
 
 logo = "images/logo.png" # Logo image. Default to "images/logo.webp".
 
-
 palette = "blue" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
-palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
+palettes = ["blue", "blue gray", "purple", "brown", "cyan", "green", "indigo", "orange", "pink", "red", "teal", "yellow"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 
 comment = true
