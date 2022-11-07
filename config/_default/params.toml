@@ -1,18 +1,13 @@
 mainSections = ["posts", "docs"] # Default to ["posts"].
 
-# titleSeparator = "|" # Title separator. Default to "-".
-
 description = "I'm a Software Engineer with more than 10 years of professional experiencePrakash Bhandari, Software Engineer"
 keywords = "Prakash Bhandari, Prakash's Blog, Software Engineering"
 # images = ["site-feature-image.jpg"]
 
-# metaRobots = "noindex, nofollow" # Default value for Meta Tag "robots"
-# metaRobots = "" # disable Meta Tag "robots"
-
 logo = "images/logo.png" # Logo image. Default to "images/logo.webp".
 
 
-palette = "purple" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette = "blue" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 
@@ -114,7 +109,7 @@ viewer = true # Image Viewer
 
 [analytics]
   # baidu = "" # Baidu Analytics
-  # plausible = "razonyang.com,hbs.razonyang.com" # Multiple domains separated by comma.
+  # plausible = "" # Multiple domains separated by comma.
   # plausibleScript = "" # Specify the self-hosted script or extended script. Default to https://plausible.io/js/script.js.
 
 # Site verification
@@ -141,25 +136,11 @@ viewer = true # Image Viewer
   # Optional values: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
   # theme = ""
 
-# [staticman]
-  # endpoint = "https://yourstaticmaninstance" # Required, replace with your own Staticman instance.
-  # repo = "user/repo" # Required
-  # service = "github" # Default to GitHub.
-  # branch = "main" # Default to master.
-  # property = "comments" # Default to comments.
-  # sorting = "desc" # Default to asc.
-  # reCaptchaKey = "" # The reCaptcha site key.
-  # reCaptchaSecret = "" # The reCaptcha encrypted secret. You'll need to encrypt plain secret via https://yourstaticmaninstance/v3/encrypt/PLAINSECRET.
-  # extraFields = [ "url" ] # Extra fields. Available fields: url.
-  # requiredFields = [ "email", "url" ] # Extra required fields. Available fields: email and the extra fields.
-  # paginate = 5 # Default to 10.
-  # moderation = false # Same as Staticman's moderation.
-
 [giscus]
   #repo = "dev-scripts/prakashbhandari.com.np"
-  #repoId = "MDEwOlJlcG9zaXRvcnkzMDQzMzI4NTM="
-  #category = "General"
-  #categoryId = "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODkzODg2"
+  #repoId = ""
+  #category = ""
+  #categoryId = ""
   # theme = "dark" # Default to auto.
   # mapping = "title" # Default to pathname.
   # inputPosition = "bottom" # Default to top.
@@ -188,20 +169,11 @@ viewer = true # Image Viewer
 #[docsearch]
 #  # https://docsearch.algolia.com/docs/api
 #  # container = ".search-bar" # replace it if necessary, default to '.search-bar'.
-#  appId = "QJSHIZ7V63"
-#  apiKey = "664dc009c2ff1891823c07720e5f79ed"
-#  indexName = "razonyang_hbs"
+#  appId = ""
+#  apiKey = ""
+#  indexName = ""
 #  # debug = true
 
-[reward]
-  #alipay = "images/reward/alipay.png"
-  #wechat = "images/reward/wechat.png"
-  #paypal = "images/reward/paypal.png"
-  #patreon = "images/reward/patreon.png"
-  #liberapay = "images/reward/liberapay.png"
-
-#[share]
-  #addThis = "" # AddThis pubid.
 
 # [actionsPanel]
   # disabled = true
@@ -243,21 +215,21 @@ viewer = true # Image Viewer
     #   "/assets/js/foo.js"
     # ]
     # styles = [
-    #   "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    #   ""
     # ]
 
 [contact]
-  endpoint = "https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd" # Backend endpoint, remove this line if you're using Netlify.
+  endpoint = "" # Backend endpoint, remove this line if you're using Netlify.
   # file = true # Enable file upload
   # fileField = "image" # The name of file field.
   [contact.reCaptcha]
-    siteKey = "6LcWQH0gAAAAAJPZN9S-wrugRUukNOiHfxmFOSM5"
+    siteKey = ""
 
 [repo]
-  # url = "https://github.com/razonyang/hugo-theme-bootstrap"
-  # branch = "main"
-  # subPath = "exampleSite"
-  # dateFormat = "02/01/2006, 15:04:05 PM"
+  # url = ""
+  # branch = ""
+  # subPath = ""
+  # dateFormat = ""
 
 # [fullWidthInSections]
   # docs = true
@@ -267,8 +239,8 @@ viewer = true # Image Viewer
   # coloredInDark = true # Colored in dark mode
   # dropdownMenuToggle = false # Hide the dropdown menu toggle.
   [topAppBar.social]
-    #github = "razonyang/hugo-theme-bootstrap"
-    #patreon = "razonyang"
+    #github = ""
+    #patreon = ""
     # "razonyang"
     # rss = "" # Disable RSS link
 
