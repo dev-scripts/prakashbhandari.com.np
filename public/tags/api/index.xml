@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>API on Prakash&#39;s Blog</title>
+    <link>https://incomparable-strudel-63ad22.netlify.app/tags/api/</link>
+    <description>Recent content in API on Prakash&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2020-2022 Prakash Bhandari. All Rights Reserved.
+</copyright>
+    <lastBuildDate>Mon, 08 Feb 2021 11:00:52 +1100</lastBuildDate><atom:link href="https://incomparable-strudel-63ad22.netlify.app/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API Design Best Practices</title>
+      <link>https://incomparable-strudel-63ad22.netlify.app/posts/api-design-best-practices/</link>
+      <pubDate>Mon, 08 Feb 2021 11:00:52 +1100</pubDate>
+      
+      <guid>https://incomparable-strudel-63ad22.netlify.app/posts/api-design-best-practices/</guid>
+      <description><![CDATA[<p>I had done presentation wihin the API development team in my work place on <em><strong>&quot;{API} Design Best Practices&quot;</strong></em> while creating the APIs that is consumed by the clients. The main purpose of this presentation was to bring ease and smoothness in API development and implementation. I have shared the slide in slideshare.net.</p>]]></description>
+    </item>
+    
+  </channel>
+</rss>
+

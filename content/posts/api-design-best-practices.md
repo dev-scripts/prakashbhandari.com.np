@@ -11,10 +11,13 @@ tags = [
 categories = [
   "API",
 ]
+images = [
+  "images/posts/api-design-best-practices/api-design-best-practices.png"
+]
 
 +++
 
-I had done presentation wihin the API development team in my work place on ***"{API} Design Best Practices"*** while creating the APIs that is consumed by the clients. The main purpose of this presentation was to bring ease and smoothness in API development and implementation. I have shared the slide in slideshare.net clink on read more to view full slide. <!--more-->   
+I had done presentation wihin the API development team in my work place on ***"{API} Design Best Practices"*** while creating the APIs that is consumed by the clients. The main purpose of this presentation was to bring ease and smoothness in API development and implementation. I have shared the slide in slideshare.net. <!--more-->   
 
 Here is full slide.
 
