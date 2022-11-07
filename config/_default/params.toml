@@ -16,6 +16,8 @@ palette = "purple" # Default palette. Optional. You'll need to clear the browser
 palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 
+comment = false
+
 # color = "dark" # light, dark or auto. Default to auto.
 
 # fullWidth = true # Full width.
