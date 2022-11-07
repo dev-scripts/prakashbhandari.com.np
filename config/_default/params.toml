@@ -2,7 +2,7 @@ mainSections = ["posts", "docs"] # Default to ["posts"].
 
 # titleSeparator = "|" # Title separator. Default to "-".
 
-description = "I'm a Software Engineer with more than 10 years of professional experience, Prakash Bhandari, Software Engineer"
+description = "I'm a Software Engineer with more than 10 years of professional experiencePrakash Bhandari, Software Engineer"
 keywords = "Prakash Bhandari, Prakash's Blog, Software Engineering"
 # images = ["site-feature-image.jpg"]
 
@@ -153,11 +153,11 @@ viewer = true # Image Viewer
   # paginate = 5 # Default to 10.
   # moderation = false # Same as Staticman's moderation.
 
-[giscus]
-  repo = "razonyang/hugo-theme-bootstrap"
-  repoId = "MDEwOlJlcG9zaXRvcnkzMDQzMzI4NTM="
-  category = "General"
-  categoryId = "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODkzODg2"
+#[giscus]
+  #repo = "dev-scripts/prakashbhandari.com.np"
+  #repoId = "MDEwOlJlcG9zaXRvcnkzMDQzMzI4NTM="
+  #category = "General"
+  #categoryId = "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODkzODg2"
   # theme = "dark" # Default to auto.
   # mapping = "title" # Default to pathname.
   # inputPosition = "bottom" # Default to top.
