@@ -155,7 +155,7 @@ viewer = true # Image Viewer
   # paginate = 5 # Default to 10.
   # moderation = false # Same as Staticman's moderation.
 
-#[giscus]
+[giscus]
   #repo = "dev-scripts/prakashbhandari.com.np"
   #repoId = "MDEwOlJlcG9zaXRvcnkzMDQzMzI4NTM="
   #category = "General"
