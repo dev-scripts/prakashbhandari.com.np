@@ -13,7 +13,7 @@ logo = "images/logo.png" # Logo image. Default to "images/logo.webp".
 
 
 palette = "purple" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
-# palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
+palettes = ["blue", "blue gray", "purple"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 
 # color = "dark" # light, dark or auto. Default to auto.
@@ -77,11 +77,11 @@ viewer = true # Image Viewer
   # taxonomiesToggle = false # Disable taxonomy toggle
   # taxonomiesToggleArchives = false # Don't show the archives on taxonomies toggle widget.
   # categories = true # Enable categories widget
-  # tags = true # Enable tags widget
+   tags = true # Enable tags widget
   # series = true # Enable series widget
-  # authors = true # Enable authors widget
+   authors = true # Enable authors widget
   # postsToggle = false # Disable posts toggle
-  # featuredPosts = true # Enable featured posts widget
+   featuredPosts = true # Enable featured posts widget
   # recentPosts = true # Enable featured posts widget
   # collapsed = true # Collapse sidebar widgets by default on small screens.
 
@@ -131,8 +131,8 @@ viewer = true # Image Viewer
   # nd = true # No derivatives or adaptations of your work are permitted.
   # sa = true # Adaptations must be shared under the same terms.
 
-# [utterances]
-  # repo = "razonyang/hugo-theme-bootstrap" # Replace with your repository.
+[utterances]
+    repo = "dev-scripts/prakashbhandari.com.np" # Replace with your repository.
   # issueTerm = "pathname" # pathname, url, title, og:title
   # label = "comment"
   # By default, light and dark mode correspond to github-light and github-dark, respectively.
