@@ -186,9 +186,9 @@ viewer = true # Image Viewer
 [pwa]
   [pwa.manifest]
     # name = "" # Default to site title.
-    short_name = "HBS"
+    short_name = "Prakash's Blog"
     # display = "fullscreen" # Default to standalone.
-    # description = "" # Default to site description.
+      description = "Prakash's Blog" # Default to site description.
     # theme_color = ""
     # background_color = ""
 
