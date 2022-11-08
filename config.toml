@@ -25,5 +25,7 @@ enableRobotsTXT = true
 
 [build]
   writeStats = true
+[params]
+  favicon = "/images/favicon.ico" # Path to favicon file
 
 
