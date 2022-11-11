@@ -10,6 +10,8 @@ images = [
 ]
 +++
 
+In this article I will share the changes that I have seen and experienced in the software engineering space as a Software Engineer.
+
 I started my career as a front-end developer in late 2010. At that time I was converting PSD files to HTML pages. It took time to learn the basics of photoshop, HTML and CSS. But, slowly I became a professional frontend developer. Not actually a frontend developer was called HTML/CSS developer. <!--more--> 
 
 I did not limit myself on what I was doing. Slowly I started learning PHP, MySQL and other necessary tools to build dynamic websites. I built my first dynamic website by using WAMP(Windows, Apache, MySQL, and PHP) stack. And, hosted my website on a shared server. FTP client (FileZilla) was used to upload files to the shared server from the development environment.
