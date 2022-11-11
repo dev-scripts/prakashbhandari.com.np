@@ -22,22 +22,19 @@ Now, there are numerous programming languages, frameworks, tools and software de
 
 I have seen an evolution in the software engineering space. I will list out a few changes that I have experienced and witnessed as a Software Engineer.
 
-## Waterfall to Agile methodology
-
+## Waterfall to Agile Methodology
 
 ![waterfall to agile](images/posts/changes-in-software-engineering-space/waterfall-agile.png#center)
 
 Back in those days, Agile Methodology was in theory but the Waterfall Software Development Life Cycle(SDLC) was followed by the developers/organizations. Nowadays most developers/organizations follow the agile methodology. They work in small teams, involved in backlog refinement, sprint planning, daily standup, showcases, retro etc.
 
-
-## Shared/On-Premise hosting to the cloud : 
-
+## Shared/On-Premise hosting to the Cloud Services
 
 ![Shared hosting to cloud](images/posts/changes-in-software-engineering-space/shared-cloud.png#center)
 
-Back in those days, we used to get either a dedicated server or a shared-hosting solution. Sometimes we also used to host the application on On-Premises.  Nowadays most of the software engineers use the Cloud Solutions provided by AWS, GCP, Azure, Alicloud, and DigitalOcean. 
+Back in those days, we used to get either a dedicated server or a shared-hosting solution. Sometimes we also used to host the application on On-Premises.  Nowadays most of the software engineers use the Cloud Solutions provided by AWS, GCP, Azure, Alicloud, DigitalOcean etc. 
 
-## FTP client to CI/CD tool Deployment tool
+## FTP client to CI/CD Deployment tools
 
 ![FTP Client to CI tools](images/posts/changes-in-software-engineering-space/ftp-client-to-ci-tools.png#center)
 
@@ -60,7 +57,7 @@ I have worked on a really big monolithic application where we used to package al
 
 ![Relational database to NoSQL](images/posts/changes-in-software-engineering-space/relation-database-to-nosql.png#center)
 
-As I mentioned above, I developed a LAMP stack skill to develop a full-phase application. At that time I was using MySQL heavenly as a relational database. Later on, in my roles, I used MS-SQL and ORACLE databases. All those were relational databases. Nowadays I also worked on NoSQL databases like MongoDB while developing MERN stack applications.
+As I mentioned above, I developed a LAMP stack skill to develop a full-phase application. At that time I was using MySQL heavenly as a relational database. Later on, in my roles, I used MS-SQL and ORACLE databases. All those were relational databases. Nowadays I also worked on NoSQL databases like MongoDB while developing MERN stack applications. NoSQL is not replacement of RDMS, it's just another option. 
 
 ## Host Machine to Container world
 
@@ -71,7 +68,6 @@ In my early days, I was using my machine as a development environment. Sometimes
 
 ## Multi-Page Application (MPA) to Single Page Application(SPA)
 
-<br /><br />
 
 ![Multi-Page Application (MPA) to Single Page Application(SPA)](images/posts/changes-in-software-engineering-space/multi-page-to-single-page-applications.png#center)
 
@@ -79,13 +75,19 @@ I worked a lot on multiple-page applications while developing web applications. 
 
 ## Desktop-friendly web app to Responsive Web App
 
-
 ![Desktop-friendly web app to Responsive Web App](images/posts/changes-in-software-engineering-space/responsive-non-responsive.png#center)
-
 
 Back in those days, I used to create web apps only for desktops. Very few people were browsing the web app on mobile devices. I used to target IE browsers :) . Slowly technology changed and many people started to browse web apps on mobile devices. So, I had to learn responsive design to develop device-compatible web apps. I learned responsive design and all those CSS media queries from the bootstrap CSS framework.  Now these days, peope perefer mobile first web design approach.
 
-I have seen many more changes than what I discussed above. Everything changed form programming language, development process, development environmennt to deployment. Many new software engineer don't know what we were woking on those old days. Software engineering is all about learing and evolving. Future belongs to thise who learn more skills.
+## Regular Software (Traditional) Applications to SAAS platform
+
+
+![Regular Software (Traditional) Applications to SAAS platform](images/posts/changes-in-software-engineering-space/treditional-software-to-saas-software.png#center)
+
+Thre was concept of software as a service (SAAS) but only few organizations were providing those solutions. SAAS is a multi-tenant architecture concept where software provider hosts their application on the cloud and makes available to their customers over the internet. Now these days, Larger company like microsoft, google provides software as a service. 
+
+
+I have seen many more changes than what I discussed above. Everything has changed form development process to deployment process. Many new software engineer don't know what we were woking on those old days. Software engineering is all about learing and evolving. Future belongs to thise who learn more skills.
 
 
 
