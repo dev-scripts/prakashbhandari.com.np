@@ -6,7 +6,7 @@ categories = [
   "Software Engineering",
 ]
 images = [
-  "images/posts/changes-in-software-engineering-space/changes-i-have-seen-in-the-software-engineering-space.png"
+  "images/posts/changes-in-software-engineering-space/changes-i-have-seen-in-the-software-engineering-space-as-software-engineer.png"
 ]
 +++
 
