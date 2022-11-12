@@ -2,6 +2,7 @@
 title = "Changes I have seen in the software engineering space"
 date="2022-11-11T08:31:35+11:00"
 draft=false
+featured=true
 categories = [
   "Software Engineering",
 ]
