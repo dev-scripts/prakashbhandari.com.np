@@ -36,3 +36,5 @@ Above image clearly explains the execution order of the **SELECT** query. But, I
 **7. LIMIT :-**  Limit the number of return data.
 
 Sometimes **DISTINCT** is also used after **SELECT** and before **ORDER BY** setps to eliminate duplicated values. However, this may need to process large volumes of data and as a result, the query runs slowly. Generally, it is recommended to avoid using **SELECT DISTINCT** and simply execute the **SELECT** statement with desired columns.
+
+Not every select query needs to have all the parts that I explained above. It's depend upon our requirement. Sometime we might be writing complex queries by joining multiple tables with complex filters and sometimes we just write simple select query with single table.
