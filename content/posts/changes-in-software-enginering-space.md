@@ -89,7 +89,7 @@ Back in those days, I used to create web apps only for desktops. Very few people
 Thre was concept of software as a service (SAAS) but only few organizations were providing those solutions. SAAS is a multi-tenant architecture concept where software provider hosts their application on the cloud and makes available to their customers over the internet. Now these days, Larger company like microsoft, google provides software as a service. 
 
 
-I have seen many more changes than what I discussed above. Everything has changed form development process to deployment process. Many new software engineer don't know what we were woking on those old days. Software engineering is all about learing and evolving. Future belongs to thise who learn more skills.
+I have seen many more changes than what I discussed above. Everything has changed form development process to deployment process, tools to technology, job roles etc. Many new software engineer don't know what we were woking on those old days. Software engineering is all about learing and evolving. Future belongs to thise who learn more skills.
 
 
 
