@@ -23,11 +23,11 @@ Above image clearly explains the execution order of the **SELECT** query. But, I
 
 **1. FROM :-**  Select the set of tables and joins to get data.
 
-**2. WHERE :-**  Applys filter to the records. Only retirns those records that fulfill a specified condition. 
+**2. WHERE :-**  Applys filter to the records. Only returns those records that fulfill a specified condition. 
 
 **3. GROUP BY :-** Group or aggregate data.
 
-**4. HAVING :-** is logical predicate to filter the data.
+**4. HAVING :-** Is logical predicate to filter the data. WHERE keyword cannot be used with aggregate functions.
 
 **5. SELECT :-** Return the final data.
 
