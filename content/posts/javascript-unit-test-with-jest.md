@@ -15,17 +15,17 @@ images = [
 ]
 +++
 
-In this tutorial I will demonstrate how to write a basic unit test to calculate the area of geometric shapes like circle, rectangle, and square by using the Javascript framework called jest.
+In this tutorial, I will demonstrate how to write a basic unit test to calculate the area of geometric shapes like circle and rectangle by using the Javascript package called Jest. <!--more-->
  
-According to jestjs.io "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+According to `jestjs.io` "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
  
 It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!"
  
-I will create a basic NodeJS project to demonstrate.
+I will create a basic NodeJS project to demonstrate the unit test example.
  
 Our project folder structure will be like the attached image.
  
-![Folder structure](images/posts/javascript-unit-test-with-jest/foldar-structure.png#center)
+![Folder structure](images/posts/javascript-unit-test-with-jest/project-folder-structure.png#center)
  
  
 Let assume you already have installed Node in your machine.
@@ -156,5 +156,5 @@ Here is the test coverage report. Report is available `coverage/lcov-report/inde
 ![Test Coverage](images/posts/javascript-unit-test-with-jest/test-coverage.png#center)
  
  
-In the article we have learned how to set up a basic Node project, configure `jest` package for unit test and test coverage. Furthermore, we have written some business logics and unit tests for those logics. Also, ran unit tests and generated test coverage reports.
+In the article, we have learned how to set up a basic Node project, configure `jest` package for unit test and test coverage. Furthermore, we have written some business logics and unit tests for those logics. Also, ran unit tests and generated test coverage reports.
 

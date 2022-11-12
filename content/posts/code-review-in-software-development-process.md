@@ -50,7 +50,7 @@ A review can be done in many places like on developers’ machines, online platf
 
 3. Pair Programming : In this method, more than one developer can be found at a workstation, but only one of them writes the code whereas the other provides real-time feedback and suggestions.
 
- 4. Tool-assisted : Authors and reviewers use specialized tools designed for peer code review. The tool could be open source or paid like GitHub, BitBucket, etc. It is the popular and preferred method of reviewing codes in the current era.
+4. Tool-assisted : Authors and reviewers use specialized tools designed for peer code review. The tool could be open source or paid like GitHub, BitBucket, etc. It is the popular and preferred method of reviewing codes in the current era.
 
 ## What Do Code Reviewers Look For?
 According to Google's Engineering Practices documentation, code reviews should look at the following things:
