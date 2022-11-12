@@ -36,7 +36,7 @@ googleAdsense = ""
 # readingTime = false # Whether to display the reading time.
 # postDate = false # Whether to display the post date in the post meta section.
 
- featuredPostCount = 5 # The number of featured posts shown in sidebar. Turn off by setting it to false.
+# featuredPostCount = 10 # The number of featured posts shown in sidebar. Turn off by setting it to false.
 # recentPostCount = 10 # The number of recent posts shown in sidebar. Turn off by setting it to false.
 # relatedPostCount = 10 # The number of related posts. Turn off by setting it to false.
 # categoryCount = 10 # The number of categories shown in sidebar. Turn off by setting it to false.
@@ -77,7 +77,7 @@ viewer = true # Image Viewer
   # series = true # Enable series widget
   # authors = true # Enable authors widget
   # postsToggle = false # Disable posts toggle
-   featuredPosts = true # Enable featured posts widget
+   #featuredPosts = true # Enable featured posts widget
   # recentPosts = true # Enable featured posts widget
   # collapsed = true # Collapse sidebar widgets by default on small screens.
 
