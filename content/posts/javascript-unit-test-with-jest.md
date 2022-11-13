@@ -148,7 +148,7 @@ We have covered all the business logics and unit tests. Now, It's time to run th
  
 Now we can run `npm test` which will run the unit test as well as create the coverage folder where the meninist file for test coverage is available.
  
-![Test result](images/posts/javascript-unit-test-with-jest/unit-test-result.png#center)
+![Test result](images/posts/javascript-unit-test-with-jest/test-result.png#center)
  
 Here is the test coverage report. Report is available `coverage/lcov-report/index.html`
  
