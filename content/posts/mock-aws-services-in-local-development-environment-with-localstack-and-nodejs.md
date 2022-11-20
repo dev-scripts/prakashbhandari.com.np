@@ -12,7 +12,7 @@ categories = [
 "Cloud",
 ]
 images = [
-"images/posts/mock-aws-services-in-local-development-environment/localstack-nodejs.png"
+"images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/localstack-nodejs.png"
 ]
 +++
 
