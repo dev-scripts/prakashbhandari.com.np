@@ -15,23 +15,26 @@ images = [
 ]
 +++
 
-I was developing and deploying the applications to dedicated servers, on-premises and shared servers. In 2017 I got an opportunity to work with AWS for one of the retail online ecommerce applications. Since then primarily I have been developing AWS based applications.
+I was developing and deploying the applications to dedicated servers, on-premises and shared servers. In 2017, I got an opportunity to work with AWS
+for one of the retail online ecommerce web application. Since then primarily, I have been developing AWS based applications.
 
-In this journey I have used many AWS services. Primarily, Route 53, EC2 instances, RDS, SQS, SNS, S3 buckets and so on.
+In my career, I have used many AWS services. Primarily, Route 53, EC2 instances, RDS, SQS, SNS, S3 buckets and so on.
 
-Developing and testing applications in the real AWS account is sometimes time consuming, costly and dependent on the internet.
+Developing and testing applications in the real AWS account is sometimes time-consuming, costly and has dependency  on the internet.
 
-I was looking for an AWS cloud service emulator as an alternative solution to avoid all those problems. I found LocalStack as a solution.
+I was looking for an AWS cloud service emulator as an alternative solution to get rid of all these issues. 
+I found LocalStack as a solution.
 
 >In this article I will show you how to add LocalStack docker container for NodeJS project. Also, I will demonstrate how to create S3 bucket, list the created bucket names and upload file object to the created S3 buckets.
 
 # What is LocalStack ?
 
-According to LocalStack GitHub page "LocalStack  is a cloud service emulator that runs in a single container on your local machine or in your CI environment. With LocalStack, you can run your AWS services like S3 bucket, Lambda functions, SQS, etc  entirely on your local machine without connecting to a remote cloud provider.  Whether you are testing complex CDK applications or Terraform configurations, or just beginning to learn about AWS services, LocalStack helps speed up and simplify your testing and development workflow.
+According to LocalStack GitHub page 
+>LocalStack  is a cloud service emulator that runs in a single container on your local machine or in your CI environment. With LocalStack, you can run your AWS services like S3 bucket, Lambda functions, SQS, etc  entirely on your local machine without connecting to a remote cloud provider.  Whether you are testing complex CDK applications or Terraform configurations, or just beginning to learn about AWS services, LocalStack helps speed up and simplify your testing and development workflow.
 
-Basic version of LocalStack supports a growing number of AWS services, like AWS Lambda, S3, Dynamodb, Kinesis, SQS, SNS, and many more.
+>Basic version of LocalStack supports a growing number of AWS services, like AWS Lambda, S3, Dynamodb, Kinesis, SQS, SNS, and many more.
 
-The Pro version of LocalStack supports additional APIs and advanced features. You can find a comprehensive list of supported APIs on Feature Coverage page."
+>The Pro version of LocalStack supports additional APIs and advanced features. You can find a comprehensive list of supported APIs on Feature Coverage page.
 
 # How to configure LocalStack in Local machine?
 
@@ -39,7 +42,7 @@ You can configure LocalStack in two ways. One way is to directly install in your
 
 ## Add LocalStack in your NodeJS project
 
-### Create `package.json` file
+### Create `package.json` file and install the dependencies
 ```json
 {
   "name": "aws_node_app",
@@ -76,7 +79,13 @@ COPY . .
 EXPOSE 8081
 CMD [ "node", "server.js" ]
 ```
-### Create complete `docker-compose.yaml` file.
+### Complete `docker-compose.yaml` file.
+
+`docker-compose.yaml`  will create two containers `aws-app` and `aws-app-localstack`. 
+Node app is running inside `aws-app` container and AWS services are running inside the `aws-app-localstack` container.
+ 1. Node App runs at port number **8081**: `http://localhost:8081/`
+ 2. LocalStacks runs at port number **4566** : `http://localhost:4566/`
+
 
 ```yaml
 version: '3'
@@ -136,7 +145,14 @@ Create `config.json` file and place AWS configuration. For now we will add Local
     "region": "us-west-2"
 }
 ```
-Create `server.js` file and import necessary packages and define the necessary constants for basic NodeJS project.
+Create `server.js` file and import necessary packages and define the necessary constants for basic NodeJS app.
+
+Also, we are load `credentials` from a JSON file on disk (`config.json`).
+
+There are several ways in `Node.js` to supply your credentials to the SDK. 
+Some of these are more secure and others afford greater convenience while developing an application.
+You can find more on AWS official documentation. https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html
+
 ```javascript
 "use strict";
 const express = require("express");
@@ -291,6 +307,9 @@ main();
 ```
 
 ### Complete `server.js` file
+
+`server.js` includes the functions to create bucket, list the created buckets and upload file to the bucket.
+
 ```javascript
 "use strict";
 
@@ -425,10 +444,11 @@ You can run project simply running the docker compose command
 **That's it !!!**
 
 
-We have successfully created NodeJS project with `LocalStack` emulator for AWS services. Here, we have learned how to create AWS S3 bucket
-list created buckets and upload files to the bucket.
+We have successfully created NodeJS app with `LocalStack` emulator for AWS services. Here, 
+we have learned how to create S3 buckets
+list created buckets, and upload file objects to the buckets.
 
-For production environment we just need to change the configuration in `config.js` file and `endpoint`
+For production environment, we just need to change configuration in `config.js` file and replace `endpoint` with production `endpoint`
 
 Get full source code form GitHub: https://github.com/dev-scripts/localstack-nodejs
 
@@ -440,9 +460,10 @@ YouTube Video :
           allowfullscreen="" title="YouTube Video"></iframe>
 </div>
 
-# Referances
+# References
 1. https://github.com/localstack/localstack
 2. https://docs.localstack.cloud/aws/feature-coverage/ 
+3. https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-nodejs.html
 
 
 
