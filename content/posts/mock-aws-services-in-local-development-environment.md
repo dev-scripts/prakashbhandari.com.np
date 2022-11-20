@@ -2,6 +2,7 @@
 title="Mock AWS Services in Local Development Environment"
 date="2022-11-19T15:09:02+11:00"
 draft=false
+featured=true
 tags = [
 "AWS",
 "Localstack",
