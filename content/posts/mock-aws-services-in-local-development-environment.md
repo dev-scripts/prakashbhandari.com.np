@@ -431,6 +431,11 @@ list created buckets and upload files to the bucket.
 For production environment we just need to change the configuration in `config.js` file and `endpoint`
 
 Get full source code form GitHub: https://github.com/dev-scripts/localstack-nodejs
+
+YouTube Video : 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r9RMT3bLEQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Referances
 1. https://github.com/localstack/localstack
 2. https://docs.localstack.cloud/aws/feature-coverage/ 
