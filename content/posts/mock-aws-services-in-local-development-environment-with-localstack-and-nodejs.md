@@ -453,7 +453,7 @@ For production environment, we just need to change configuration in `config.js` 
 
 Get full source code form GitHub: https://github.com/dev-scripts/localstack-nodejs
 
-YouTube Video : 
+Output demonstration on YouTube Video : 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/r9RMT3bLEQ8"
