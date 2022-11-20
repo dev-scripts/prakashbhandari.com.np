@@ -59,7 +59,7 @@ You can configure LocalStack in two ways. One way is to directly install in your
 }
 ```
 
-### Create `Dockerfile` for the project NodeJS
+### Create `Dockerfile` for the NodeJS project(app)
 
 ```Dockerfile
 FROM node:19
@@ -158,11 +158,11 @@ app.listen(PORT, HOST, () => {
 
 ```
 
-Add `SLEEP_TIME` and `BUCKET_NAME` in the `server.js` file 
+Add `SLEEP_TIME` and `BUCKET_NAME` in the `server.js` file. `crypto.randomUUID()` is embeded at the end of
+`localstack-test-bucket` test s3 bucket to generate random/unique bucket everytime.
 ```javascript
 const BUCKET_NAME = "localstack-test-bucket-" + crypto.randomUUID();
 const SLEEP_TIME = 3000;
-
 ```
 
 Add sleep function in the `server.js` file.

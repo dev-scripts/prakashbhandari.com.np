@@ -1,2 +1,3 @@
 baseURL = "https://www.prakashbhandari.com.np/"
 googleAnalytics = "G-0YH2BX9EPQ"
+enableRobotsTXT=true
