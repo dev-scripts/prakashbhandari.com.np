@@ -1,5 +1,5 @@
 +++
-title="Mock AWS Services in Local Development Environment"
+title="Mock AWS Services in Local Development Environment with LocalStack and NodeJS"
 date="2022-11-19T15:09:02+11:00"
 draft=false
 featured=true
@@ -25,7 +25,7 @@ Developing and testing applications in the real AWS account is sometimes time-co
 I was looking for an AWS cloud service emulator as an alternative solution to get rid of all these issues. 
 I found LocalStack as a solution.
 
->In this article I will show you how to add LocalStack docker container for NodeJS project. Also, I will demonstrate how to create S3 bucket, list the created bucket names and upload file object to the created S3 buckets.
+>In this post I will focus on AWS S3 bucket. I will practically show you how to add LocalStack docker container for NodeJS project. Also, I will demonstrate how to create S3 bucket, list the created bucket names and upload file object to the created S3 buckets.
 
 # What is LocalStack ?
 
@@ -444,7 +444,7 @@ You can run project simply running the docker compose command
 **That's it !!!**
 
 
-We have successfully created NodeJS app with `LocalStack` emulator for AWS services. Here, 
+We have successfully created NodeJS app with `LocalStack` emulator for AWS services. In this post, 
 we have learned how to create S3 buckets
 list created buckets, and upload file objects to the buckets.
 
