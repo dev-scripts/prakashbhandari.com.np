@@ -6,6 +6,7 @@ featured=true
 tags = [
 "AWS",
 "Localstack",
+"NodeJS",
 ]
 categories = [
 "Cloud",
