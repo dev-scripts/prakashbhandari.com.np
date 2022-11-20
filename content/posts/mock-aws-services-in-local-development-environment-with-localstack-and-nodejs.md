@@ -440,7 +440,7 @@ app.listen(PORT, HOST, () => {
 You can run project simply running the docker compose command
 `docker compose up`
 
-![Result](images/posts/mock-aws-services-in-local-development-environment/result.png#center)
+![Result](images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/result.png#center)
 
 **That's it !!!**
 
