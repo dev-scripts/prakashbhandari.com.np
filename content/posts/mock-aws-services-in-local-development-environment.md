@@ -432,7 +432,7 @@ list created buckets and upload files to the bucket.
 
 For production environment we just need to change the configuration in `config.js` file and `endpoint`
 
-Get source code :
+Get full source code form GitHub: https://github.com/dev-scripts/localstack-nodejs
 # Referances
 1. https://github.com/localstack/localstack
 
