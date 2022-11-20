@@ -15,7 +15,6 @@ images = [
 ]
 +++
 
-# Introduction 
 I was developing and deploying the applications to dedicated servers, on-premises and shared servers. In 2017 I got an opportunity to work with AWS for one of the retail online ecommerce applications. Since then primarily I have been developing AWS based applications.
 
 In this journey I have used many AWS services. Primarily, Route 53, EC2 instances, RDS, SQS, SNS, S3 buckets and so on.
@@ -32,9 +31,7 @@ According to LocalStack GitHub page "LocalStack  is a cloud service emulator tha
 
 Basic version of LocalStack supports a growing number of AWS services, like AWS Lambda, S3, Dynamodb, Kinesis, SQS, SNS, and many more.
 
-The Pro version of LocalStack supports additional APIs and advanced features. You can find a comprehensive list of supported APIs on Feature Coverage page" 
-
-https://docs.localstack.cloud/aws/feature-coverage/ .
+The Pro version of LocalStack supports additional APIs and advanced features. You can find a comprehensive list of supported APIs on Feature Coverage page."
 
 # How to configure LocalStack in Local machine?
 
@@ -62,7 +59,7 @@ You can configure LocalStack in two ways. One way is to directly install in your
 }
 ```
 
-### Create Dockerfile for the project NodeJS
+### Create `Dockerfile` for the project NodeJS
 
 ```Dockerfile
 FROM node:19
@@ -293,7 +290,7 @@ Call main function in the `server.js` file. So, that it will perform all the S3 
 main();
 ```
 
-Complete `server.js` file
+### Complete `server.js` file
 ```javascript
 "use strict";
 
@@ -436,6 +433,7 @@ For production environment we just need to change the configuration in `config.j
 Get full source code form GitHub: https://github.com/dev-scripts/localstack-nodejs
 # Referances
 1. https://github.com/localstack/localstack
+2. https://docs.localstack.cloud/aws/feature-coverage/ 
 
 
 
