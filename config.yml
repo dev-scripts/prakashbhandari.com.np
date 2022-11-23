@@ -15,10 +15,10 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: Prakash's Blog
-  description: "A blog about software engineering focused on web development, deployment and web programming languages."
-  keywords: [Prakash's Blog, A blog about software engineering, Web Programming, Prakash Bhandari, Javascript, PHP, MySQL, microservices, docker, react, angular, vue, laravel,]
+  description: "A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, etc"
+  keywords: [Prakash's Blog, A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, Javascript, PHP, MySQL, microservices, docker, NodeJS, React, Angular, VueJS, laravel]
   author: Prakash Bhandari
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -54,12 +54,24 @@ params:
     text: "Prakash's Blog"
     icon: /images/logo.png
     iconHeight: 35
-
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title:  "\U0001F44B I’m Prakash,"
-    subtitle: "I have 10+ years of professional experience in software engineering space. I’m currently employed as a Senior Software Engineer at Bigtincan. Sydney, Australia. 😊"
+    title:   > 
+      👋 I’m Prakash,
+    subtitle: > 
+        **Software Engineer & Tech Enthusiast**
+              
+        👨‍💻
+              
+        I have 10+ years of professional experience in software engineering space. 
+             
+        I’m currently employed as a **Senior Software Engineer** at **[Bigtincan](https://www.bigtincan.com/company/)** 
+                
+        Sydney, Australia. 
+              
+        😊
+
     imageUrl: "images/profile.jpeg"
     imageWidth: 120
     imageHeight: 120
