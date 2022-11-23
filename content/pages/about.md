@@ -11,7 +11,7 @@ I have 10+ years of professional experience in software engineering space. I’m
 
 Extensive background in full lifecycle software development process including iterations of requirements gathering, prototyping, architecting, coding, peer review, refactoring, debugging, Agile Methodologies, SQL, AWS Services & IT Strategy.
 
-## Professional Experiences 👨‍💻
+## Experiences 👨‍💻
 
 ### 1. Senior Software Engineer 
 **Bigtincan · Full-time (Jan 2020 - Present)**
