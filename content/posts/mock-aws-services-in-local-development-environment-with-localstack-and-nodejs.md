@@ -1,20 +1,22 @@
-+++
-title="Mock AWS Services in Local Development Environment with LocalStack and NodeJS"
-date="2022-11-19T15:09:02+11:00"
-draft=false
-featured=true
-tags = [
-"AWS",
-"Localstack",
-"NodeJS",
-]
-categories = [
-"Cloud",
-]
-images = [
-"images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/localstack-nodejs.png"
-]
-+++
+---
+title: "Mock AWS Services in Local Development Environment with LocalStack and NodeJS"
+date: 2022-11-19T15:09:02+11:00
+# weight: 1
+# aliases: ["/first"]
+tags: ["AWS", "Localstack", "NodeJS",]
+categories : [ "Cloud", ]
+author: "Prakash Bhandari"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: false
+draft: false
+UseHugoToc: true
+cover:
+    image: "images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/localstack-nodejs.png" # image path/url
+    alt: "Mock AWS Services in Local Development Environment with LocalStack and NodeJS" 
+    caption: "Mock AWS Services in Local Development Environment with LocalStack and NodeJS"
+    relative: true
+---
 
 I was developing and deploying the applications to dedicated servers, on-premises and shared servers. In 2017, I got an opportunity to work with AWS
 for one of the retail online ecommerce web application. Since then primarily, I have been developing AWS based applications.
@@ -440,7 +442,7 @@ app.listen(PORT, HOST, () => {
 You can run project simply running the docker compose command
 `docker compose up`
 
-![Result](images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/result.png#center)
+![Image](/images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/result.png#center)
 
 **That's it !!!**
 
@@ -455,11 +457,7 @@ Get full source code form GitHub: https://github.com/dev-scripts/localstack-node
 
 Output demonstration on YouTube Video : 
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/r9RMT3bLEQ8"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
-          allowfullscreen="" title="YouTube Video"></iframe>
-</div>
+  {{< youtube r9RMT3bLEQ8 >}}
 
 # References
 1. https://github.com/localstack/localstack

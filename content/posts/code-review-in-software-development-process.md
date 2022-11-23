@@ -1,20 +1,41 @@
-+++
-author = "Prakash Bhandari"
-title = "Code Review in Software Development Process"
-date = "2020-09-08T11:00:52+11:00"
-description = "Code Review in Software Development Process"
-draft = false
-tags = [
-    "Code Review",
-    "Git",
+---
+title: "Code Review in Software Development Process"
+date: 2020-09-08T11:00:52+11:00
+# weight: 1
+# aliases: ["/first"]
+tags: [
+"Code Review",
+"Git",
 ]
-categories = [
-  "Software Engineering",
+categories: [
+"Software Engineering",
 ]
-images = [
-  "images/posts/code-review-process-in-software-development/code-review-process.png"
-]
-+++
+author: "Prakash Bhandari"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: false
+description: "Code Review in Software Development Process"
+#canonicalURL: "https://canonical.url/to/page"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+cover: 
+    image: "images/posts/code-review-process-in-software-development/code-review-process.png"
+    alt: "Code Review in Software Development Process"
+    caption: "Code Review in Software Development Process"
+    relative: true
+---
 
 In the Software Development process, code review is one of the major processes. It plays a vital role in developing quality software and reducing human errors. This article highlights the significance of code review and tries to answer <!--more-->questions related to the code review process like Who will be involved in this process, Whose code should be reviewed, What reviewer will look at code, Where code review is done and is spending time on code review worthwhile?
 
@@ -68,7 +89,7 @@ Functionality: Does code meet the requirements and behave as the author likely i
 
 Code review  provides a large number of benefits for a company dealing with code development as well as software developers.  It’s advantages are extended beyond  finding errors and fixing them.  Let's dive deep into the advantages of code review,
 
-![benifit of code review](images/posts/code-review-process-in-software-development/benifit-of-code-review.png#center)
+![benifit of code review](/images/posts/code-review-process-in-software-development/benifit-of-code-review.png#center)
 
 ### Knowledge Sharing 
 In a perfect world, the author will create the pull request (PR) (on bitbucket/GitHub) for code that needs to be reviewed and reviewers will go through each line of code. This process encourages the sharing of ideas, experiences, and knowledge across the team where both authors and reviewers can learn from each other.
