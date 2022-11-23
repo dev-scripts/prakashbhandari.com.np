@@ -1,15 +1,41 @@
-+++
-title = "Changes I have seen in the software engineering space"
-date="2022-11-11T08:31:35+11:00"
-draft=false
-featured=true
-categories = [
-  "Software Engineering",
+---
+title: "Changes I have seen in the software engineering space"
+date: 2022-11-11T08:31:35+11:00
+# weight: 1
+# aliases: ["/first"]
+tags: [
+"Software Engineering",
 ]
-images = [
-  "images/posts/changes-in-software-engineering-space/changes-i-have-seen-in-the-software-engineering-space-as-software-engineer.png"
+categories: [
+"Software Engineering",
 ]
-+++
+author: "Prakash Bhandari"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: false
+description: "Software Engineering"
+#canonicalURL: "https://canonical.url/to/page"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+cover:
+  image: "images/posts/changes-in-software-engineering-space/changes-i-have-seen-in-the-software-engineering-space-as-software-engineer.png"
+  alt: "Software Engineering"
+  caption: "Software Engineering"
+  relative: true
+---
+
 
 In this article I will share the changes that I have seen and experienced in the software engineering space as a Software Engineer.
 
@@ -27,65 +53,65 @@ I have seen an evolution in the software engineering space. I will list out a fe
 
 ## Waterfall to Agile Methodology
 
-![waterfall to agile](images/posts/changes-in-software-engineering-space/waterfall-agile.png#center)
+![waterfall to agile](/images/posts/changes-in-software-engineering-space/waterfall-agile.png#center)
 
 Back in those days, Agile Methodology was in theory but the Waterfall Software Development Life Cycle(SDLC) was followed by the developers/organizations. Nowadays most developers/organizations follow the agile methodology. They work in small teams, involved in backlog refinement, sprint planning, daily standup, showcases, retro etc.
 
 ## Shared/On-Premise hosting to the Cloud Services
 
-![Shared hosting to cloud](images/posts/changes-in-software-engineering-space/shared-cloud.png#center)
+![Shared hosting to cloud](/images/posts/changes-in-software-engineering-space/shared-cloud.png#center)
 
 Back in those days, we used to get either a dedicated server or a shared-hosting solution. Sometimes we also used to host the application on On-Premises.  Nowadays most of the software engineers use the Cloud Solutions provided by AWS, GCP, Azure, Alicloud, DigitalOcean etc. 
 
 ## FTP client to CI/CD Deployment tools
 
-![FTP Client to CI tools](images/posts/changes-in-software-engineering-space/ftp-client-to-ci-tools.png#center)
+![FTP Client to CI tools](/images/posts/changes-in-software-engineering-space/ftp-client-to-ci-tools.png#center)
 
 Mostly I used FileZilla and Cyber Duck as an FTP client to transfer the codes and files to the share servers. It was a manual process. Every time I had to connect to the server via an FTP client and transfer files to the server.  That was a manual process and was completely replaced by the CI/CD tools (Jenkins, GitHub, BitBucket, CircleCI etc).  No need to worry much, just push the code to the correct repository, create Pull Request (PR) and Merge to the main branch. All the deployment process is handled by the CI/CD tools.
 
 ## Javascript(JS) as a scripting language to Javascript(JS) as a powerful backend programming language
 
-![Javascript Evolution](images/posts/changes-in-software-engineering-space/javascript-evolution.png#center)
+![Javascript Evolution](/images/posts/changes-in-software-engineering-space/javascript-evolution.png#center)
 
 Javascript was created by Brendan Eich. He created JS as a scripting language. In my early days, I also used JS as a scripting language like to add the dropdown menu, image gallery, sliding images, etc. Also, I used JS libraries like jQuery and Ajax for advanced features.  Now, JS is not only the scripting language. We can build a fully functional application by using JS.  NodeJS powered JS as a backend programming language and frontend frameworks like React, Angular, Vue etc. made JS a more popular language.
 
 ## Monolith to Microservice Architecture
 
-![Javascript Evolution](images/posts/changes-in-software-engineering-space/monolith-microservices.png#center)
+![Javascript Evolution](/images/posts/changes-in-software-engineering-space/monolith-microservices.png#center)
 
 I have worked on a really big monolithic application where we used to package all the modules (both client side and server side) together as a single deployable unit of execution. Now the concept has changed. I typically worked on decentralized, loosely coupled units of execution. Generally, API is created to communicate between the services.
 
 
 ## Relational Database to NoSQL
 
-![Relational database to NoSQL](images/posts/changes-in-software-engineering-space/relation-database-to-nosql.png#center)
+![Relational database to NoSQL](/images/posts/changes-in-software-engineering-space/relation-database-to-nosql.png#center)
 
 As I mentioned above, I developed a LAMP stack skill to develop a full-phase application. At that time I was using MySQL heavenly as a relational database. Later on, in my roles, I used MS-SQL and ORACLE databases. All those were relational databases. Nowadays I also worked on NoSQL databases like MongoDB while developing MERN stack applications. NoSQL is not replacement of RDMS, it's just another option. 
 
 ## Host Machine to Container world
 
 
-![Relational database to NoSQL](images/posts/changes-in-software-engineering-space/user-machine-to-docker.png#center)
+![Relational database to NoSQL](/images/posts/changes-in-software-engineering-space/user-machine-to-docker.png#center)
 
 In my early days, I was using my machine as a development environment. Sometimes, it was a headache to configure my environment for different versions of software on a single machine like running different versions of PHP or MySQL for newer and older projects. Later, I learned about virtual machines like vagrants which helped me to overcome many problems. But,  Docker has changed everything.  Now, I  can create an isolated environment by using docker containers for every version of the app and each container holds a separate isolated environment configuration that doesn’t affect the configurations of the OS or any other container running concurrently on my machine.
 
 ## Multi-Page Application (MPA) to Single Page Application(SPA)
 
 
-![Multi-Page Application (MPA) to Single Page Application(SPA)](images/posts/changes-in-software-engineering-space/multi-page-to-single-page-applications.png#center)
+![Multi-Page Application (MPA) to Single Page Application(SPA)](/images/posts/changes-in-software-engineering-space/multi-page-to-single-page-applications.png#center)
 
 I worked a lot on multiple-page applications while developing web applications. All the rendering used to happen from the server after the page refresh. AJAX and Javascript were used to achieve some interactivity on the page. Now, SAP has changed everything, application is an app that works inside a browser and does not require page reloading during use. React, Angular and Vue changed the world. Also, created a new role called Frontend Developer/Frontend Engineer.
 
 ## Desktop-friendly web app to Responsive Web App
 
-![Desktop-friendly web app to Responsive Web App](images/posts/changes-in-software-engineering-space/responsive-non-responsive.png#center)
+![Desktop-friendly web app to Responsive Web App](/images/posts/changes-in-software-engineering-space/responsive-non-responsive.png#center)
 
 Back in those days, I used to create web apps only for desktops. Very few people were browsing the web app on mobile devices. I used to target IE browsers :) . Slowly technology changed and many people started to browse web apps on mobile devices. So, I had to learn responsive design to develop device-compatible web apps. I learned responsive design and all those CSS media queries from the bootstrap CSS framework.  Now these days, peope perefer mobile first web design approach.
 
 ## Regular Software (Traditional) Applications to SAAS platform
 
 
-![Regular Software (Traditional) Applications to SAAS platform](images/posts/changes-in-software-engineering-space/treditional-software-to-saas-software.png#center)
+![Regular Software (Traditional) Applications to SAAS platform](/images/posts/changes-in-software-engineering-space/treditional-software-to-saas-software.png#center)
 
 Thre was concept of software as a service (SAAS) but only few organizations were providing those solutions. SAAS is a multi-tenant architecture concept where software provider hosts their application on the cloud and makes available to their customers over the internet. Now these days, Larger company like microsoft, google provides software as a service. 
 

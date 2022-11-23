@@ -1,19 +1,41 @@
-
-+++
-title="Javascript Unit Test With Jest"
-date=2022-11-12T21:56:57+11:00
-draft=false
-tags = [
-    "NodeJS",
-    "Unit Test",
+---
+title: "Javascript Unit Test With Jest"
+date: 2022-11-12T21:56:57+11:00
+# weight: 1
+# aliases: ["/first"]
+tags : [
+"NodeJS",
+"Unit Test",
 ]
-categories = [
-  "Javascript",
+categories : [
+"Javascript",
 ]
-images = [
-  "images/posts/javascript-unit-test-with-jest/javascript-unit-test-with-jest.png"
-]
-+++
+author: "Prakash Bhandari"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: false
+description: "Javascript Unit Test With Jest"
+#canonicalURL: "https://canonical.url/to/page"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+cover:
+    image: "images/posts/javascript-unit-test-with-jest/javascript-unit-test-with-jest.png" # image path/url
+    alt: "Javascript Unit Test With Jest"
+    caption: "Javascript Unit Test With Jest"
+    relative: true
+---
 
 In this tutorial, I will demonstrate how to write a basic unit test to calculate the area of geometric shapes like circle and rectangle by using the JavaScript Testing Framework called Jest. <!--more-->
 
@@ -150,11 +172,12 @@ We have covered all the business logics and unit tests. Now, It's time to run th
  
 Now we can run `npm test` which will run the unit test as well as create the coverage folder where the meninist file for test coverage is available.
  
-![Test result](images/posts/javascript-unit-test-with-jest/test-results.png#center)
+![Test result](/images/posts/javascript-unit-test-with-jest/test-results.png#center)
+
  
 Here is the test coverage report. Report is available `coverage/lcov-report/index.html`
  
-![Test Coverage](images/posts/javascript-unit-test-with-jest/test-coverage.png#center)
+![Test Coverage](/images/posts/javascript-unit-test-with-jest/test-coverage.png#center)
  
  
 In the article, we have learned how to set up a basic Node project, configure `jest` package for unit test and test coverage. Furthermore, we have written some business logics and unit tests for those logics. Also, ran unit tests and generated test coverage reports.
@@ -166,8 +189,4 @@ git clone https://github.com/dev-scripts/jest-test.git
 ```
 YouTube Video:
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/cOuboivJK0A"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
-          allowfullscreen="" title="YouTube Video"></iframe>
-</div>
+{{< youtube cOuboivJK0A >}}
