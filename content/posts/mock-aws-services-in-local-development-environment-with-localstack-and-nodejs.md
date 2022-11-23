@@ -457,12 +457,16 @@ Get full source code form GitHub: https://github.com/dev-scripts/localstack-node
 
 Output demonstration on YouTube Video : 
 
-  {{< youtube r9RMT3bLEQ8 >}}
+{{< youtube r9RMT3bLEQ8 >}}
+
+Twitter Post : 
+{{< tweet user="ScriptPrakash" id="1594197783887872001" >}}
 
 # References
 1. https://github.com/localstack/localstack
 2. https://docs.localstack.cloud/aws/feature-coverage/ 
 3. https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-nodejs.html
+
 
 
 

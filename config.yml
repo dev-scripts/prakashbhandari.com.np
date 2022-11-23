@@ -17,8 +17,8 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Prakash's Blog
-  description: "I have 10+ years of professional experience in software engineering space. "
-  keywords: [Prakash's Blog, Prakash Bhandari, Tech Blog, Programming]
+  description: "A blog about software engineering focused on web development, deployment and web programming languages."
+  keywords: [Prakash's Blog, A blog about software engineering, Web Programming, Prakash Bhandari, Javascript, PHP, MySQL, microservices, docker, react, angular, vue, laravel,]
   author: Prakash Bhandari
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
