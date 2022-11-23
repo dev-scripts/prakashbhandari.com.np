@@ -60,7 +60,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: I caught fire coding 🔥
-    subtitle: "I’m Prakash Bhandari, Software Engineer. I have 10+ years of professional software engineering experience. <span> dddd </span>"
+    subtitle: "I’m Prakash Bhandari, Software Engineer. I have 10+ years of professional software engineering experience."
     imageUrl: "images/profile.jpeg"
     imageWidth: 120
     imageHeight: 120
