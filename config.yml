@@ -65,6 +65,8 @@ params:
     imageHeight: 120
     imageTitle: Prakash Bhandari
     buttons:
+      - name: About
+        url: /pages/about
       - name: Posts
         url: posts
       - name: Archives
@@ -128,6 +130,11 @@ menu:
     - identifier: archives
       name: Archives
       url: /archives
+      weight: 10
+
+    - identifier: about
+      name: About Me
+      url: /pages/about
       weight: 10
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
