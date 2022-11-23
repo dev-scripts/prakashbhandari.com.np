@@ -49,7 +49,7 @@ I will create a basic NodeJS project to demonstrate the unit test example.
  
 Our project folder structure will be like the attached image.
  
-![Folder structure](images/posts/javascript-unit-test-with-jest/project-folder-structure.png#center)
+![Folder structure](/images/posts/javascript-unit-test-with-jest/project-folder-structure.png#center)
  
  
 Let assume you already have installed Node in your machine.

@@ -59,8 +59,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: I caught fire coding 🔥
-    subtitle: "I’m Prakash Bhandari, Software Engineer. I have 10+ years of professional software engineering experience."
+    title:  "\U0001F44B I’m Prakash,"
+    subtitle: "I have 10+ years of professional experience in software engineering space. I’m currently serving as a Senior Software Engineer at Bigtincan Mobile Pty. Sydney, Australia."
     imageUrl: "images/profile.jpeg"
     imageWidth: 120
     imageHeight: 120
@@ -75,14 +75,16 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: " \U0001F44B  I'm Prakash Bhandari. I caught fire coding 🔥"
-    Content: I caught fire coding 🔥 I'm a Software Engineer with more than 10 years of professional experience.
+    Title: " \U0001F44B  I'm Prakash Bhandari, "
+    Content: I have 10+ years of professional experience in software engineering space.
 
   socialIcons:
     - name: youtube
       url: "https://www.youtube.com/@prakashbhandari9315"
     - name: linkedin
       url: "https://www.linkedin.com/in/prakash-bhandari-047ba447"
+    - name : facebook
+      url : "https://www.facebook.com/thebhandariprakash"
 
   # for search
   # https://fusejs.io/api/options.html
