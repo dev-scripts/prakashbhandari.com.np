@@ -59,7 +59,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title:  "\U0001F44B I’m Prakash,"
-    subtitle: "I have 10+ years of professional experience in software engineering space. I’m currently employed as a Senior Software Engineer at Bigtincan Mobile Pty. Sydney, Australia."
+    subtitle: "I have 10+ years of professional experience in software engineering space. I’m currently employed as a Senior Software Engineer at Bigtincan. Sydney, Australia. 😊"
     imageUrl: "images/profile.jpeg"
     imageWidth: 120
     imageHeight: 120

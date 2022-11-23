@@ -1,15 +1,17 @@
 ---
-title: "About Me"
+title: "About Me 😊"
 date: 2022-11-24T05:30:56+11:00
 draft: false
 ---
-## Background
+## 👋 I’m Prakash Bhandari - Software Engineer
+
+**🔥 I caught fire coding 🔥**
 
 I have 10+ years of professional experience in software engineering space. I’m currently employed as a Senior Software Engineer at Bigtincan Mobile Pty. Sydney, Australia.
 
 Extensive background in full lifecycle software development process including iterations of requirements gathering, prototyping, architecting, coding, peer review, refactoring, debugging, Agile Methodologies, SQL, AWS Services & IT Strategy.
 
-## Professional Experiences
+## Professional Experiences 👨‍💻
 
 ### 1. Senior Software Engineer 
 **Bigtincan · Full-time (Jan 2020 - Present)**
