@@ -1,6 +1,6 @@
 ---
 title: "How to Copy S3 Bucket Objects From One AWS Account to Another Account"
-date: 2019-08-24T12:00:15+11:00
+date: 2019-09-23T12:00:15+11:00
 draft: false
 tags: [
 "s3",
