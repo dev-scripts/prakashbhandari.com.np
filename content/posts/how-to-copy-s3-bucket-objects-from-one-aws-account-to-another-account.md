@@ -159,5 +159,5 @@ Once we run the AWS command we can see the file sync process in console. The syn
 
 Now, we learned how to copy S3 bucket objects from one account to the another AWS account(transfer the ownership of S3 objects from one account to another AWS account).
 
-Also, publish Medium https://medium.com/@thebhandariprakash/how-to-copy-s3-bucket-objects-from-one-aws-account-to-another-account-609a482fb931
+Also, publish on **Medium** https://medium.com/@thebhandariprakash/how-to-copy-s3-bucket-objects-from-one-aws-account-to-another-account-609a482fb931
 
