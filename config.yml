@@ -1,11 +1,11 @@
 baseURL: "https://www.prakashbhandari.com.np"
-title: Prakash's Blog
-paginate: 5
+title: Prakash's Blog 👨‍💻
+paginate: 10
 theme: hugo-PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
-buildFuture: false
+buildFuture: true
 buildExpired: false
 
 googleAnalytics: G-0YH2BX9EPQ
@@ -16,7 +16,7 @@ minify:
 
 params:
   env: production
-  title: Prakash's Blog
+  title: Prakash's Blog 👨‍💻
   description: "A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, etc"
   keywords: [Prakash's Blog, A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, Javascript, PHP, MySQL, microservices, docker, NodeJS, React, Angular, VueJS, laravel]
   author: Prakash Bhandari

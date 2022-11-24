@@ -39,6 +39,15 @@ According to LocalStack GitHub page
 
 >The Pro version of LocalStack supports additional APIs and advanced features. You can find a comprehensive list of supported APIs on Feature Coverage page.
 
+# Why LocalStack ?
+
+Using LocalStack in development environment has some benefits :
+
+1. No need to worry about internet and can work offline.
+2. Cost saving. No need to pay to AWS for usages.
+3. Any team member can easily setup and work locally without having AWS account.
+4. Dockerized LocalStack is portable.
+
 # How to configure LocalStack in Local machine?
 
 You can configure LocalStack in two ways. One way is to directly install in your machine. Another way is to run LocalStack inside a container. I always prefer to run inside a docker container.
