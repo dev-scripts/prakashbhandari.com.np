@@ -1,7 +1,24 @@
 ---
 title: "Branching Strategy for Big Feature"
 date: 2022-11-29T15:50:27+11:00
+showToc: true
+TocOpen: false
 draft: false
+hidemeta: false
+comments: false
+description: "Branching Strategy for Big Feature"
+#canonicalURL: "https://canonical.url/to/page"
+disableHLJS: true # to disable highlightjs
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
 tags: [
 "GIT",
 ]
@@ -60,7 +77,6 @@ Let’s assume we have the following branches in our git flow.
 3. ***develop***: the main branch for development. The feature ranches can be checkout from develop.
 
 
-
 To work on the above feature we need to create a main feature branch from develop
 
 ```git
@@ -84,7 +100,7 @@ git checkout -b paypal-integration
 
 Now you can work in this branch and create PR for `payment-gateway-integration` branch. Once the code review is completed you can merge it to `payment-gateway-integration` 
 
-Similarly, you can create separate branches for all the sub-features and merge them back into the main feature branch.
+Similarly, you can create separate branches for all the sub-features and merge them back into the main feature branch. If more then one developers is working on the sub featues. You or another developer need to rebase his/her working branch form `payment-gateway-integration` depend upon who will merge the their work to main feature brnach.
 
 Once all the sub-feature branches get merged to `payment-gateway-integration` branch you need to `rebase` from develop. Because other developer might have alrady merged their PR to develop and  your brnach is behind those commits.
 
@@ -94,9 +110,9 @@ git rebase develop
 git push --force-with-lease
 ```
 
-Finally, you need to create a PR form payment-gateway-integration to develop. Once you create PR other developers can review it, and QA can test independently in the local feature branch.
+Finally, you need to create a PR `form payment-gateway-integration` to `develop`. Once you create PR other developers can review it, and QA can test independently in the local feature branch.
 
-This approach helps us to work smoothly without merging work in progress branch to develop.
+This approach helps us to work smoothly without erging Work In Progress(WIP) branch to develop.
 
 
 
