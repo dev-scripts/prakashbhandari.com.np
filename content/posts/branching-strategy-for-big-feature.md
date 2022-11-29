@@ -98,9 +98,9 @@ After this, you can work on the Paypal integration feature. This branch needs to
 git checkout -b paypal-integration
 ```
 
-Now you can work in this branch and create PR for `payment-gateway-integration` branch. Once the code review is completed you can merge it to `payment-gateway-integration` 
+Now you can work in this branch and create PR for `payment-gateway-integration` branch. Once the code review is completed for `paypal-integration` you can merge it to `payment-gateway-integration` 
 
-Similarly, you can create separate branches for all the sub-features and merge them back into the main feature branch. If more then one developers is working on the sub featues. You or another developer need to rebase his/her working branch form `payment-gateway-integration` depend upon who will merge the their work to main feature brnach.
+Similarly, you can create separate branches for all the sub-features and merge them back into the main feature branch `payment-gateway-integration`. If more then one developers is working on the sub featues. You or another developer need to rebase his/her working branch form `payment-gateway-integration` depend upon who will first merge their work to main feature brnach (`payment-gateway-integration`).
 
 Once all the sub-feature branches get merged to `payment-gateway-integration` branch you need to `rebase` from develop. Because other developer might have alrady merged their PR to develop and  your brnach is behind those commits.
 
@@ -112,7 +112,7 @@ git push --force-with-lease
 
 Finally, you need to create a PR `form payment-gateway-integration` to `develop`. Once you create PR other developers can review it, and QA can test independently in the local feature branch.
 
-This approach helps us to work smoothly without erging Work In Progress(WIP) branch to develop.
+This approach helps you to work smoothly without merging Work In Progress(WIP) branch to develop. 
 
 
 
