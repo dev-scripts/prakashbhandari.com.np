@@ -33,6 +33,7 @@ tags: [
 ]
 categories: [
 "NodeJS",
+"JavaScript",
 ]
 author: "Prakash Bhandari"
 cover:
