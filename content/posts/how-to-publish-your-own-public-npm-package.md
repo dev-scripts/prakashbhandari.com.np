@@ -333,6 +333,6 @@ npm install nepali-english-number-converter --save
 yarn add nepali-english-number-converter --save
 ```
 
-Full source code form GitHub Repository : https://github.com/dev-scripts/nepali-english-number-converter
+**Full source code form GitHub Repository** : https://github.com/dev-scripts/nepali-english-number-converter
 
-Publish URL :  https://www.npmjs.com/package/nepali-english-number-converter
+**Publish URL** :  https://www.npmjs.com/package/nepali-english-number-converter
