@@ -316,7 +316,7 @@ Run `npm publish` inside your project directory
 
 Once you publish to into `npmjs.com` you are done and your module is publicly available to user by the community.
 
-## How to use publicly by other `NPM` 
+## How to use publicly available NPM package by others people
 Now this module is publicly available on `npmjs.com`
 
  ***Publish URL:***  https://www.npmjs.com/package/nepali-english-number-converter
