@@ -318,34 +318,78 @@ It acts the same way as `.gitignore` does. To ignore the files and folder that y
 For our module we don't need to create.
 
 ### Create `LICENSE` file
-You can copy and modify my licence text or you can copy form https://opensource.org/licenses/MIT
-### `package.json` file
+You can copy and modify my licence text, or you can copy form https://opensource.org/licenses/MIT
+### Create `package.json` file
 
-All npm packages contain a file, usually in the project root, called `package.json` - 
+All `npm` packages contain a file, usually in the project root, called `package.json` - 
 this file holds various metadata relevant to the project. This file is used to 
 give information to `npm` that allows it to identify the project as well as handle 
 the project's dependencies.
 
-`package.json` file will be automatically created when you run `npm init` command in the root of the project.
-As mention above this file holds various metadata like repository url , authors , keywords ect. 
-Please refer my `package.json` file.
+A `package.json` file will be automatically created when you run `npm init` command in the root of the project.
+As mention above, this file holds various metadata like name, version, description, repository url , authors , keywords ect. 
+
+A `package.json` file must contain **"name"** and **"version"** fields.
+
+The **"name"** field contains your package's name, and must be lowercase and one word, and may contain hyphens and underscores.
+
+The **"version"** field must be in the form x.x.x .
+
+If you want to know more about the `package.json` file please visit: [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
+
+Here, I have attached my `package.json` file. 
+
+```json
+{
+  "name": "nepali-english-number-converter",
+  "version": "1.0.0",
+  "description": "English to Nepali and Nepali to English number converter",
+  "main": "./src/index.js",
+  "repository": "https://github.com/dev-scripts/nepali-english-number-converter.git",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": {
+    "name": "Prakash Bhandari",
+    "email": "thebhandariprakash@gmail.com",
+    "url": "https://www.prakashbhandari.com.np"
+  },
+  "keywords": [
+    "neplai number onverter",
+    "english to nepali number converter",
+    "nepali to english numnber converter",
+    "hindu arabic to english numbner",
+    "english to hindu arabic",
+    "number converter"
+  ],
+  "bugs": {
+    "url": "https://github.com/dev-scripts/nepali-english-number-converter/issues"
+  },
+  "homepage": "https://github.com/dev-scripts/nepali-english-number-converter#readme",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.3.1",
+    "save-dev": "0.0.1-security"
+  }
+}
+```
 
 ### Create `README.md` file.
 
-Create `README.md` file and you can write the document on how to use the package.
+Create `README.md` file, and you can write the document on how to use the package.
 
 ## Create Account on `npmjs.com`
 If you don't have account on  `npmjs.com`. You have to create an account on https://www.npmjs.com. 
 If you have your account on  `npmjs.com` you can publish your module under your account.
 
 ## Login into `npmjs.com`
-Run `npm login` command in the root of the project. You have to provide the login details form console.
+Run `npm login` command in the root of the project. You have to provide the login details from console.
 
 ## Publish module to `npmjs.com`
 
-Run `npm publish` inside your project directory
+Run `npm publish` inside your project root directory
 
-Once you publish to into `npmjs.com` you are done and your module is publicly available to user by the community.
+Once you publish to into `npmjs.com` you are done 🍻 and your package is publicly available to user by the community.
 
 ## How to use publicly available NPM package by others people
 Now this module is publicly available on `npmjs.com`
@@ -381,3 +425,5 @@ NPM package and publish to the `npmjs.com`  for public use.
 
 ## References 
 1. https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry
+2. https://nodejs.org/en/download/
+3. https://www.w3schools.com/nodejs/nodejs_npm.asp
