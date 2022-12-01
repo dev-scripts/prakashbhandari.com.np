@@ -13,7 +13,7 @@ categories: [
 author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
@@ -30,6 +30,12 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+keywords: [
+    "Code Review in Software Development Process",
+    "Code Review",
+    "Peer Review",
+    "Peer Programming",
+]
 cover: 
     image: "images/posts/code-review-process-in-software-development/code-review-process.png"
     alt: "Code Review in Software Development Process"

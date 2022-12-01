@@ -9,10 +9,14 @@ tags : [
 categories : [
 "SQL",
 ]
+keywords: [
+"Execution Order of SELECT SQL Query",
+"SELECT SQL Query",
+]
 author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false

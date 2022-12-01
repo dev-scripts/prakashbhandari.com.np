@@ -9,6 +9,11 @@ tags: [
 categories: [
 "API",
 ]
+keywords: [
+    "API Design Best Practices", 
+    "REST API", 
+    "RestFul API"
+]
 author: "Prakash Bhandari"
 cover:
     image: "images/posts/api-design-best-practices/api-design-best-practices.png"

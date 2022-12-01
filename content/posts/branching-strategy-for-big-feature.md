@@ -19,6 +19,11 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+keywords: [
+"Branching Strategy for Big Feature",
+"Git Flow",
+"Working with Git"
+]
 tags: [
 "GIT",
 ]

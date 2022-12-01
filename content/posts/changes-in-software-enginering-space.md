@@ -9,10 +9,15 @@ tags: [
 categories: [
 "Software Engineering",
 ]
+keywords: [
+"Changes I have seen in the software engineering space",
+"Software Engineering",
+"Waterfall to Agile Methodology"
+]
 author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false

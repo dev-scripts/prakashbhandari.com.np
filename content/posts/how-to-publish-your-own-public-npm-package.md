@@ -2,11 +2,11 @@
 title: "How to Publish Your Own Public NPM Package?"
 date: 2022-12-01T12:11:00+11:00
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I have created small package to convert Nepali number to English number and English number to Nepali number"
+description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I have created small package to convert Nepali number to English number and English number to Nepali number. This post will guide you to create and publish your own package."
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -19,6 +19,13 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+keywords: [
+    "How to Publish Your Own Public NPM Package?", 
+    "How to Publish NPM Package ?", 
+    "Publish NPM Package", 
+    "Nepali to English Number Conversion",
+    "English to Nepali Number Conversion"
+]
 tags: [
 "NPM",
 "JavaScript",

@@ -3,12 +3,13 @@ title: "Mock AWS Services in Local Development Environment with LocalStack and N
 date: 2022-11-19T15:09:02+11:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["AWS", "Localstack", "NodeJS",]
+tags: ["AWS", "Localstack", ]
+keywords: ["LocalStack", "Mock AWS Services in Local Development Environment with LocalStack and NodeJS", "AWS"]
 categories : [ "Cloud", ]
 author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 UseHugoToc: true
 cover:

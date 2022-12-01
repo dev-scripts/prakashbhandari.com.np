@@ -10,10 +10,15 @@ tags : [
 categories : [
 "Javascript",
 ]
+keywords: [
+"Unit test with Jest",
+"Unit test",
+"NodeJS",
+]
 author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false

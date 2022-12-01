@@ -9,6 +9,11 @@ tags: [
 categories: [
 "Cloud",
 ]
+keywords: [
+"How to Copy S3 Bucket Objects From One AWS Account to Another Account",
+"S3 bucket",
+"AWS",
+]
 author: "Prakash Bhandari"
 cover:
     image: "images/posts/how-to-copy-s3-bucket-objects-from-one-aws-account-to-another-account/how-to-copy-s3-bucket-objects-from-one-aws-account-to-another-account.webp"
