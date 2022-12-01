@@ -340,6 +340,14 @@ npm install nepali-english-number-converter --save
 yarn add nepali-english-number-converter --save
 ```
 
+Full implementation
+```javascript
+const convert = require("neplai-number-converter")
+console.log(convert(123, 'TO-NP'));
+
+```
+Output : `१२३`
+
 **Full source code form GitHub Repository** : https://github.com/dev-scripts/nepali-english-number-converter
 
 **Publish URL** :  https://www.npmjs.com/package/nepali-english-number-converter
