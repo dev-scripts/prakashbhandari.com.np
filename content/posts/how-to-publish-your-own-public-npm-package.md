@@ -6,7 +6,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I will create one package to convert Nepali number to English number and English number to Nepali number. Also, I will publish it to npmjs.com."
+description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I will create one package to convert Nepali number to English number and English number to Nepali number. Finally, I will publish it to npmjs.com."
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -49,12 +49,12 @@ All you need is basic understanding of Javascript, NPM, `package.json` file and 
 In this post, I will try to explain the steps to create and publish your own public NPM package to https://www.npmjs.com.
 
 To demonstrate, I will create real NPM package which will ***convert English number to Nepali Number and Nepali number to English Number.***
-And, this package will be publish to https://www.npmjs.com for public use.
+Finally, this package will be publish to https://www.npmjs.com for public use.
 
 ## What is NPM?
-NPM is a package manager for Node.js packages, or modules. 
+NPM is a package manager for `Node.js` packages, or modules. 
 
-www.npmjs.com acts like git and hosts thousands of public packages which can be downloaded and used.
+www.npmjs.com acts like git for `Node.js` packages and hosts millions of public packages which can be downloaded and used in your project.
 
 ## What is a Package?
 According to [w3schools](https://www.w3schools.com/nodejs/nodejs_npm.asp)
@@ -417,7 +417,7 @@ console.log(convert(123, 'TO-NP'));
 Output : `१२३`
 
 After completing this post we have learned how to create a basic 
-NPM package and publish to the `npmjs.com`  for public use.
+`NPM` package and publish to the `npmjs.com` for public use.
 
 **Full source code form GitHub Repository** : https://github.com/dev-scripts/nepali-english-number-converter
 
