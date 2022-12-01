@@ -44,13 +44,12 @@ cover:
 
 
 Publishing your own public NPM package is not that hard. 
-All you need is basic Javascript skills and Account in https://www.npmjs.com
+All you need is basic understanding of Javascript, NPM, `package.json` file and Account in https://www.npmjs.com
 
-In this post I will try to explain the steps to publish your own public NPM package.
+In this post, I will try to explain the steps to create and publish your own public NPM package to https://www.npmjs.com.
 
-To demonstrate, I will create real NPM package that will be publish to https://www.npmjs.com
-
-I will create small NPM package that will convert English number to Nepali Number and Nepali number to English Number.
+To demonstrate, I will create real NPM package which will ***convert English number to Nepali Number and Nepali number to English Number.***
+And, this package will be publish to https://www.npmjs.com for public use.
 
 ## What is NPM?
 NPM is a package manager for Node.js packages, or modules. 
@@ -65,23 +64,26 @@ According to [w3schools](https://www.w3schools.com/nodejs/nodejs_npm.asp)
 
 
 ## NPM Project Setup 
-I assume you already have installed the NodeJS in your machine. `NPM` comes with NodeJS.he NPM program is installed on your computer when you install NodeJS
+I assume you already have installed the Node in your machine. 
+If you don't have node in your machine please install form [Node.js](https://nodejs.org/en/download/).
+`NPM` comes with NodeJS, `NPM` gets installed on your machine automatically when you install Node in your machine.
 
-Let's create folder for the project.  
+Let's create project folder for our package. 
 
 `mkdir nepali-english-number-converter`
 
 `cd nepali-english-number-converter`
 
-Now, you are in root of the project. next step is to initiate the project.
+Now, you are in root of the project. Next step is to initiate the project by creating `package.json` file.
 
-Need to run the `npm init` which will create `package.json` file.
+`package.json` file gets automatically created  when you run `npm init` command in your project root directory.
 
-Let's create files as defined in below File and folder Structure 
+Let's create files and folders as defined in below ***Files and Folders Structure for the project***.
 
-## File and Folder Structure
+## Files and Folders Structure for the project
 
-Our file structure should look like this attached image: 
+My file and folder structure will be like below in my project. 
+I will be creating all the files and folders as I move further.
 ```
 |- __tests__/
 | | english-to-nepali.test.js
@@ -98,7 +100,7 @@ Our file structure should look like this attached image:
 ```
 ### Create files inside `__tests__/` folder
 I will also write unit test by using one of most popular JavaScript framework  called `Jest`.
-But, you can totally ignore this step, because you might feel boring :)
+I have installed Jest for this. But, you can totally ignore this step, because you might feel boring :)
 
 The test code for each file inside the `__tests__/` should look like this. 
 
@@ -369,6 +371,9 @@ console.log(convert(123, 'TO-NP'));
 
 ```
 Output : `१२३`
+
+After completing this post we have learned how to create a basic 
+NPM package and publish to the `npmjs.com`  for public use.
 
 **Full source code form GitHub Repository** : https://github.com/dev-scripts/nepali-english-number-converter
 
