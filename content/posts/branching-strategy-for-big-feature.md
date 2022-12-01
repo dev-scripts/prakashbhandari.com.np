@@ -83,7 +83,6 @@ To work on the above feature we need to create a main feature branch from develo
 git checkout -b payment-gateway-integration 
 ```
 
-
 Now, this branch can act as the main feature branch, and other sub-feature branches can `checkout` `payment-gateway-integration`, create PR, review PR, rebase and merge back to `payment-gateway-integration`. 
 
 You need to push this branch to a remote repository even though there is no commit.  You can add `--allow-empty`  flag in git commit
