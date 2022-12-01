@@ -42,7 +42,9 @@ cover:
     relative: true
 ---
 
-Publishing your own public NPM package is not that hard.  All you need is basic Javascript skills and Account in https://www.npmjs.com
+
+Publishing your own public NPM package is not that hard. 
+All you need is basic Javascript skills and Account in https://www.npmjs.com
 
 In this post I will try to explain the steps to publish your own public NPM package.
 
@@ -50,8 +52,20 @@ To demonstrate, I will create real NPM package that will be publish to https://w
 
 I will create small NPM package that will convert English number to Nepali Number and Nepali number to English Number.
 
+## What is NPM?
+NPM is a package manager for Node.js packages, or modules. 
+
+www.npmjs.com acts like git and hosts thousands of public packages which can be downloaded and used.
+
+## What is a Package?
+According to [w3schools](https://www.w3schools.com/nodejs/nodejs_npm.asp)
+>"A package in Node.js contains all the files you need for a module."
+
+>"Modules are JavaScript libraries you can include in your project."
+
+
 ## NPM Project Setup 
-I assume you already have installed the NodeJS in your machine. `NPM` comes with NodeJS
+I assume you already have installed the NodeJS in your machine. `NPM` comes with NodeJS.he NPM program is installed on your computer when you install NodeJS
 
 Let's create folder for the project.  
 
@@ -305,9 +319,14 @@ For our module we don't need to create.
 You can copy and modify my licence text or you can copy form https://opensource.org/licenses/MIT
 ### `package.json` file
 
+All npm packages contain a file, usually in the project root, called `package.json` - 
+this file holds various metadata relevant to the project. This file is used to 
+give information to `npm` that allows it to identify the project as well as handle 
+the project's dependencies.
+
 `package.json` file will be automatically created when you run `npm init` command in the root of the project.
-But you can add repository url , authors , keywords ect. Please refer my `package.json` file. 
-`package.json` file defines the name, version, author, repository and other attributes of the package.
+As mention above this file holds various metadata like repository url , authors , keywords ect. 
+Please refer my `package.json` file.
 
 ### Create `README.md` file.
 
