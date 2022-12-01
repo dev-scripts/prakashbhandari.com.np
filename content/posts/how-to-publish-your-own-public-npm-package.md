@@ -82,9 +82,12 @@ Our file structure should look like this attached image:
 | package.json
 | README.md
 ```
-### Create files inside __tests__/ folder
-We will also write unit test by using JavaScript framework `Jest`. 
-The test code for each file inside the __tests__/ should look like this.
+### Create files inside `__tests__/` folder
+I will also write unit test by using one of most popular JavaScript framework  called `Jest`.
+But, you can totally ignore this step, because you might feel boring :)
+
+The test code for each file inside the `__tests__/` should look like this. 
+
 1. `english-to-nepali.test.js`
 
 ```javascript
@@ -340,7 +343,7 @@ npm install nepali-english-number-converter --save
 yarn add nepali-english-number-converter --save
 ```
 
-Full implementation
+Example of package implementation.
 ```javascript
 const convert = require("neplai-number-converter")
 console.log(convert(123, 'TO-NP'));
