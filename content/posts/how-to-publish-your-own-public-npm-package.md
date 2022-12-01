@@ -6,7 +6,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 comments: false
-description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I have created small package to convert Nepali number to English number and English number to Nepali number. This post will guide you to create and publish your own package."
+description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I will create one package to convert Nepali number to English number and English number to Nepali number and publish it to npmjs.com."
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -351,3 +351,6 @@ Output : `१२३`
 **Full source code form GitHub Repository** : https://github.com/dev-scripts/nepali-english-number-converter
 
 **Publish URL** :  https://www.npmjs.com/package/nepali-english-number-converter
+
+## References 
+1. https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry
