@@ -343,7 +343,7 @@ Here, I have attached my `package.json` file.
 ```json
 {
   "name": "nepali-english-number-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "English to Nepali and Nepali to English number converter",
   "main": "./src/index.js",
   "repository": "https://github.com/dev-scripts/nepali-english-number-converter.git",
@@ -356,12 +356,14 @@ Here, I have attached my `package.json` file.
     "url": "https://www.prakashbhandari.com.np"
   },
   "keywords": [
-    "neplai number onverter",
-    "english to nepali number converter",
-    "nepali to english numnber converter",
-    "hindu arabic to english numbner",
-    "english to hindu arabic",
-    "number converter"
+    "Neplai number converter",
+    "English to Nepali number converter",
+    "Neplai to English number converter",
+    "hindu arabic to English number",
+    "English to hindu arabic",
+    "number converter",
+    "NPM package oconverter English number to Nepali number",
+    "Javascript package oconverter English number to Nepali number",
   ],
   "bugs": {
     "url": "https://github.com/dev-scripts/nepali-english-number-converter/issues"
