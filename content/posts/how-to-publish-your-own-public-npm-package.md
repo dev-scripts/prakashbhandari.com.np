@@ -356,14 +356,13 @@ Here, I have attached my `package.json` file.
     "url": "https://www.prakashbhandari.com.np"
   },
   "keywords": [
-    "Neplai number converter",
+    "Nepali Number converter",
     "English to Nepali number converter",
-    "Neplai to English number converter",
-    "hindu arabic to English number",
-    "English to hindu arabic",
-    "number converter",
-    "NPM package oconverter English number to Nepali number",
-    "Javascript package oconverter English number to Nepali number",
+    "Nepali to English number converter",
+    "Hindu Arabic to English number",
+    "English number to Hindu Arabic",
+    "Number Converter",
+    "NPM package converter English number to Nepali number"
   ],
   "bugs": {
     "url": "https://github.com/dev-scripts/nepali-english-number-converter/issues"
