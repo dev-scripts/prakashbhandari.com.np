@@ -424,6 +424,9 @@ After completing this post we have learned how to create a basic
 
 **Publish URL** :  https://www.npmjs.com/package/nepali-english-number-converter
 
+YouTube Video:
+{{< youtube j1bvT_lWr9Q >}}
+
 ## References 
 1. https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry
 2. https://nodejs.org/en/download/
