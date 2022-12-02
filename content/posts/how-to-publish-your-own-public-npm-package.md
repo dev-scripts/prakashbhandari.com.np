@@ -343,7 +343,7 @@ Here, I have attached my `package.json` file.
 ```json
 {
   "name": "nepali-english-number-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "English to Nepali and Nepali to English number converter",
   "main": "./src/index.js",
   "repository": "https://github.com/dev-scripts/nepali-english-number-converter.git",
