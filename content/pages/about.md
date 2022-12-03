@@ -32,5 +32,5 @@ Extensive background in full lifecycle software development process including it
 ***Find more details on my LinkedIn profile*** : https://www.linkedin.com/in/prakash-bhandari-047ba447
 
 ## Publish Packages
-1. Nepali English Number Converter and vice versa (Composer Package): https://github.com/dev-scripts/dev-scripts-nglish-nepali-number-converter-php
-2.  Nepali English Number Converter and vice versa (NPM Package) : https://www.npmjs.com/package/nepali-english-number-converter
+1. Nepali English Number Converter and vice versa (Composer Package): https://packagist.org/packages/dev-scripts/english-nepali-number-converter-php
+2. Nepali English Number Converter and vice versa (NPM Package) : https://www.npmjs.com/package/nepali-english-number-converter
