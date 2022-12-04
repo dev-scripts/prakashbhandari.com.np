@@ -37,10 +37,10 @@ categories: [
 ]
 author: "Prakash Bhandari"
 cover:
-image: "images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/create-laravel-composer-package-from-scratch-and-publish-on-packagist-org.png"
-alt: "Create Laravel Composer Package From Scratch and Publish on Packagist"
-caption: "Create Laravel Composer Package From Scratch and Publish on Packagist"
-relative: true
+    image: "images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/create-laravel-composer-package-from-scratch-and-publish-on-packagist-org.png"
+    alt: "Create Laravel Composer Package From Scratch and Publish on Packagist"
+    caption: "Create Laravel Composer Package From Scratch and Publish on Packagist"
+    relative: true
 ---
 
 
