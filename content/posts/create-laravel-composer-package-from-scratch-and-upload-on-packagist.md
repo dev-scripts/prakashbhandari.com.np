@@ -37,49 +37,48 @@ categories: [
 ]
 author: "Prakash Bhandari"
 cover:
-    image: "images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/create-laravel-composer-package-from-scratch-and-publish-on-packagist-org.png"
-    alt: "Create Laravel Composer Package From Scratch and Publish on Packagist"
-    caption: "Create Laravel Composer Package From Scratch and Publish on Packagist"
-    relative: true
+image: "images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/create-laravel-composer-package-from-scratch-and-publish-on-packagist-org.png"
+alt: "Create Laravel Composer Package From Scratch and Publish on Packagist"
+caption: "Create Laravel Composer Package From Scratch and Publish on Packagist"
+relative: true
 ---
 
 
-In this post, I’m going to explain how you can create Laravel package locally and publish to packagegist.
+In this post, I’m going to explain how you can create Laravel package locally and publish to [Packagist](https://packagist.org/).
+
+In this post, I will create a package to convert Hindu Arabic(Nepali) number to English and  English number to Hindu Arabic (Nepali).
 
 Creating Laravel package is not that hard.
 
-I will create a package to convert Hindu Arabic(Nepali) 
-number to English and  English number to Hindu Arabic (Nepali).
+In few simple steps you can create your own package. I will go through few steps:
 
-In few simple steps you can create your own package. I will go through few steps: 
+## Step #1 : Install Laravel
 
-## Step #1 : Install Laravel 9
-
-I choose Laravel 9 because Laravel 9 is the latest version of Laravel. In future, you will have newer version of Laravel. 
+I choose Laravel 9 because Laravel 9 is the latest version of Laravel. In future, you will have newer version of Laravel.
 
 One simple command can install Laravel project in your machine. But,  it has dependency on composer.
 
-I am assuming you already have installed composer in your machine. 
+I am assuming you already have installed composer in your machine.
 
 If you have not installed composer please install [Composer](https://getcomposer.org/download/)
 
-Here how you install Laravel in your machine.
+Install Laravel in your machine by running below command.
 
-```composer log
+```
 composer create-project --prefer-dist laravel/laravel example-app
 ```
 
-## Step #2: Create a Folder Structure
+## Step #2: Folder Structure
 
-My file and folder structure will be like below inside my `example-app`.
+Files and folders structure will be like below inside my `example-app` project.
 
 ```
-|- app/
-|- bootstrap
-|- config
-|- database
-|- lang
-|- packages
+| - app/
+| - bootstrap/
+| - config/
+| - database/
+| - lang/
+| - packages/
 | | - dev-scripts/
 | | | - english-nepali-number-converter-php/
 | | | | - src/
@@ -95,22 +94,21 @@ My file and folder structure will be like below inside my `example-app`.
 | | | | - composer.json
 | | | | - composer.lock
 | | | | - README.md
-|- public/
-|- resources/
-|- rounts/
-|- storeage/
-|- tests/
-|- vendor/
-| .env
-| .gitignore
-| LICENSE
-| composer.lock
-| composer.json
-| phpunit.xml
-| README.md
+| - public/
+| - resources/
+| - rounts/
+| - storeage/
+| - tests/
+| - vendor/
+| - .env
+| - .gitignore
+| - composer.lock
+| - composer.json
+| - phpunit.xml
+| - README.md
 ```
 
-## Step #3 : Create Folder and Files inside `Packages` folder 
+## Step #3 : Create Folder and Files inside `packages` folder
 
 Go inside `english-nepali-number-converter-php` folder from console and run :
 ```
@@ -121,7 +119,7 @@ Above command creates `composer.json` file inside `packages/dev-script/english-n
 
 After crating `composer.json` file. You can create all the folders and files inside package folder. The folder structure should look like:
 ```
-|- packages
+| - packages/
 | | - dev-scripts/
 | | | - english-nepali-number-converter-php/
 | | | | - src/
@@ -139,59 +137,59 @@ After crating `composer.json` file. You can create all the folders and files ins
 | | | | - README.md
 ```
 
-Your `composer.json` file will only have basic configuration. You need you update your configuration file.
+Your `composer.json` file will only have basic configuration. You need to update your `composer.json` file with additional configurations.
 
 ### Updating `composer.json` file
 ```json
 {
-    "name": "dev-scripts/english-nepali-number-converter-php",
-    "description": "Package to convert English number to Nepali number and Nepali number to English number.",
-    "keywords": [
-        "Nepali Number converter",
-        "English to Nepali number converter",
-        "Nepali to English number converter",
-        "Hindu Arabic to English number",
-        "English number to Hindu Arabic",
-        "Number Converter",
-        "PHP package converter English number to Nepali number",
-        "PHP package converter Nepali number to English number"
-    ],
-    "minimum-stability": "dev",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Prakash Bhandari",
-            "email": "thebhandariprakash@gmail.com"
-        }
-    ],
-    "homepage": "https://prakashbhandari.com.np/",
-    "support": {
-        "issues": "https://github.com/dev-scripts/english-nepali-number-converter-php/issues"
-    },
-    "autoload": {
-        "psr-4": {
-            "DevScripts\\EnglishNepaliNumberConverter\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "DevScripts\\EnglishNepaliNumberConverter\\Tests\\": "tests/"
-        }
-    },
-    "require": {
-        "php": "^8.1"
-    },
-    "require-dev": {
-
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "DevScripts\\EnglishNepaliNumberConverter\\EnglishNepaliNumberConverterProvider"
-            ]
-        }
+  "name": "dev-scripts/english-nepali-number-converter-php",
+  "description": "Package to convert English number to Nepali number and Nepali number to English number.",
+  "keywords": [
+    "Nepali Number converter",
+    "English to Nepali number converter",
+    "Nepali to English number converter",
+    "Hindu Arabic to English number",
+    "English number to Hindu Arabic",
+    "Number Converter",
+    "PHP package converter English number to Nepali number",
+    "PHP package converter Nepali number to English number"
+  ],
+  "minimum-stability": "dev",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Prakash Bhandari",
+      "email": "thebhandariprakash@gmail.com"
     }
+  ],
+  "homepage": "https://prakashbhandari.com.np/",
+  "support": {
+    "issues": "https://github.com/dev-scripts/english-nepali-number-converter-php/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "DevScripts\\EnglishNepaliNumberConverter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DevScripts\\EnglishNepaliNumberConverter\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DevScripts\\EnglishNepaliNumberConverter\\EnglishNepaliNumberConverterProvider"
+      ]
+    }
+  }
 }
 ```
 
@@ -451,30 +449,30 @@ class ConvertTest extends UnitTestCase
 
 Create `README.md` file and update your documentation
 
-Now your package is ready. 
+Now your package is ready.
 
 ## Step #4 Test your package locally
 
 If you want to test locally you need to update the main
-`composer.json` file reside in the root of the project. You need to make below changes. 
+`composer.json` file reside in the root of the project. You need to make below changes.
 
 ```json
 "require": {
-        "dev-scripts/english-nepali-number-converter-php": "dev-main"
-    },
-    "autoload": {
-        "psr-4": {
-            "DevScripts\\EnglishNepaliNumberConverter\\": "packages/dev-scripts/english-nepali-number-converter-php/src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "DevScripts\\EnglishNepaliNumberConverter\\Tests\\": "packages/dev-scripts/english-nepali-number-converter-php/tests/"
-        }
-    },
+"dev-scripts/english-nepali-number-converter-php": "dev-main"
+},
+"autoload": {
+"psr-4": {
+"DevScripts\\EnglishNepaliNumberConverter\\": "packages/dev-scripts/english-nepali-number-converter-php/src/"
+}
+},
+"autoload-dev": {
+"psr-4": {
+"DevScripts\\EnglishNepaliNumberConverter\\Tests\\": "packages/dev-scripts/english-nepali-number-converter-php/tests/"
+}
+},
 ```
 
-Run test from root folder. 
+Run test from root folder.
 To run your test you should have `vendor` folder inside the  `english-nepali-number-converter-php`
 
 You already have `composer.json` file inside `english-nepali-number-converter-php` just need to run `composer update` this will install the `phpunit` package  inside `vendor` folder.
@@ -484,7 +482,7 @@ Now, run test :
 test packages/dev-scripts/english-nepali-number-converter-php
 ```
 
-Also, you can test it via a web URL. You need to mack changes 
+Also, you can test it via a web URL. You need to mack changes
 in` web.php` route file.
 ```php
 Route::get('/', function() {
@@ -497,7 +495,7 @@ Run app with below artisan command
 php artisn serve
 ```
 
-You can see result in web browser 
+You can see result in web browser
 
 `http://localhost:8000/`
 
@@ -505,9 +503,9 @@ You can see result in web browser
 
 ## Step #5: Push to  GitHub Public Repository
 
-Now your package is tested and ready to publish. 
-To publish your package you need to push it to GitHub 
-public repository. 
+Now your package is tested and ready to publish.
+To publish your package you need to push it to GitHub
+public repository.
 
 I have pushed this package in [GitHub](https://github.com/dev-scripts/english-nepali-number-converter-php)
 
@@ -525,7 +523,7 @@ If you don't have account you can create one. I already have account.
 
 So, I will go to submit page and publish my package for public use.
 
-I aam copying the GitHub public repository URL and pest in 
+I aam copying the GitHub public repository URL and pest in
 the submit text box.
 
 ![Submit package](/images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/submit.png#center "Submit package")
@@ -541,7 +539,7 @@ composer require dev-scripts/english-nepali-number-converter-php
 ![Public package](/images/posts/create-laravel-composer-package-from-scratch-and-publish-on-packagist/public-package.png#center "Public package")
 
 In this post, we have learned how to create Laravel package,
-test it locally, push to GitHub public repository and finally 
+test it locally, push to GitHub public repository and finally
 publish to https://packagist.org/ for public use.
 
 GitHub Repository URL : https://github.com/dev-scripts/english-nepali-number-converter-php
