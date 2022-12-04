@@ -46,7 +46,7 @@ cover:
 
 In this post, I’m going to explain how you can create Laravel package locally and publish to [Packagist](https://packagist.org/).
 
-In this post, I will create a package to convert Hindu Arabic(Nepali) number to English and  English number to Hindu Arabic (Nepali).
+To demonstrate, I will create a package to convert Hindu Arabic(Nepali) number to English and  English number to Hindu Arabic (Nepali).
 
 Creating Laravel package is not that hard.
 
