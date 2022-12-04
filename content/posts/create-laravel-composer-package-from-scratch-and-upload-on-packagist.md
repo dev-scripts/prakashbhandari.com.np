@@ -52,7 +52,7 @@ Creating Laravel package is not that hard.
 
 In few simple steps you can create your own package. I will go through few steps:
 
-## Step #1 : Install Laravel
+## Step #1: Install Laravel
 
 I choose Laravel 9 because Laravel 9 is the latest version of Laravel. In future, you will have newer version of Laravel.
 
@@ -108,7 +108,7 @@ Files and folders structure will be like below inside my `example-app` project.
 | - README.md
 ```
 
-## Step #3 : Create Folder and Files inside `packages` folder
+## Step #3: Create Folder and Files inside `packages` folder
 
 Go inside `english-nepali-number-converter-php` folder from console and run :
 ```
@@ -451,7 +451,7 @@ Create `README.md` file and update your documentation
 
 Now your package is ready.
 
-## Step #4 Test your package locally
+## Step #4: Test your package locally
 
 If you want to test locally you need to update the main
 `composer.json` file reside in the root of the project. You need to make below changes.
