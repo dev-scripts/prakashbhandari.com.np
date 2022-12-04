@@ -44,16 +44,15 @@ cover:
 ---
 
 
-In this post, I’m going to explain how you can create Laravel package locally and publish to packagegist.
+In this post, I’m going to explain how you can create Laravel package locally and publish to [Packagist](https://packagist.org/).
+
+In this post, I will create a package to convert Hindu Arabic(Nepali) number to English and  English number to Hindu Arabic (Nepali).
 
 Creating Laravel package is not that hard.
 
-I will create a package to convert Hindu Arabic(Nepali) 
-number to English and  English number to Hindu Arabic (Nepali).
-
 In few simple steps you can create your own package. I will go through few steps: 
 
-## Step #1 : Install Laravel 9
+## Step #1 : Install Laravel 
 
 I choose Laravel 9 because Laravel 9 is the latest version of Laravel. In future, you will have newer version of Laravel. 
 
@@ -63,23 +62,23 @@ I am assuming you already have installed composer in your machine.
 
 If you have not installed composer please install [Composer](https://getcomposer.org/download/)
 
-Here how you install Laravel in your machine.
+Install Laravel in your machine by running below command.
 
-```composer log
+```
 composer create-project --prefer-dist laravel/laravel example-app
 ```
 
-## Step #2: Create a Folder Structure
+## Step #2: Folder Structure
 
-My file and folder structure will be like below inside my `example-app`.
+Files and folders structure will be like below inside my `example-app` project.
 
 ```
-|- app/
-|- bootstrap
-|- config
-|- database
-|- lang
-|- packages
+| - app/
+| - bootstrap/
+| - config/
+| - database/
+| - lang/
+| - packages/
 | | - dev-scripts/
 | | | - english-nepali-number-converter-php/
 | | | | - src/
@@ -95,22 +94,21 @@ My file and folder structure will be like below inside my `example-app`.
 | | | | - composer.json
 | | | | - composer.lock
 | | | | - README.md
-|- public/
-|- resources/
-|- rounts/
-|- storeage/
-|- tests/
-|- vendor/
-| .env
-| .gitignore
-| LICENSE
-| composer.lock
-| composer.json
-| phpunit.xml
-| README.md
+| - public/
+| - resources/
+| - rounts/
+| - storeage/
+| - tests/
+| - vendor/
+| - .env
+| - .gitignore
+| - composer.lock
+| - composer.json
+| - phpunit.xml
+| - README.md
 ```
 
-## Step #3 : Create Folder and Files inside `Packages` folder 
+## Step #3 : Create Folder and Files inside `packages` folder 
 
 Go inside `english-nepali-number-converter-php` folder from console and run :
 ```
@@ -121,7 +119,7 @@ Above command creates `composer.json` file inside `packages/dev-script/english-n
 
 After crating `composer.json` file. You can create all the folders and files inside package folder. The folder structure should look like:
 ```
-|- packages
+| - packages/
 | | - dev-scripts/
 | | | - english-nepali-number-converter-php/
 | | | | - src/
@@ -139,7 +137,7 @@ After crating `composer.json` file. You can create all the folders and files ins
 | | | | - README.md
 ```
 
-Your `composer.json` file will only have basic configuration. You need you update your configuration file.
+Your `composer.json` file will only have basic configuration. You need to update your `composer.json` file with additional configurations.
 
 ### Updating `composer.json` file
 ```json
