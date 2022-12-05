@@ -52,6 +52,10 @@ Generally, it doesn't highlight the syntax based on what programming language th
 It's best and simplest way to embed pre-formatted code in markdown. 
 It helps us to highlight the syntax based on what programming language the snippet is written in.
 
+YouTube Video:
+{{< youtube v=NOE3E-5ULuA >}}
+
+Here are the 5 simple steps : 
 
 ## Step #1: Get your source code
 
