@@ -3,7 +3,7 @@ title: Prakash's Blog 👨‍💻
 paginate: 10
 theme: hugo-PaperMod
 
-enableRobotsTXT: true
+enableRobotsTXT: false
 buildDrafts: false
 buildFuture: true
 buildExpired: false
