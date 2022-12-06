@@ -92,12 +92,14 @@ params:
     Content: I have 10+ years of professional experience in software engineering space.
 
   socialIcons:
-    - name: youtube
-      url: "https://www.youtube.com/@prakashbhandari9315"
+    - name: github
+      url: "https://github.com/dev-scripts"
     - name: linkedin
       url: "https://www.linkedin.com/in/prakash-bhandari-047ba447"
-    - name : facebook
-      url : "https://www.facebook.com/thebhandariprakash"
+    - name: twitter
+      url: "https://twitter.com/PrakashsBlog"
+    - name: youtube
+      url: "https://www.youtube.com/@prakashbhandari9315"
 
   # for search
   # https://fusejs.io/api/options.html
