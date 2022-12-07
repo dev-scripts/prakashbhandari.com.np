@@ -181,7 +181,7 @@ You can also register Service Provider to `Config\app.php` as aliases. The Alias
 It's optional step.
 
 Here in my project, I am registering`FacadesCalculator`  as alias  for `App\Facades\CalculatorFacade` CalculatorFacade class.
-So that you can just call the *alias* and not the whole *Namspaced ClassName*.
+So that you can just call the *alias* and not the whole *Namspaced ClassName*. This alias name be valid string.
 
 If you have registered alias you can use alias to call function like this :  `FacadesCalculator::add(1, 2);`
 
