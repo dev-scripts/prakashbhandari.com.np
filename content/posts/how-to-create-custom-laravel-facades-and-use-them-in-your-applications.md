@@ -212,3 +212,6 @@ Run `php artisan serve`. This will sever your app in your localhost at port no 8
 ![How to create custom laravel facades](/images/posts/how-to-create-custom-laravel-facades-and-use-them-in-your-applications/results.png#center)
 
 In this post, I have covered what is facades in Laravel, benefit of using facades, how to create your own custom facades and use them in Laravel applications in very simple steps with example. Also, I have discussed about `static` and `non-static` functions in PHP.
+
+Twitter Post :
+{{< tweet user="PrakashsBlog" id="1600608015279075330" >}}
