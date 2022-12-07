@@ -98,9 +98,6 @@ params:
       url: "https://www.linkedin.com/in/prakash-bhandari-047ba447"
     - name: twitter
       url: "https://twitter.com/PrakashsBlog"
-    - name: youtube
-      url: "https://www.youtube.com/@prakashbhandari9315"
-
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
@@ -112,13 +109,11 @@ params:
     minMatchCharLength: 1
     findAllMatches: true
     keys: ["title", "permalink", "summary", "content"]
-
 outputs:
   home:
     - HTML
     - RSS
     - JSON
-
 menu:
   main:
     - identifier: categories
