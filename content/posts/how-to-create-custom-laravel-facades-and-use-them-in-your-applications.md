@@ -169,7 +169,7 @@ an instance of your main class `Calculator`
 ***Example Code:***
 {{< github-code-snippets 25c501bdfa747f7e7ee3a8f3eef178a6 >}}
 
-### Step #4 : Register ServiceProvider
+### Step #4 : Register Service Provider Class
 
 Just creating service provider won’t work. You need to register your Service Provider in the `/Config/app.php`
 config file, under the `provider` key.
