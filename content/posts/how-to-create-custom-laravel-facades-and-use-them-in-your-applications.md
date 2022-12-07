@@ -120,13 +120,13 @@ and will wrap this class with facade so that we can call functions of class stat
 ## Steps to Create Custom Facades
 
 Before building and implementing your own custom facades. You need to have
-a clear picture of the files and folders structure in your mind.
+a clear picture of the files and folders structure in your mind for your project.
 
 I will be creating following `Calculator` and `Facades` folders with `Calculator.php` and `CalculatorFacade.php` classes.
 Moreover, I will create `CalculatorServiceProvider.php` provider class inside existing `Providers` folder.
 Finally, I will make required changes in the `config/app.php` and `rounts/web.php` files.
 
-For pur demo purpose, I will be using **Laravel 9.**
+For demo purpose, I will be using **Laravel 9.**
 
 My project folders and files structure.
 ```
@@ -190,12 +190,12 @@ Otherwise, you need to use whole namespace to call function  `App\Facades\Calcul
 ***Example Code:***
 {{< github-code-snippets fb0946470ad2cf2e24417f6dc9a0fa30 >}}
 
-### Step #4 : Run `composer dump-autoload`
+### Step #5 : Run `composer dump-autoload`
 
 After finishing all you need to run the `composer dump-autoload` in you project root directory. This command regenerates the list of all classes that need to be included in the project `(autoload_classmap.php)`
 It's good to run when you have a new class inside your project. 
 
-### Step #5 : Call `non-static` Functions Statically
+### Step #6 : Call `non-static` Functions Statically
 
 You can call functions where ever you need in your project.
 Just to demonstrate, I will be calling functions from `web.php` router. So that we can see 
