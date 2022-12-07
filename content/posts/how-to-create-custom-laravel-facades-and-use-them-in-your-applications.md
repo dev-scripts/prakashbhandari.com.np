@@ -117,7 +117,7 @@ Let me show you the comparison between static and non-static in tabular format.
 To demonstrate, I will create one class to perform the mathematical operations `add`, `substract`, `multiply` and `divide`
 and will wrap this class with facade so that we can call functions of class statically.
 
-## Steps to Create Custom Cacades
+## Steps to Create Custom Facades
 
 Before building and implementing your own custom facades. You need to have
 a clear picture of the files and folders structure in your mind.
@@ -190,12 +190,12 @@ Otherwise, you need to use whole namespace to call function  `App\Facades\Calcul
 ***Example Code:***
 {{< github-code-snippets fb0946470ad2cf2e24417f6dc9a0fa30 >}}
 
-### Step #4 : Run `php artisan composer dump-autoload`
+### Step #4 : Run `composer dump-autoload`
 
 After finishing all you need to run the `composer dump-autoload` in you project root directory. This command regenerates the list of all classes that need to be included in the project `(autoload_classmap.php)`
 It's good to run when you have a new class inside your project. 
 
-### Step #5 : Get Output
+### Step #5 : Call `non-static` Functions Statically
 
 You can call functions where ever you need in your project.
 Just to demonstrate, I will be calling functions from `web.php` router. So that we can see 
