@@ -97,7 +97,7 @@ params:
     - name: linkedin
       url: "https://www.linkedin.com/in/prakash-bhandari-047ba447"
     - name: twitter
-      url: "https://twitter.com/PrakashsBlog"
+      url: "https://twitter.com/TheBhandariP"
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
@@ -120,11 +120,6 @@ menu:
       name: Categories
       url: /categories/
       weight: 10
-
-    - identifier: tags
-      name: Tags
-      url: /tags
-      weight: 20
 
     - identifier: posts
       name: Posts
