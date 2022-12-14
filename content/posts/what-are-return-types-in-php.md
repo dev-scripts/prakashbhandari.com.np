@@ -40,12 +40,14 @@ cover:
     caption: "What Are Return Types in PHP ?"
     relative: true
 author: "Prakash Bhandari"
+description: "PHP 7 followed on the heels of PHP 5.6 and the release was a big revolution. Chronologically PHP 7 is confusing version but brought enormous improvements in PHP engine performance.
+It also introduced a variety of new, impactful features that made it quickly adopted."
 ---
 
 I studied `Java` in my university. It was strictly typed programming language and had to define the 
 return type for a function.
-But, I started my career with PHP programming. 
-PHP 5.6  did not had a concept of return type. 
+But, I started my career as PHP developer with PHP programming. 
+`PHP 5.6` did not had a concept of return type or type hinting. 
 In my early days, I used to get confused.
 
 I worked in many small to big projects. For all projects
@@ -54,12 +56,18 @@ I used PHP and this language become primary backend programming language for me.
 Now, I am also working with other languages. But, I have deep connection with PHP.
 I am closely monitoring the evolution in PHP space.
 
-`PHP 5.6` to `PHP 7` was a big revolution. In this release PHP
-community introduce a new feature **Type hinting**. Type hinting is being referred to as **Return Type declaration** 
-Return type declaration specifies the type of value that a function should return.
-Also, community is adding more  **Type hinting**. in `8.x` release.
 
-In this post, I will try to explain **Type hinting** for each release with example.
+
+PHP 7 followed on the heels of PHP 5.6 and the release was a big revolution. 
+
+Chronologically PHP 7 is confusing version but brought enormous improvements in PHP engine performance.
+It also introduced a variety of new, impactful features that made it quickly adopted.
+
+In this release PHP community added a new impactful feature **Type hinting**. Type hinting is being referred to as **Return Type declaration**.
+Return type declaration specifies the type of value that a function should return.
+Also, community releasing new Type Hinting in new releases.
+
+In this post, I will try to explain **Type hinting** added in each release with example.
 
 ## PHP 7.0.0
 `PHP 7.0.0` added new features to support `int` `float`, `bool`, `string`, `interfaces`, `array` and `callable` return types.
@@ -385,6 +393,25 @@ function isLogin(true|string): true {
 isLogin(true);
 ```
 ### 3. `DNF` types
+
+`PHP 8.2.0` started to support `DNF` type by combining Union Types available form `PHP 8.0` and Intersection Types available form  `PHP 8.1`. 
+One of the most common use cases is to declare a type that accepts an Intersection type, or null (i.e. nullable intersection types). 
+which means they can become nullable: `(A&B)|null`
+
+**Example**
+```php
+class DNFExample {
+    public function DnfFunction((A&B)|null $entity) {
+        if ($entity === null) {
+            return null;
+        }
+ 
+        return $entity;
+    }
+}
+
+```
+
 
 
 ## Refrances 
