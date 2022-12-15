@@ -4,3 +4,4 @@ public/
 hugo_stats.json
 package.hugo.json
 .idea/
+.DS_Store
