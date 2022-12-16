@@ -32,7 +32,7 @@ These models can be used for everything from content generation to semantic sear
 ---
 
 {{< youtube TwoeHvE7cIE >}}
-OpenAI is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
+OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
 ChatGPT is really cool, and it's more than what I thought.
 
 >OpenAI offer a spectrum of models with different levels of power suitable for different tasks, 
@@ -54,7 +54,7 @@ I went through the API documentation, and it's super easy to understand and inte
 They have their own official `Node.js library` and `Python bindings` for integration.  
 
 As a part of this article, I will create a small backend app in NodeJS using `Node.js library` 
-and integrate with frontend by using React framework. I will use ` GPT-3 - text-davinci-003` model
+and integrate with frontend by using React framework. I will use ` GPT-3 - text-davinci-003` model to create Q & A.
 
 ## NodeJS Backend App
 ### App files and folders structure
@@ -84,7 +84,7 @@ After installing above mention packages our `package.json` file will be like thi
 ### open.api.service.js file
 
 We will create `open.api.service.js` file inside services folder. This services will connect with the OpenAI system.
-`OPENAI_API_KEY` should be stored in the `.env` file.
+`OPENAI_API_KEY` should be stored in the `.env` file. API can be generated form your [OpenAI Account](https://beta.openai.com/account/api-keys)
 
 This file has `getAnswer(question)` function which will accept `question` as input.  Here, we will be using `text-davinci-003` model.
 
@@ -97,7 +97,7 @@ App listening on port number `3006`.
 We will be creating  `http://localhost:3006/answer` API end point to access via frontend React App. 
 
 From front-end we will be passing questions in `question` query parameter. 
-Which will be recieved via `req.query.question` and it will be send to OpenAI `open.api.service.js`. So,
+Which will be received via `req.query.question` and it will be send to OpenAI `open.api.service.js`. So,
 that we will be getting the desired answer form OpenAI.
 
 {{< github-code-snippets ea03cc644e3ab3fbafc70cf53b4bb72e >}}
