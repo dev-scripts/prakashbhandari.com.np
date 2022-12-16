@@ -41,24 +41,24 @@ I am using [GitHub Copilot](https://github.com/features/copilot) which is also p
 OpenAI Codex is a generative pretrained language model which helps people write code even for non-tech people.
 
 ChatGPT dose more than helping people writing code. 
-It interacts like human in a conversational way to provide a detailed response to query. 
+It interacts like human in a conversational way to provide a detailed response to query.  
+code completion, text completion, image generation, and fine-tuning are next level of innovation.
 
 But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said that "it’s a mistake to rely on it for anything important right now."
 
->OpenAI offer a spectrum of models with different levels of power suitable for different tasks, 
-as well as the ability to fine-tune your own custom models. 
+The OpenAI API is powered by a family of models with different capabilities as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification.
 
-The OpenAI API is powered by a family of models with different capabilities.  
-
-OpenAI Models are : 
-1. GPT-3
+**OpenAI Models are :**
+1. ***GPT-3 :*** A set of models that can understand and generate natural language
    - text-davinci-003
    - text-curie-001
    - text-babbage-001
    - text-ada-001
-2. Codex
-3. Content filter
+2.  ***Codex*** : A set of models that can understand and generate code, including translating natural language to code
+   - code-davinci-002
+   - code-cushman-001
+3. ***Content filter*** : A fine-tuned model that can detect whether text may be sensitive or unsafe
 
 I went through the API documentation, and it's super easy to understand and integrated.
 They have their own official `Node.js library` and `Python bindings` for integration.  
