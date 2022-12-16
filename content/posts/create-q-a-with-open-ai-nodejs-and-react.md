@@ -24,7 +24,7 @@ keywords: [
 "Prakash Bhandari",
 ]
 cover:
-   image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.svg" 
+   image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.png" 
    alt: "Create Q & A With OpenAI, NodeJS and React"
    caption: "Create Q & A With OpenAI, NodeJS and React"
    relative: false
@@ -32,8 +32,6 @@ author: "Prakash Bhandari"
 description: "OpenAI offer a spectrum of models with different levels of power suitable for different tasks,
 as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification."
-images:
-   - ./images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.svg
 ---
 
 OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
