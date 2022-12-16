@@ -8,11 +8,11 @@ tags : [
 "NodeJS",
 "ReactJS",
 "AI",
-"NodeJS",
-"ReactJS"
 ]
 categories : [
 "AI",
+"NodeJS",
+"ReactJS"
 ]
 keywords: [
 "Create Q & A With OpenAI, NodeJS and React",
