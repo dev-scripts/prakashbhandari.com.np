@@ -35,7 +35,15 @@ These models can be used for everything from content generation to semantic sear
 ---
 
 OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
-ChatGPT is really cool, and it's more than what I thought.
+ChatGPT is really cool, and it's more than what I thought. 
+
+I am using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI. 
+Codex a generative pretrained language model created by OpenAI which helps people write code even for non-tech people.
+
+ChatGPT dose more than helping people writing code. 
+It interacts like human in a conversational way provide a detailed response to any question. 
+
+But, OpenAI CEO, Sam Altman said tha "it’s a mistake to rely on it for anything important right now."
 
 >OpenAI offer a spectrum of models with different levels of power suitable for different tasks, 
 as well as the ability to fine-tune your own custom models. 
@@ -55,8 +63,9 @@ OpenAI Models are :
 I went through the API documentation, and it's super easy to understand and integrated.
 They have their own official `Node.js library` and `Python bindings` for integration.  
 
-As a part of this article, I will create a small backend app in NodeJS using `Node.js library` 
-and integrate with frontend by using React framework. I will use ` GPT-3 - text-davinci-003` model to create Q & A.
+As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
+and integrate with frontend web app. React will be used to develop frontend app.  
+` GPT-3 - text-davinci-003` OpenAI model will be used dialog.
 
 ## NodeJS Backend App
 
