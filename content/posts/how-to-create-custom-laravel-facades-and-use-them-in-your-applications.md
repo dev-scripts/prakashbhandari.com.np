@@ -40,7 +40,7 @@ cover:
     image: "images/posts/how-to-create-custom-laravel-facades-and-use-them-in-your-applications/how-to-create-custom-laravel-facades-and-use-them-in-your-applications.png" # image path/url
     alt: "How to Create Custom Laravel Facades And Use Them In Your Laravel Applications?"
     caption: "How to Create Custom Laravel Facades And Use Them In Your Laravel Applications?"
-    relative: true
+    relative: false
 author: "Prakash Bhandari"
 ---
 

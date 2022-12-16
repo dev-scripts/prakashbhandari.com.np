@@ -37,7 +37,7 @@ cover:
   image: "images/posts/execution-order-of-select-sql-query/execution-order-of-select-sql-query.png" # image path/url
   alt: "Execution Order of SELECT SQL Query"
   caption: "Execution Order of SELECT SQL Query"
-  relative: true
+  relative: false
 ---
 
 This article is not an unique article. You can find numbers of article related with the **SQL** query execution order. But, I will try to make easy to read and simple to understand.

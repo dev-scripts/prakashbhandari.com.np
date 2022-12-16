@@ -39,7 +39,7 @@ cover:
     image: "images/posts/how-to-embed-github-code-snippets-in-hugo-template-blog-posts/how-to-embed-github-gist-code-snippets-in-hugo-template-blog-posts.png"
     alt: "How to Embed GitHub Code Snippets in Hugo Template Blog Posts?"
     caption: "How to Embed GitHub Code Snippets in Hugo Template Blog Posts?"
-    relative: true
+    relative: false
 ---
 
 In this post, I am going to show you how to embed GitHub code snippets in the Hugo Template blog post in 5 simple steps.

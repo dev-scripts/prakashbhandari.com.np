@@ -40,7 +40,7 @@ cover:
     image: "images/posts/code-review-process-in-software-development/code-review-process.png"
     alt: "Code Review in Software Development Process"
     caption: "Code Review in Software Development Process"
-    relative: true
+    relative: false
 ---
 
 In the Software Development process, code review is one of the major processes. It plays a vital role in developing quality software and reducing human errors. This article highlights the significance of code review and tries to answer <!--more-->questions related to the code review process like Who will be involved in this process, Whose code should be reviewed, What reviewer will look at code, Where code review is done and is spending time on code review worthwhile?

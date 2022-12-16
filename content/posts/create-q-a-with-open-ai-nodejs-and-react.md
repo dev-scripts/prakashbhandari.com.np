@@ -24,7 +24,7 @@ cover:
    image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.svg" # image path/url
    alt: "Create Q & A With OpenAI, NodeJS and React"
    caption: "Create Q & A With OpenAI, NodeJS and React"
-   relative: true
+   relative: false
 author: "Prakash Bhandari"
 description: "OpenAI offer a spectrum of models with different levels of power suitable for different tasks,
 as well as the ability to fine-tune your own custom models.
