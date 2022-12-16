@@ -43,7 +43,7 @@ Codex a generative pretrained language model created by OpenAI which helps peopl
 ChatGPT dose more than helping people writing code. 
 It interacts like human in a conversational way provide a detailed response to any question. 
 
-But, OpenAI CEO, Sam Altman said tha "it’s a mistake to rely on it for anything important right now."
+But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said tha "it’s a mistake to rely on it for anything important right now."
 
 >OpenAI offer a spectrum of models with different levels of power suitable for different tasks, 
 as well as the ability to fine-tune your own custom models. 
