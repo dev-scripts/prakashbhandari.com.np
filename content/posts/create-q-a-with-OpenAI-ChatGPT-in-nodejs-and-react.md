@@ -199,6 +199,8 @@ We can browse react app via `http://localhost:3000/`
 {{< youtube TwoeHvE7cIE >}}
 
 ### Medium Publish Link
+This article is also publish in Medium. Here is the link.
+
 https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e812933d9cd5
 
 ## Public Response to CatGPT 
