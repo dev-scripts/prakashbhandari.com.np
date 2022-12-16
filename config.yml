@@ -20,8 +20,6 @@ params:
   description: "A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, etc"
   keywords: [Prakash's Blog, A blog about software engineering focused on web development, deployment, web programming, Docker, Microservices, Software Engineering best practices, Javascript, PHP, MySQL, microservices, docker, NodeJS, React, Angular, VueJS, laravel]
   author: Prakash Bhandari
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
   disableThemeToggle: false
