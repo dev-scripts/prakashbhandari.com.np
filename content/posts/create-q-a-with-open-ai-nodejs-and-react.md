@@ -57,6 +57,10 @@ As a part of this article, I will create a small backend app in NodeJS using `No
 and integrate with frontend by using React framework. I will use ` GPT-3 - text-davinci-003` model to create Q & A.
 
 ## NodeJS Backend App
+
+We will create a small backend app in NodeJS using `Node.js library`. 
+This app will teaks question as input form API and send to the OpenAI GPT model.  
+
 ### App files and folders structure
 
 ```
@@ -76,12 +80,12 @@ We will be installing following packages in our Node App.
 2. Express `npm install express --save`
 3. cors  `npm install cors --save`
 
-### package.json file
+### Create package.json file
 After installing above mention packages our `package.json` file will be like this.
 
 {{< github-code-snippets 2122f47bc568d5c9087ed5df20531478 >}}
 
-### open.api.service.js file
+### Crate open.api.service.js file
 
 We will create `open.api.service.js` file inside services folder. This services will connect with the OpenAI system.
 `OPENAI_API_KEY` should be stored in the `.env` file. API can be generated form your [OpenAI Account](https://beta.openai.com/account/api-keys)
@@ -90,7 +94,7 @@ This file has `getAnswer(question)` function which will accept `question` as inp
 
 {{< github-code-snippets fae2e207ff1ae1803899eba04750105e >}}
 
-### index.js file
+### Create index.js file
 
 App listening on port number `3006`.
 
@@ -116,6 +120,12 @@ If you want to test the API you can try following URL in browser address bar or 
 `http://localhost:3006/answer?question=install nodejs`
 
 ## React Frontend App
+
+We will create a small frontend app in React.
+This app will have form which accepts question form user and send to the backend NodeJS app.
+NodeJS app will send the answer, and we will display answer in the UI.
+
+### App files and folders structure
 ```
 | - public
 | - src/
