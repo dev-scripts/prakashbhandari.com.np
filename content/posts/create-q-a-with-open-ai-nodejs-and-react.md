@@ -131,6 +131,7 @@ If you want to test the API you can try following URL in browser address bar or 
 `http://localhost:3006/answer?question=install nodejs`
 
 ## React Frontend App
+## React Frontend App
 
 We will create a small frontend app in React.
 This app will have form which accepts question form user and send to the backend NodeJS app.
@@ -163,7 +164,7 @@ By default, react app will be serving on port number `3000` on localhost when we
 
 `.gitignore`, `.env`, `App.css`, `App.js`, `package.json` and `public/` files and folders are created when we run the `create-react-app`
 
-### Create  `ChatGBTService.js` Service 
+### Create  `ChatGPTService.js` Service 
 
 Create  `ChatGPTService.js` service in side `Services` folder. This service will
 make an API request to the backend APP that we have written above.
