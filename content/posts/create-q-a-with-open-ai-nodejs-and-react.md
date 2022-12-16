@@ -141,9 +141,9 @@ NodeJS app will send the answer back to frontend react app, and we will display 
 | - public
 | - src/
 | | - Components/
-| | | - ChatGBT.js
+| | | - ChatGPT.js
 | | - Services/
-| | | ChatGBTService.js
+| | | ChatGPTService.js
 | .gitignore
 | .env
 | App.css
@@ -165,25 +165,25 @@ By default, react app will be serving on port number `3000` on localhost when we
 
 ### Create  `ChatGBTService.js` Service 
 
-Create  `ChatGBTService.js` service in side `Services` folder. This service will
+Create  `ChatGPTService.js` service in side `Services` folder. This service will
 make an API request to the backend APP that we have written above.
 
 `REACT_APP_API_BASE_URL`  is declared inside `.env` file.
 
 {{< github-code-snippets 0c4fad136a396d4d1cfd54d27e167613 >}}
 
-### Create  `ChatGBT.js` Component
+### Create  `ChatGPT.js` Component
 
-Create  `ChatGBT.js` component inside `Components` folder. This UI component will have input `textarea` and submit button.
+Create  `ChatGPT.js` component inside `Components` folder. This UI component will have input `textarea` and submit button.
 You can input the desired question into this textarea and submit. 
 Submit action will call the NodeJS backend app API via, which will return the answer of question and display in the UI.
 This UI will be simple, I am not going to add fancy CSS 😊. This frontend app has one pitfall, it does not highlight the codes return form ChtaGPT.
-`ChatGBTService.js`
+`ChatGPTService.js`
 
 {{< github-code-snippets cf15e8b5c14694ccf9e35e4afe5fc227 >}}
 
-### Import   `ChatGBT` component in `App` component
-`App` component is the main component. In this component we need to import the `ChatGBT` component
+### Import `ChatGPT` component in `App` component
+`App` component is the main component. In this component we need to import the `ChatGPT` component
 
 {{< github-code-snippets 4dc9db75aeda2f92fe608d4aaad1b728 >}}
 
