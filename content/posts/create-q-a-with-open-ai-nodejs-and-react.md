@@ -165,6 +165,7 @@ make an API request to the backend APP that we have written above.
 Create  `ChatGBT.js` component inside `Components` folder. This UI component will have input `textarea` and submit button.
 You can input the desired question into this textarea and submit. 
 Submit action will call the NodeJS backend app API via, which will return the answer of question and display in the UI.
+This UI will be simple, I am not going to add fancy CSS :). 
 `ChatGBTService.js`
 
 {{< github-code-snippets cf15e8b5c14694ccf9e35e4afe5fc227 >}}
