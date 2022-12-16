@@ -37,11 +37,11 @@ These models can be used for everything from content generation to semantic sear
 OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
 ChatGPT is really cool, and it's more than what I thought. 
 
-I am using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI. 
-Codex a generative pretrained language model created by OpenAI which helps people write code even for non-tech people.
+I am using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI.
+OpenAI Codex is a generative pretrained language model which helps people write code even for non-tech people.
 
 ChatGPT dose more than helping people writing code. 
-It interacts like human in a conversational way provide a detailed response to any question. 
+It interacts like human in a conversational way to provide a detailed response to query. 
 
 But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said tha "it’s a mistake to rely on it for anything important right now."
 
