@@ -40,7 +40,7 @@ cover:
     image: "images/posts/how-to-publish-your-own-public-npm-package/how-to-publish-your-own-public-npm-package-to-npmjs.png"
     alt: "How to Publish Your Own Public NPM Package"
     caption: "How to Publish Your Own Public NPM Package?"
-    relative: true
+    relative: false
 ---
 
 

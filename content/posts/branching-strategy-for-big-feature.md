@@ -35,7 +35,7 @@ cover:
     image: "images/posts/branching-strategy-for-big-feature/branching-strategy-for-big-feature.png"
     alt: "Branching Strategy for Big Feature"
     caption: "Branching Strategy for Big Feature"
-    relative: true
+    relative: false
 ---
 
 In a single repository, many developers are developing new features or fixing bugs. 

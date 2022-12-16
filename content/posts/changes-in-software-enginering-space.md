@@ -38,7 +38,7 @@ cover:
   image: "images/posts/changes-in-software-engineering-space/changes-i-have-seen-in-the-software-engineering-space-as-software-engineer.png"
   alt: "Software Engineering"
   caption: "Software Engineering"
-  relative: true
+  relative: false
 ---
 
 

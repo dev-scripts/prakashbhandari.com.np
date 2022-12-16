@@ -16,7 +16,7 @@ cover:
     image: "images/posts/mock-aws-services-in-local-development-environment-with-localstack-and-nodejs/localstack-nodejs.png" # image path/url
     alt: "Mock AWS Services in Local Development Environment with LocalStack and NodeJS" 
     caption: "Mock AWS Services in Local Development Environment with LocalStack and NodeJS"
-    relative: true
+    relative: false
 ---
 
 I was developing and deploying the applications to dedicated servers, on-premises and shared servers. In 2017, I got an opportunity to work with AWS

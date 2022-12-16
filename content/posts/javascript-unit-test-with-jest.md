@@ -39,7 +39,7 @@ cover:
     image: "images/posts/javascript-unit-test-with-jest/javascript-unit-test-with-jest.png" # image path/url
     alt: "Javascript Unit Test With Jest"
     caption: "Javascript Unit Test With Jest"
-    relative: true
+    relative: false
 ---
 
 In this tutorial, I will demonstrate how to write a basic unit test to calculate the area of geometric shapes like circle and rectangle by using the JavaScript Testing Framework called Jest. <!--more-->

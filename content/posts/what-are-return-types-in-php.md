@@ -38,7 +38,7 @@ cover:
     image: "images/posts/what-are-return-types-in-php/what-are-return-types-in-php.png" # image path/url
     alt: "What Are Return Types in PHP ?"
     caption: "What Are Return Types in PHP ?"
-    relative: true
+    relative: false
 author: "Prakash Bhandari"
 description: "PHP 7 followed on the heels of PHP 5.6 and the release was a big revolution. Chronologically PHP 7 is confusing version but brought enormous improvements in PHP engine performance.
 It also introduced a variety of new, impactful features that made it quickly adopted."
