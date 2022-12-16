@@ -31,7 +31,6 @@ as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification."
 ---
 
-{{< youtube TwoeHvE7cIE >}}
 OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
 ChatGPT is really cool, and it's more than what I thought.
 
@@ -178,6 +177,10 @@ Submit action will call the NodeJS backend app API via, which will return the an
 ### Output
 
 We can browse react app via `http://localhost:3000/`
+
+### Demo Video
+
+{{< youtube TwoeHvE7cIE >}}
 
 
 ![OpenAI ChatGPT output](/images/posts/create-q-a-with-open-ai-nodejs-and-react/output.png#center)
