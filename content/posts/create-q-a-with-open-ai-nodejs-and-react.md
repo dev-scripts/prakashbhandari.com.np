@@ -178,9 +178,8 @@ Submit action will call the NodeJS backend app API via, which will return the an
 
 We can browse react app via `http://localhost:3000/`
 
+![OpenAI ChatGPT output](/images/posts/create-q-a-with-open-ai-nodejs-and-react/output.png#center)
+
 ### Demo Video
 
 {{< youtube TwoeHvE7cIE >}}
-
-
-![OpenAI ChatGPT output](/images/posts/create-q-a-with-open-ai-nodejs-and-react/output.png#center)
