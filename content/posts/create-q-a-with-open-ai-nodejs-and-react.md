@@ -6,8 +6,10 @@ showToc: true
 TocOpen: true
 tags : [
 "NodeJS",
-"React",
+"ReactJS",
 "AI",
+"NodeJS",
+"ReactJS"
 ]
 categories : [
 "AI",
@@ -19,9 +21,10 @@ keywords: [
 "OpenAI",
 "Integrate OpenAI",
 "Integrate ChatGPT",
+"Prakash Bhandari",
 ]
 cover:
-   image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.svg" # image path/url
+   image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.svg" 
    alt: "Create Q & A With OpenAI, NodeJS and React"
    caption: "Create Q & A With OpenAI, NodeJS and React"
    relative: false
@@ -122,7 +125,7 @@ If you want to test the API you can try following URL in browser address bar or 
 
 We will create a small frontend app in React.
 This app will have form which accepts question form user and send to the backend NodeJS app.
-NodeJS app will send the answer, and we will display answer in the UI.
+NodeJS app will send the answer back to frontend react app, and we will display answer in the UI.
 
 ### App files and folders structure
 ```
@@ -165,7 +168,7 @@ make an API request to the backend APP that we have written above.
 Create  `ChatGBT.js` component inside `Components` folder. This UI component will have input `textarea` and submit button.
 You can input the desired question into this textarea and submit. 
 Submit action will call the NodeJS backend app API via, which will return the answer of question and display in the UI.
-This UI will be simple, I am not going to add fancy CSS :). This frontend app has one pitfall, it does not highlight the codes return form ChtGPT.
+This UI will be simple, I am not going to add fancy CSS 😊. This frontend app has one pitfall, it does not highlight the codes return form ChtaGPT.
 `ChatGBTService.js`
 
 {{< github-code-snippets cf15e8b5c14694ccf9e35e4afe5fc227 >}}
@@ -184,6 +187,9 @@ We can browse react app via `http://localhost:3000/`
 ### Demo Video
 
 {{< youtube TwoeHvE7cIE >}}
+
+### Medium Publish Link
+https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e812933d9cd5
 
 ## Public Response to CatGPT 
 
