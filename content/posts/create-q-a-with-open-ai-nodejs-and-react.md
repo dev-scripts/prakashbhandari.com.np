@@ -183,3 +183,20 @@ We can browse react app via `http://localhost:3000/`
 ### Demo Video
 
 {{< youtube TwoeHvE7cIE >}}
+
+## Public Response to CatGPT 
+
+### Elon musk
+{{< tweet user="elonmusk" id="1599128577068650498" >}}
+
+
+### Health
+{{< tweet user="StuartBlitz" id="1602834224284897282" >}}
+
+### Education
+{{< tweet user="DanielPink" id="1600611580567293954" >}}
+{{< tweet user="ericbahn" id="1598507949638373376" >}}
+ 
+
+
+
