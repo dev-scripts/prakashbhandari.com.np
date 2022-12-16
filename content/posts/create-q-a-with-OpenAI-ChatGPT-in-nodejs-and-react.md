@@ -1,5 +1,5 @@
 ---
-title: "Create Q & A With OpenAI, NodeJS and React"
+title: "Create Q & A With OpenAI ChatGPT in NodeJS and React"
 date: 2022-12-15T17:40:07+11:00
 draft: false
 showToc: true
@@ -15,8 +15,8 @@ categories : [
 "ReactJS"
 ]
 keywords: [
-"Create Q & A With OpenAI, NodeJS and React",
-"Create Q & A With OpenAI ChatGPT, NodeJS and React",
+"Integrate NodeJS and React",
+"Create Q & A With OpenAI ChatGPT in NodeJS and React",
 "OpenAI ChatGPT",
 "OpenAI",
 "Integrate OpenAI",
@@ -24,7 +24,7 @@ keywords: [
 "Prakash Bhandari",
 ]
 cover:
-   image: "images/posts/create-q-a-with-open-ai-nodejs-and-react/create-q-a-with-open-ai-nodejs-and-react.png" 
+   image: "images/posts/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react.png" 
    alt: "Create Q & A With OpenAI, NodeJS and React"
    caption: "Create Q & A With OpenAI, NodeJS and React"
    relative: false
@@ -192,7 +192,7 @@ This UI will be simple, I am not going to add fancy CSS 😊. This frontend app 
 
 We can browse react app via `http://localhost:3000/`
 
-![OpenAI ChatGPT output](/images/posts/create-q-a-with-open-ai-nodejs-and-react/output.png#center)
+![OpenAI ChatGPT output](/images/posts/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react/output.png#center)
 
 ### Demo Video
 
