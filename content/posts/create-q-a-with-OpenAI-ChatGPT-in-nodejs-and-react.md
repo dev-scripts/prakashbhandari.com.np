@@ -25,8 +25,8 @@ keywords: [
 ]
 cover:
    image: "images/posts/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react.png" 
-   alt: "Create Q & A With OpenAI, NodeJS and React"
-   caption: "Create Q & A With OpenAI, NodeJS and React"
+   alt: "Create Q & A With OpenAI GPTChat in NodeJS and React"
+   caption: "Create Q & A With OpenAI GPTChat in NodeJS and React"
    relative: false
 author: "Prakash Bhandari"
 description: "OpenAI offer a spectrum of models with different levels of power suitable for different tasks,
