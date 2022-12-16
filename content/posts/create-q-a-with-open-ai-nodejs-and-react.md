@@ -34,7 +34,7 @@ as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification."
 ---
 
-OpenAI ChatGPT is tranding topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
+OpenAI ChatGPT is trending topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
 ChatGPT is really cool, and it's more than what I thought. 
 
 I am using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI.
