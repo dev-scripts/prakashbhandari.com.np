@@ -131,7 +131,6 @@ If you want to test the API you can try following URL in browser address bar or 
 `http://localhost:3006/answer?question=install nodejs`
 
 ## React Frontend App
-## React Frontend App
 
 We will create a small frontend app in React.
 This app will have form which accepts question form user and send to the backend NodeJS app.
@@ -188,13 +187,13 @@ This UI will be simple, I am not going to add fancy CSS 😊. This frontend app 
 
 {{< github-code-snippets 4dc9db75aeda2f92fe608d4aaad1b728 >}}
 
-### Output
+### Demo Output
 
 We can browse react app via `http://localhost:3000/`
 
 ![OpenAI ChatGPT output](/images/posts/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react/output.png#center)
 
-### Demo Video
+### YouTube Demo Video
 
 {{< youtube TwoeHvE7cIE >}}
 
@@ -205,14 +204,13 @@ https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e
 
 ## Public Response to CatGPT 
 
-### Elon musk
+### Elon  Musk's Reaction 
 {{< tweet user="elonmusk" id="1599128577068650498" >}}
 
-
-### Health
+### Impact of ChatGPT in Health
 {{< tweet user="StuartBlitz" id="1602834224284897282" >}}
 
-### Education
+### Impact of ChatGPT in Education
 {{< tweet user="DanielPink" id="1600611580567293954" >}}
 {{< tweet user="ericbahn" id="1598507949638373376" >}}
  
