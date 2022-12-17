@@ -29,20 +29,20 @@ cover:
    caption: "Create Q & A With OpenAI ChatGPT in NodeJS and React"
    relative: false
 author: "Prakash Bhandari"
-description: "OpenAI offer a spectrum of models with different levels of power suitable for different tasks,
+description: "OpenAI is a software company which develops AI models with different levels of power suitable for different tasks,
 as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification."
 ---
 
-OpenAI recently released the ChatGPT-3. ChatGPT-3 trending for a while, I tried ChatGPT-3 in tier playground. 
-It is really cool, and it's more than what I thought. 
+OpenAI recently released the ChatGPT-3 and this is trending topic. I also tried ChatGPT-3 in their playground. 
+It's really cool, and  more than what I thought. 
 
 I have been using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI.
 OpenAI Codex is a generative pertained language model which helps people write code even for non-tech people.
 
-ChatGPT dose more than helping people write code. 
-It interacts like human in a conversational way to provide a detailed response to query.  
-code completion, text completion, image generation, and fine-tuning are next level of innovation.
+ChatGPT-3 dose more than helping people write code. 
+It interacts like human in a conversational way to provide a detailed response to their query. 
+ Code completion, text completion, image generation, and fine-tuning are next level of innovation.
 
 But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said that "it’s a mistake to rely on it for anything important right now."
 
