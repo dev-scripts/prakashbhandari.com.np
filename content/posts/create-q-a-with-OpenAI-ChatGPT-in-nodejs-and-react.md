@@ -34,9 +34,8 @@ as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification."
 ---
 
-OpenAI ChatGPT is trending topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
-ChatGPT-3 (Model -3) is really cool, and it's more than what I thought. 
-
+OpenAI recently released the ChatGPT-3. ChatGPT-3 trending for a while, I tried ChatGPT-3 in tier playground. 
+It is really cool, and it's more than what I thought. 
 
 I have been using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI.
 OpenAI Codex is a generative pertained language model which helps people write code even for non-tech people.
@@ -77,8 +76,8 @@ This model use `safe`, `sensitive`, or `unsafe` to filter the contents.
 
 API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration. Also, community has contributed for other programming libraries.  
 
-As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` and integrate with frontend web app. React will be used to develop frontend app.  
-` GPT-3 - text-davinci-003` OpenAI model will be used for Q&A.
+As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
+and integrate with frontend web app. React will be used to develop frontend app. `GPT-3 - text-davinci-003` model will be used for Q&A.
 
 ## NodeJS Backend App
 
