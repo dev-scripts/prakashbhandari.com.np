@@ -60,7 +60,7 @@ These models can be used for everything from content generation to semantic sear
    - code-cushman-001
 3. ***Content filter*** : A fine-tuned model that can detect whether text may be sensitive or unsafe
 
-API documentation super easy to understand. They have their own official `Node.js library` and `Python bindings` for integration.  
+API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration.  
 Also, community has contributed for other programming libraries.  
 
 As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
