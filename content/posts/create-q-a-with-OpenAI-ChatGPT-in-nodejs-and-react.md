@@ -65,7 +65,7 @@ Also, community has contributed for other programming libraries.
 
 As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
 and integrate with frontend web app. React will be used to develop frontend app.  
-` GPT-3 - text-davinci-003` OpenAI model will be used dialog.
+` GPT-3 - text-davinci-003` OpenAI model will be used for Q&A.
 
 ## NodeJS Backend App
 
