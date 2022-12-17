@@ -50,10 +50,9 @@ But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said that "it’s a 
 It uses machine learning to generate text that is contextual and appropriate for the given situation. Unlike other chatbot systems,
 Chat GPT-3 does not rely on pre-programmed responses, but instead is able to generate its own responses based on the input.
 
+## OpenAI Models 
 The OpenAI API is powered by a family of models with different capabilities as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification.
-
-## OpenAI Models 
 ### 1. GPT-3 
   A set of models that can understand and generate natural language. GPT-3 offer four main models:
    - text-davinci-003
@@ -73,7 +72,7 @@ This model use `safe`, `sensitive`, or `unsafe` to filter the contents.
  - `1` - Text contains `sensitive` topics like political, religious etc.
  - `2` - text contains `unsafe` language  or hateful language.
 
-
+## How is API?
 API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration. Also, community has contributed for other programming libraries.  
 
 As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
