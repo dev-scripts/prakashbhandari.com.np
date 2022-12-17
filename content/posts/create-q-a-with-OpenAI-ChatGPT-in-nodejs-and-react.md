@@ -35,7 +35,8 @@ These models can be used for everything from content generation to semantic sear
 ---
 
 OpenAI ChatGPT is trending topics, I heard a lot about it and curious to know more about it. I sign up and tried ChatGPT. 
-ChatGPT is really cool, and it's more than what I thought. 
+ChatGPT-3 (Model -3) is really cool, and it's more than what I thought. 
+
 
 I have been using [GitHub Copilot](https://github.com/features/copilot) which is also powered by OpenAI.
 OpenAI Codex is a generative pertained language model which helps people write code even for non-tech people.
@@ -45,6 +46,10 @@ It interacts like human in a conversational way to provide a detailed response t
 code completion, text completion, image generation, and fine-tuning are next level of innovation.
 
 But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said that "it’s a mistake to rely on it for anything important right now."
+
+>Chat GPT-3 is a natural language processing (NLP) model developed by OpenAI that is trained to generate human-like text responses to user input.
+It uses machine learning to generate text that is contextual and appropriate for the given situation. Unlike other chatbot systems,
+Chat GPT-3 does not rely on pre-programmed responses, but instead is able to generate its own responses based on the input.
 
 The OpenAI API is powered by a family of models with different capabilities as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification.
@@ -70,11 +75,9 @@ This model use `safe`, `sensitive`, or `unsafe` to filter the contents.
  - `2` - text contains `unsafe` language  or hateful language.
 
 
-API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration.  
-Also, community has contributed for other programming libraries.  
+API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration. Also, community has contributed for other programming libraries.  
 
-As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` 
-and integrate with frontend web app. React will be used to develop frontend app.  
+As a part of this article, I will create a small backend app in NodeJS using OpenAI official `Node.js library` and integrate with frontend web app. React will be used to develop frontend app.  
 ` GPT-3 - text-davinci-003` OpenAI model will be used for Q&A.
 
 ## NodeJS Backend App
@@ -143,8 +146,7 @@ If you want to test the API you can try following URL in browser address bar or 
 ## React Frontend App
 
 We will create a small frontend app in React.
-This app will have form which accepts question form user and send to the backend NodeJS app.
-NodeJS app will send the answer back to frontend react app, and we will display answer in the UI.
+This app will have form which accepts question form user and send to the backend NodeJS app. NodeJS app will send the answer back to frontend react app, and we will display answer in the UI.
 
 ### App files and folders structure
 ```
@@ -161,7 +163,6 @@ NodeJS app will send the answer back to frontend react app, and we will display 
 | index.js
 | package-lock.json
 | package.json
-
 ```
 Creating  and running react app is very simple:
 
@@ -173,7 +174,7 @@ By default, react app will be serving on port number `3000` on localhost when we
 
 `.gitignore`, `.env`, `App.css`, `App.js`, `package.json` and `public/` files and folders are created when we run the `create-react-app`
 
-### Create  `ChatGPTService.js` Service 
+### Create `ChatGPTService.js` Service 
 
 Create  `ChatGPTService.js` service in side `Services` folder. This service will
 make an API request to the backend APP that we have written above.
@@ -214,7 +215,7 @@ https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e
 
 ## Public Response to CatGPT 
 
-### Elon  Musk's Reaction 
+### Elon Musk's Reaction 
 {{< tweet user="elonmusk" id="1599128577068650498" >}}
 
 ### Impact of ChatGPT in Health
@@ -223,7 +224,10 @@ https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e
 ### Impact of ChatGPT in Education
 {{< tweet user="DanielPink" id="1600611580567293954" >}}
 {{< tweet user="ericbahn" id="1598507949638373376" >}}
- 
+###  Views of Chamath Palihapitiya, Jason Calacanis, David Sacks and David Friedberg 
+Why OpenAI's new ChatGPT will change the future of every industry?
+
+{{< youtube XuHfzVkZGBU >}}
 
 
 
