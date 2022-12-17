@@ -49,16 +49,26 @@ But, OpenAI CEO, **[Sam Altman](https://twitter.com/sama)** said that "it’s a 
 The OpenAI API is powered by a family of models with different capabilities as well as the ability to fine-tune your own custom models.
 These models can be used for everything from content generation to semantic search and classification.
 
-**OpenAI Models are :**
-1. ***GPT-3 :*** A set of models that can understand and generate natural language
+## OpenAI Models 
+### 1. GPT-3 
+  A set of models that can understand and generate natural language. GPT-3 offer four main models:
    - text-davinci-003
    - text-curie-001
    - text-babbage-001
    - text-ada-001
-2.  ***Codex*** : A set of models that can understand and generate code, including translating natural language to code
+### 2. Codex
+A set of models that can understand and generate code, including translating natural language to code
+OpenAI offer two Codex models:
    - code-davinci-002
    - code-cushman-001
-3. ***Content filter*** : A fine-tuned model that can detect whether text may be sensitive or unsafe
+### 3. Content filter
+A fine-tuned model that can detect whether text may be sensitive or unsafe. 
+This model use `safe`, `sensitive`, or `unsafe` to filter the contents.
+
+ - `0` - The text is `safe`.
+ - `1` - Text contains `sensitive` topics like political, religious etc.
+ - `2` - text contains `unsafe` language  or hateful language.
+
 
 API documentation is super simple to understand. They have their own official `Node.js library` and `Python bindings` for integration.  
 Also, community has contributed for other programming libraries.  
