@@ -29,14 +29,9 @@ description: "If you are  working with git branches you probably know the 'Merge
 There is philosophical debates between using 'Merge commits' and 'Squash Commits'. But, I find both git commands are very useful based on the situation and use case."
 ---
 
-If you are  working with git branches you probably know the "Merge commits" and "Squash Commits".
-There is philosophical debates between using "Merge commits" and "Squash Commits". 
-
-But, I find both git commands are very useful based on the situation.
 Both command has its own advantages and disadvantages. But, personally I use "Merge commits" a lot.
 
-In this, article I will explain the advantage and disadvantage of using "Merge commits" and "Squash Commits" 
-based on situation.
+In this, article I will explain the advantage and disadvantage of using "Merge commits" and "Squash Commits" based on situation.
 
 ## Squash Commits
 Sometimes you might be working in a feature which has many commits, and you don't want to maintain the history of all the commits at that time you can use 
