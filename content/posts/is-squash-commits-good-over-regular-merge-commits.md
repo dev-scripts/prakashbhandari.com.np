@@ -20,8 +20,8 @@ keywords: [
 ]
 cover:
     image: "images/posts/is-squash-commits-good-over-regular-merge-commits/is-squash-commits-good-over-regular-merge-commits.png"
-    alt: "Is Regular Merge Commits Are Good Over Squash Commits?"
-    caption: "Is Regular Merge Commits Are Good Over Squash Commits?"
+    alt: "Is Squash Commits Good Over Regular Merge Commits?"
+    caption: "Is Squash Commits Good Over Regular Merge Commits?"
     relative: false
 author: "Prakash Bhandari"
 description: "If you are working with git branches you probably know the 'Merge commits' and 'Squash Commits'.
