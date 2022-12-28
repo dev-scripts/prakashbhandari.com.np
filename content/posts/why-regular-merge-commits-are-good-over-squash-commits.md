@@ -1,6 +1,6 @@
 ---
 title: "Is Regular Merge Commits Are Good Over Squash Commits?"
-date: 2022-12-21T13:46:09+11:00
+date: 2022-12-28T13:46:09+11:00
 draft: false
 showToc: true
 TocOpen: true
