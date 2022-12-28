@@ -20,25 +20,40 @@ keywords: [
 "How to Squash All Commits Related to a Single Issue into a Single Commit"
 ]
 cover:
-    image: "images/posts/is-regular-merge-commits-are-good-over-squash-commits/is-regular-merge-commits-are-good-over-squash-commits.png"
+    image: "images/posts/is-regular-merge-commits-are-good-over-squash-commits/is-regular-git-merge-commits-are-good-over-squash-commits.png"
     alt: "Is Regular Merge Commits Are Good Over Squash Commits?"
     caption: "Is Regular Merge Commits Are Good Over Squash Commits?"
     relative: false
 author: "Prakash Bhandari"
-description: "If you are  working with git branches you probably know the 'Merge commits' and 'Squash Commits'.
-There is philosophical debates between using 'Merge commits' and 'Squash Commits'. But, I find both git commands are very useful based on the situation and use case."
+description: "If you are working with git branches you probably know the 'Merge commits' and 'Squash Commits'.
+There is philosophical debates between using 'Merge commits' and 'Squash Commits'. But, I found both git commands are very useful based on the situation and use cases."
 ---
 
-Both command has its own advantages and disadvantages. But, personally I use "Merge commits" a lot.
+'Merge commits' and 'Squash Commits' both commands has its own advantages and disadvantages. Personally, I use both commands.
+I don't have any strong opinion to support only one command as a best command. Both of them are useful for me :).
 
-In this, article I will explain the advantage and disadvantage of using "Merge commits" and "Squash Commits" based on situation.
+In this article, I will explain how and when I am using the "Merge commits" and "Squash Commits" based on situation.
+
 
 ## Squash Commits
 Sometimes you might be working in a feature which has many commits, and you don't want to maintain the history of all the commits at that time you can use 
 "Squash Commits". "Squash Commits" will consolidate all the commits into a final big commit. Squash commits helps you to maintain the clean git history.
-Sometimes it is good to use "Squash Commits" and some time it's dangerous to use the "Squash Commits". Let me explain why?
+Developers should be mindful and wisely while using this command.
 
-![squash commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/git-squash-commits.png#center)
+We can say "Squash Commits" is alternative to "Merge commits". 
+"Squash Commits" retains the changes but omits the individual commits from git history. 
+Many developers prefer this workflow in work-in-progress feature branch, all work-in-progress commits aren’t necessarily important for future reference.
+
+It's always good to use "Squash Commits" in work-in-progress branch or addressing reviewers feedback. 
+But, sometimes it's dangerous to use "Squash Commits" command, because this command permanently remove the individual important commits which can not be retained in any case.
+
+Let me explain why?
+
+![squash commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/squash-commits.png#center)
+
+In above diagram, commits **D** and **E** from feature branch is combined merged into commit **X** of main branch. 
+Retains the changes from commits **D** and **E**  but omits the individual commits from git history. 
+Which means, whatever commit information you keep for commits **D** and **E** that will be disappear from git history.
 
 ### How "Squash Commits" will maintain clean history?
 Answer is **"YES"**
@@ -86,22 +101,28 @@ I will recommend to think before using the "Squash commits".
 
 ## Regular Merge Commits
 
+"Merge Commits" is traditonally 
 Personally, I use "Merge commits" a lot. That does not mean I never use the "Squash Commits". But, I consider the "Merge commits" as a default behaviour of Git.
 "Merge commits" preserves all the commit history in chronological order. Those commits are very helpful to track back exactly what happened in each commit.
 "Merge commits" is really helpful when you have to identify the commit that cause the particular issue.
 
 "Merge commits" not that much good when you are  working in team environment with code reviews, 
 you often make small commits with messages like `fix abc` or `code review feedback` or `formatting corrected` etc. 
-These are not great commit messages. These types of commit makes developers life herder when developer 
-have to identify the commit which actually causing the issue.
+These are not great commit messages. These types of commit make developers life harder when developer 
+have to identify the actual commit which created an issue.
 
-![Merge commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/merge-commits.png#center)
+![Merge commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/git-merge-commits.png#center)
+
+In above diagram, commits **D** and **E** from feature branch is added via commit **X** of main branch.
+This will keep both changes and commit information from commits **D** and **E**  
+Which means, whatever commit information you added for commits **D** and **E** that will retain from git history by inspecting with `git blame`
 
 ## Conclusion
 
-Both "Merge commits" and "Squash Commits" has its own advantages and disadvantages. Both has its own use cases. Developer should be mindful and command should be wisely chosen to merge the code.
-So, that the developers in future will easily understand the commit history. Past commits are the history of project. This history will tell a story "how project was developed". 
-History should be clean and easy to understand.
+Both "Merge commits" and "Squash Commits" commands has its own advantages and disadvantages. Both has its own use cases. 
+Developers should be mindful and these commands need to be wisely chosen before merging the code.
+So, that the developers in future will easily understand the commit history. Past commits are the history of project this will tell a story to other developers
+"how project was developed". History should be clean and easy to understand.
 
 ## References
 
