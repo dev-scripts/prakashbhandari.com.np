@@ -1,5 +1,5 @@
 ---
-title: "Is Regular Merge Commits Are Good Over Squash Commits?"
+title: "Is Squash Commits Good Over Regular Merge Commits?"
 date: 2022-12-28T13:46:09+11:00
 draft: false
 showToc: true
@@ -11,8 +11,7 @@ categories : [
 "Git"
 ]
 keywords: [
-"Why Regular Merge Commits Are Good Over Squash Commits?", 
-"Is Regular Merge Commits Are Good Over Squash Commits?",
+"Is Squash Commits Good Over Regular Merge Commits?",
 "Merge Commits vs Squash Commits",
 "Merge Commits and Squash Commits",
 "How to Combine Multiple Git Commits into One",
@@ -20,7 +19,7 @@ keywords: [
 "How to Squash All Commits Related to a Single Issue into a Single Commit"
 ]
 cover:
-    image: "images/posts/is-regular-merge-commits-are-good-over-squash-commits/is-regular-git-merge-commits-are-good-over-squash-commits.png"
+    image: "images/posts/is-squash-commits-good-over-regular-merge-commits/is-squash-commits-good-over-regular-merge-commits.png"
     alt: "Is Regular Merge Commits Are Good Over Squash Commits?"
     caption: "Is Regular Merge Commits Are Good Over Squash Commits?"
     relative: false
@@ -49,13 +48,13 @@ But, sometimes it's dangerous to use "Squash Commits" command, because this comm
 
 Let me explain why?
 
-![squash commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/squash-commits.png#center)
+![squash commits](/images/posts/is-squash-commits-good-over-regular-merge-commits/squash-commits.png#center)
 
 In above diagram, commits **D** and **E** from feature branch is combined merged into commit **X** of main branch. 
 Retains the changes from commits **D** and **E**  but omits the individual commits from git history. 
 Which means, whatever commit information you keep for commits **D** and **E** that will be disappear from git history.
 
-### How "Squash Commits" will maintain clean history?
+### Will "Squash Commits" maintain clean git history?
 Answer is **"YES"**
 
 Sometimes you might need to make a lot of commits because you have many formatting issue or you missed the comment in your code 
@@ -111,7 +110,7 @@ you often make small commits with messages like `fix abc` or `code review feedba
 These are not great commit messages. These types of commit make developers life harder when developer 
 have to identify the actual commit which created an issue.
 
-![Merge commits](/images/posts/is-regular-merge-commits-are-good-over-squash-commits/git-merge-commits.png#center)
+![Merge commits](/images/posts/is-squash-commits-good-over-regular-merge-commits/git-merge-commits.png#center)
 
 In above diagram, commits **D** and **E** from feature branch is added via commit **X** of main branch.
 This will keep both changes and commit information from commits **D** and **E**  
