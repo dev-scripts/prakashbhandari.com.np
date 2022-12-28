@@ -129,4 +129,7 @@ So, that the developers in future will easily understand the commit history. Pas
 1. https://www.atlassian.com/git/tutorials/comparing-workflows
 2. https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html
 
+{{< adsbygoogle  ca-pub-6437319845279303 >}}
+  
+
 
