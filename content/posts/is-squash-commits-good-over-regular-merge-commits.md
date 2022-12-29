@@ -100,7 +100,6 @@ I will recommend to think before using the "Squash commits".
 
 ## Regular Merge Commits
 
-"Merge Commits" is traditonally 
 Personally, I use "Merge commits" a lot. That does not mean I never use the "Squash Commits". But, I consider the "Merge commits" as a default behaviour of Git.
 "Merge commits" preserves all the commit history in chronological order. Those commits are very helpful to track back exactly what happened in each commit.
 "Merge commits" is really helpful when you have to identify the commit that cause the particular issue.
