@@ -72,7 +72,9 @@ Here is the screen of the app after login.
 
 You don't see many templates, probably they will add more templates in the future. 
 But whoever is looking for entry level job and don't have much idea on how to create good resume. 
-This app is really helpful. With the help of this app you can create really nice resume.
+This app is really helpful. With the help of this app you can create really nice resume 
+Also, can create multiple resumes, share them with recruiters through a unique link and print as PDF, all for free,
+no advertisements, without losing the integrity & privacy of your data
 
 This app has lots of features which helps you customize your resume, change the template of resume. 
 Export resume in JSON format and import later, etc
