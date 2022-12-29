@@ -32,17 +32,20 @@ share them with recruiters or friends through a unique link and print it as a PD
 no tracking, without losing the integrity and privacy of your data."
 ---
 
-In early days of my career I use to struggle to build the resume. 
-Many times I used Microsoft Word Template. I also tried to create resume by using online websites. 
-None of the online website were free and had some kinds of limitations like adding watermarks or asking to pay while exporting the resume.
-I was looking for a free online resume builder which can help millions of job seekers to build proper 
-resume without any struggle or without needing help from experts.
+In early days of my career I used to struggle to build the resume. I had no idea how to build the proper resume.
+Most of the time I used Microsoft Word Template to create proper resume. Also, tried online website apps to generate resume. 
+None of the online websites were free and those online apps had some kinds of limitations like adding watermarks or asking to pay while exporting the resume.
 
-Finally, I found [Reactive Resume Builder](https://rxresu.me/), which is free resume builder without any hidden limitations. 
-You can build the resume and publicly share to any other people.  App is available with highly customizable feature.
-I could not imagine even we can get this kind of app for free.
+I was looking for a free online resume builder which can help me as well as millions of job seekers who is willing to build 
+their resume from anywhere and anytime without struggle or needing help from experts.
 
-According to Reactive Resume builder
+Finally, I found [Reactive Resume Builder](https://rxresu.me/), which is free resume builder without any hidden limitations.
+With the help of this app, you can create multiple resumes, share them with recruiters or friends through a unique link and print it as a PDF, all for free, no ads,
+no tracking, without losing the integrity and privacy of your data.
+
+Also, this app is available with many customizable features. I could not even imagine we can get this kind of app for free.
+
+***According to Reactive Resume builder***
 >"Reactive Resume is a free and open source resume builder that's built to make the mundane tasks of creating, 
 updating and sharing your resume as easy as 1, 2, 3. With this app, you can create multiple resumes, 
 share them with recruiters or friends through a unique link and print it as a PDF, all for free, no ads, 
@@ -60,26 +63,20 @@ Reactive Resume builder has the following features.
 
 ## Reactive Resume builder
 
-Creating account in Reactive Resume Builder is very simple and quick.
+Creating account in Reactive Resume Builder is very simple and quick. You can do it in 5 second :) 
 
-Once you create account and signup, you can quickly build resume by just selecting the available templates from the app.
-Once you build the resume you can easily export in PDF or JSON
-format or you can share it to other people directly. 
+Once you create account and login to your account, you can quickly build resume by just selecting the available templates from the app.
 
-Here is the screen of the app after login.
+Once you build the resume you can easily export in PDF or JSON or directly share with recruiters or friends through a unique link.
+
+Here is the screen of the app after login. App is available in two themes, one is light and another is dark. I have used dark theme for this demo screen. 
 
 ![Reactive Resume builder](/images/posts/absolutely-free-open-source-resume-builder-without-watermarks-or-any-other-limitations/workspace.png#center)
 
-You don't see many templates, probably they will add more templates in the future. 
-But whoever is looking for entry level job and don't have much idea on how to create good resume. 
-This app is really helpful. With the help of this app you can create really nice resume 
-Also, can create multiple resumes, share them with recruiters through a unique link and print as PDF, all for free,
-no advertisements, without losing the integrity & privacy of your data
-
-This app has lots of features which helps you customize your resume, change the template of resume. 
-Export resume in JSON format and import later, etc
-
-You can also try **[Reactive Resume Builder](https://rxresu.me/)** for free.
+You don't see many templates in the app, probably community will add more templates in the future. 
+But, whoever is looking for entry level job and don't have much idea on how to create good resume. 
+This app is really helpful. With the help of this app you can create really nice and well-structured resume very quickly. 
+Even you can export data form your LinkedIn profile.
 
 ## Sample Resume Build By Reactive Resume builder
 
@@ -91,6 +88,8 @@ Here is the sample resume build by using Reactive Resume builder.
 Reactive resume builder  secure, highly customizable, portable, easy to use, open-source and free forever.
 
 Now, what else you need to create your nice resume.
+
+You can also try **[Reactive Resume Builder](https://rxresu.me/)** for free without worrying about your data.
 
 ## References
 
