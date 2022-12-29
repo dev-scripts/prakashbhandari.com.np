@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /tags/
-Disallow: /categories/
-Sitemap: https://www.prakashbhandari.com.np/sitemap.xml
+Disallow: /categories/*
+Disallow: /posts/*
+
+Sitemap: https://prakashbhandari.com.np/sitemap.xml
