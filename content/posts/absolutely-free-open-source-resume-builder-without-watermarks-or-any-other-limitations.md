@@ -95,6 +95,8 @@ For me its really convenient and easy tool.
 
 You can also try **[Reactive Resume Builder](https://rxresu.me/)** for free without worrying about losing the integrity and privacy of your data.
 
+Also, publish at [https://medium.com](https://medium.com/@thebhandariprakash/absolutely-free-open-source-resume-builder-without-watermarks-or-any-other-limitations-3bb4d31e779?source=friends_link&sk=a3dde4e9562238af42353955f6b31cbd) on December 29, 2022.
+
 ## References
 
 1. https://rxresu.me/
