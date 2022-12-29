@@ -87,6 +87,11 @@ Here is the sample resume build by using Reactive Resume builder.
 
 ![Reactive Resume builder](/images/posts/absolutely-free-open-source-resume-builder-without-watermarks-or-any-other-limitations/sample-resume.png#center)
 
+
+Reactive resume builder  secure, highly customizable, portable, easy to use, open-source and free forever.
+
+Now, what else you need for to create our nice resume.
+
 ## References
 
 1. https://rxresu.me/
