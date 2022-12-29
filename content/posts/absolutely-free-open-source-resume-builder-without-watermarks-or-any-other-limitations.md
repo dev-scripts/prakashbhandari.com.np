@@ -55,7 +55,7 @@ Reactive Resume builder has the following features.
 1. It's absolutely free and it will be free forever 
 2. No User Tracking  and No Advertising 
 3. Accessible in multiple languages 
-4. Import data from LinkedIn profile or from valid JSON schema https://github.com/jsonresume/resume-schema 
+4. Import data from LinkedIn profile or import valid JSON schema https://github.com/jsonresume/resume-schema 
 5. Export your resume to JSON or PDF format
 
 ## Reactive Resume builder
@@ -88,6 +88,6 @@ Here is the sample resume build by using Reactive Resume builder.
 ## References
 
 1. https://rxresu.me/
-2. https://github.com/AmruthPillai/Reactive-Resume
+2. https://github.com/jsonresume/resume-schema
 
 {{< adsbygoogle  ca-pub-6437319845279303 >}}
