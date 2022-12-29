@@ -96,5 +96,3 @@ Now, what else you need to create your nice resume.
 
 1. https://rxresu.me/
 2. https://github.com/jsonresume/resume-schema
-
-{{< adsbygoogle  ca-pub-6437319845279303 >}}
