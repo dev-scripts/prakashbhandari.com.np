@@ -90,7 +90,7 @@ Here is the sample resume build by using Reactive Resume builder.
 
 Reactive resume builder  secure, highly customizable, portable, easy to use, open-source and free forever.
 
-Now, what else you need for to create our nice resume.
+Now, what else you need to create your nice resume.
 
 ## References
 
