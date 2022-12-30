@@ -32,9 +32,10 @@ share them with recruiters or friends through a unique link and print it as a PD
 no tracking, without losing the integrity and privacy of your data."
 ---
 
-In early days of my career I used to struggle to build the resume. I had no idea how to build the proper resume.
-Most of the time I used Microsoft Word Template to create proper resume. Also, tried online website apps to generate resume. 
-None of the online websites were free and those online apps had some kinds of limitations like adding watermarks or asking to pay while exporting the resume.
+In early days of my career I used to struggle to build the resume. I had no idea how to build the proper well-structured professional resume.
+Most of the time I was using Microsoft Word Template. Later, I came know that online web apps can also be helpful to create resume,
+I tried online web apps to generate resume. 
+But, none of them were free and had some kinds of limitations like adding watermarks or asking to pay while exporting the resume.
 
 I was looking for a free online resume builder which can help me as well as millions of job seekers who is willing to build 
 their resume from anywhere and anytime without struggle or needing help from experts.
@@ -87,7 +88,7 @@ Here is the sample resume build by using Reactive Resume builder.
 
 Reactive resume builder is secure, highly customizable, portable, easy to use, open-source and free forever app or tool to build your resume.
 
-Now, what else you need to create your nice resume and well-structured resume?
+Now, what else you need to create your nice resume and well-structured professional resume?
 
 **[Reactive Resume Builder](https://rxresu.me/)** isn't good option for you?
 
