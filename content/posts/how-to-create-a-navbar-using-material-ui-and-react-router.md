@@ -138,6 +138,10 @@ Here is the demo video of navigation bar uploaded to YouTube.
 
 {{< youtube p0_-yhMZZ0I >}}
 
+## GitHub Repository
+
+Here is the GitHub Repository for the navigation bar :- https://github.com/dev-scripts/navigation-bar
+
 
 
 
