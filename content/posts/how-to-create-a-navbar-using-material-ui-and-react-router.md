@@ -118,7 +118,7 @@ Crete `Home.js` file inside `src/pages`  with some text in body.
 
 ## Step 4: Routing and Importing `Navbar` Component
 
-Finally, I will be adding Routing in `App` Component. We don't need to create `App.js` file, it comes with react project setup. Just need to update as per our requirement.
+Finally, I will be adding Routing in `App` Component. We don't need to create `App.js` file, it comes with React project setup. Just need to update as per our requirement.
 
 `BrowserRouter`, `Routes`, and `Route` need to be import from `react-router-dom` in `App.js`
 
@@ -128,9 +128,9 @@ Remove old codes from `App` function and add `<Navbar />` component along with a
 
 ## Demo Output
 
-We can browse react app via `http://localhost:3000/` where you can see the top navigation bar with three menus as shown in below picture.
+We can browse React app via `http://localhost:3000/` where you can see the top navigation bar with three menus as shown in below picture.
 
-![OpenAI ChatGPT output](/images/posts/how-to-create-a-navbar-using-material-ui-and-react-router/output.png#center)
+![Create a Navbar Using Material UI and React Router](/images/posts/how-to-create-a-navbar-using-material-ui-and-react-router/output.png#center)
 
 
 ## YouTube Demo Video.
