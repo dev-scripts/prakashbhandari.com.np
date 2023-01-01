@@ -134,7 +134,7 @@ We can browse React app via `http://localhost:3000/` where you can see the top n
 
 
 ## YouTube Demo Video.
-Here is the demo video of navigation bar uploaded to YouTube.
+Here is the demo video of navigation bar uploaded to YouTube
 
 {{< youtube p0_-yhMZZ0I >}}
 

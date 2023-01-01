@@ -103,7 +103,7 @@ You can use `http://192.168.1.173:3000` to browse in your mobile. You can see be
 Hope, you have learned how to browse **Localhost Web App** on Your Mobile Phone.
 
 
-# YouTube Demo Video.
+# YouTube Demo Video
 Here is the demo video  on **How to Test Localhost Web App on Your Mobile Phone?**
 
 {{< youtube oltB6kCZ6d0 >}}
