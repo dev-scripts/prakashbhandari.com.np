@@ -77,7 +77,7 @@ params:
     buttons:
       - name: About
         url: /pages/about
-      - name: Blog
+      - name: Posts
         url: posts
       - name: Archives
         url: archives
@@ -120,7 +120,7 @@ menu:
       weight: 10
 
     - identifier: posts
-      name: Blog
+      name: Posts
       url: /posts
       weight: 20
 
