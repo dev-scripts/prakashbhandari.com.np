@@ -5,7 +5,6 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-comments: false
 description: "This post is about 'How to Publish Your Own Public NPM Package?' To demonstrate, I will create one package to convert Nepali number to English number and English number to Nepali number. Finally, I will publish it to npmjs.com."
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

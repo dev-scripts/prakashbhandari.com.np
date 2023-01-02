@@ -16,7 +16,6 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-comments: false
 description: "Code Review in Software Development Process"
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

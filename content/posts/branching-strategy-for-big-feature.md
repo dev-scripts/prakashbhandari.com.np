@@ -5,7 +5,6 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
 description: "Branching Strategy for Big Feature"
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
