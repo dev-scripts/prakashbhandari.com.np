@@ -20,7 +20,6 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-comments: false
 description: "Software Engineering"
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

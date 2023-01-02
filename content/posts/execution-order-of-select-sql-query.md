@@ -19,7 +19,6 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-comments: false
 description: "Execution Order of SELECT SQL Query"
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

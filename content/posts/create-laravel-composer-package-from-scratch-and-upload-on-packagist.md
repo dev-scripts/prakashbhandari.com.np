@@ -5,7 +5,6 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-comments: false
 description: "This post is about 'Create Laravel Composer Package From Scratch and Publish on Packagist' To demonstrate, I will create one Laravel package to convert Hindu Arabic(Nepali)
 number to English and English number to Hindu Arabic (Nepali) number. Finally, I will publish this package to https://packagist.org/."
 #canonicalURL: "https://canonical.url/to/page"
