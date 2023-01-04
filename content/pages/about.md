@@ -2,6 +2,7 @@
 title: "About Me 😊"
 date: 2022-11-24T05:30:56+11:00
 draft: false
+comments: false
 ---
 ## 👋 I’m Prakash Bhandari - Software Engineer
 
