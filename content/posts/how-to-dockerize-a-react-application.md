@@ -33,7 +33,7 @@ Docker is very popular among the developers."
 ---
 
 Dockerizing is the process of packing, deploying, and running applications using Docker containers.
-Docker is very popular among the developers. In this post, I am going to how you how to Dockerizing the React Application.
+Docker is very popular among the developers. In this post, I am going to show you **"How to Dockerizing the React Application?"**.
 Before that I will briefly define what is docker and react.
 
 ## What Is Docker?
@@ -140,18 +140,18 @@ Dockerfile
 ```
 ### Step 4 - Run Docker Build
 You have to run `docker compose build` command. This command will take few minutes to 
-pull the images, install dependencies, copy files into the container.
+pull the node image, install dependencies, copy files, and create app image.
 
 ### Step 5 - Run React Application
 Now, you can run `docker compose up` command. This command will start the container and 
 maps internal port `3000` to external port `1111`.
 
-Once `docker compose up` is successful, you can access your app locally at `http://localhost:1111/`
+Once `docker compose up` is successful, you can access your React app locally via web browser `http://localhost:1111/`
 
 ### Step 6 - Check in Browser
 
 Your app should be running locally at port number `1111`. 
-You can browse `http://localhost:1111/` and you should be able to see following screen.
+You can browse `http://localhost:1111/` in your web browser, and you should be able to see following screen.
 
 ![Reactive Resume builder](/images/posts/how-to-dockerize-a-react-application/output.gif#center)
 
