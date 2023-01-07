@@ -234,7 +234,7 @@ Finally, done. That’s it!
 We have locally created React Application, dockarize and run the app. Hope this steps helped you 
 to skill up. 
 
-Also, ready for production with great performance. we should be thankful to Nginx.
+Also, the dockarize app is ready for production with great performance. We should be thankful to Nginx for better performance.
 
 Also, if you find any problem with app or any mistakes in this article, 
 please post in the comment, it will automatically create a git issue.
