@@ -74,7 +74,9 @@ You can create a new React app by running the command below in your terminal.
 
 `npx create-react-app react-front-end`
 
-React app will be created and all the files and folders will be stored inside ` react-front-end` folder
+React app will be created and all the files and folders will be stored inside ` react-front-end` folder.
+Also, I will add `docker` folder to add `docker` and `nginx` configuration.
+
 Here is the structure of the React App.
 
 ```
