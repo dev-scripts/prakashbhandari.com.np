@@ -38,7 +38,7 @@ Docker is very popular among the developers."
 
 Dockerizing is the process of packing, deploying, and running applications using Docker containers.
 Docker is very popular among the developers. In this post, I am going to show you **"How to Dockerizing the React Application?"**.
-for local development and production ready. 
+for local development and ready for production with great performance. 
 
 Before that I will briefly define what is docker and react.
 
@@ -74,7 +74,8 @@ You can create a new React app by running the command below in your terminal.
 
 `npx create-react-app react-front-end`
 
-React app will be created and all the files and folders will be stored inside ` react-front-end` folder.
+React app will be created and all the files and folders will be created inside ` react-front-end` folder.
+
 Also, I will add `docker` folder to add `docker` and `nginx` configuration.
 
 Here is the structure of the React App.
@@ -184,7 +185,7 @@ form `Dockerfile` with following code and change
 the port number in `docker-compose.yml` file form `"1111:80"` to `"1111:3000"`
 
 ```yaml
-# app runs on 3000 internally in to docker container
+# app runs on 3000 internally inside docker container
 EXPOSE 3000
 
 # start app
@@ -204,14 +205,14 @@ build
 .dockerignore
 docker-compose.yml
 ```
-**Why we are not including these files and folders in image?**
+**Why we are not including these files and folders in docker image?**
 1.  ***node_modules*** : `RUN npm install --silent`  from docker file will install `node_modules`  inside container. `package-lock.json` and `package.json` files will be used to install dependencies.
 2. ***build***  : `RUN npm run build` from docker file will create build folder
 3. ***.dockerignore*** and ***docker-compose.yml*** :  we don't need both files inside container.
 
 ### Step 4 - Build Docker Image
 To build docker image, you have to run `docker compose build` command. This command will take few minutes to 
-pull the node image, install dependencies, copy files, and create app image.
+pull the node and nginx image, install dependencies, copy files, and create app image.
 
 ### Step 5 - Run React Application
 Now, you can run `docker compose up` command. This command will start project in the container and 
