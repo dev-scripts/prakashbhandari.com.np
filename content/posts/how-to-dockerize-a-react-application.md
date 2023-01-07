@@ -85,7 +85,7 @@ Here is the structure of the React App.
 | | | - nginx.conf
 | | - react
 | | | - Dockerfile
-| - public
+| - public/
 | - src/
 | | - App.js
 | | - index.js
