@@ -45,8 +45,7 @@ That package can be shared to any one and run by anyone without much worrying ab
 a free, open-source and popular JavaScript library for building user interfaces. 
 It is maintained by Meta and a community of individual developers and companies. 
 
-## What is Dockerizing?
-Dockerizing is the process of packing, deploying, and running applications using Docker containers.
+>Dockerizing is the process of packing, deploying, and running applications using Docker containers.
 
 ##  Prerequisites
 Docker and Node should be pre-installed in your machine.
