@@ -191,7 +191,7 @@ We have locally created React Application, dockarize and run the app. Hope this 
 to skill up. Same app can be used for production :)
 
 Also, if you find any problem with app or any mistakes in this article, 
-please post in the comment, it will automatically create an git issue.
+please post in the comment, it will automatically create a git issue.
 
 [GitHub version of the article](https://github.com/dev-scripts/dockerize-react-app)
 
