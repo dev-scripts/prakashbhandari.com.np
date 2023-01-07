@@ -78,7 +78,7 @@ React app will be created and all the files and folders will be created inside `
 
 Also, I will add `docker` folder to add `docker` and `nginx` configuration.
 
-Here is the structure of the React App.
+Here is the structure of the React App that we have created.
 
 ```
 | - docker
