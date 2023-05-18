@@ -5,9 +5,10 @@ draft: false
 showToc: true
 TocOpen: true
 tags : [
-"Node",
+"NodeJS",
 "NVM",
-"NPM"
+"NPM",
+"Tools"
 ]
 categories : [
 "Node",
@@ -46,6 +47,8 @@ It would be great if we have an option to switch between node versions.
 Is it possible to switch between node versions in your device? 
 
 Yes, it's possible. You can use Node Version Manager (NVM) to manage or switch between node versions.
+
+If you use docker locally, you never encounter this situation. Only, non docker user will encounter this issue.
 
 # Node Version Manager (NVM) 
 
