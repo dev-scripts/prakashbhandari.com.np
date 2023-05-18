@@ -6,7 +6,8 @@ showToc: true
 TocOpen: true
 tags : [
 "PHP",
-"webhooks"
+"webhooks",
+"Slack"
 ]
 categories : [
 "PHP",
@@ -36,15 +37,16 @@ ie. `php artisan make:notification TestNotification.php`
 
 Laravel documentation on how to create notification https://laravel.com/docs/10.x/notifications
 
-Laravel notification can be used for many different purpose as for example, sending SMS, Email etc.
+Laravel notification can be used for many purpose as for example, sending SMS, Email etc.
 
-In this post, I will discuss on how to send the notification or alert message to slack via slack webhook url.
+In this post, I will discuss on how to send the notification or alert message to slack via Slack webhook url.
 
 
 # 1. Install slack notification Channel
 To integrate Slack notification in Laravel, you need to install the `laravel/slack-notification-channel` package.
 
 You can simply run this command to install laravel package in your project: 
+
 `composer require laravel/slack-notification-channel`
 
 GitHub : https://github.com/laravel/slack-notification-channel
@@ -52,12 +54,13 @@ GitHub : https://github.com/laravel/slack-notification-channel
 # 2. Create Notification Class
 Run below artisan command in your project. 
 This command will create `SendSlackNotification.php` class inside `app/Notifications` folder
+
 `php artisan make:notification SendSlackNotification`
 
 New class will be created like this `app/Notifications/SendSlackNotification.php`
 
 # 3. Configure file app/Notifications/SendSlackNotification class
-Next configure file `app/Notification/SendSlackNotification.php` class.
+Next configure file `app/Notifications/SendSlackNotification.php` class.
 
 {{< github-code-snippets afcbf15cd7f4e196caa098775a6dcad5 >}}
 
@@ -70,11 +73,11 @@ Login to slack and create your notification channel. Here I am creating `#test-s
 ![Create Channel](/images/posts/how-to-send-slack-notification-with-laravel/create-channel.png#center)
 
 ## Create Slack app 
-Naviget Navigate to this URL: https://api.slack.com/apps?new_app=1![img.png](img.png)
+Navigate to this URL: https://api.slack.com/apps?new_app=1 to crate Slack app.
 
-![Create App](/images/posts/how-to-send-slack-notification-with-laravel/create-app.png#center)
+![Create slack app App](/images/posts/how-to-send-slack-notification-with-laravel/create-app.png#center)
 
-## Enable Incoming Webhooks webhook
+## Enable Incoming Webhooks
 ![CEnable Incoming Webhooks webhook](/images/posts/how-to-send-slack-notification-with-laravel/incoming-webhook.png#center)
 ![Create App](/images/posts/how-to-send-slack-notification-with-laravel/enable-incoming-webhooks.png#center)
 
@@ -88,7 +91,7 @@ Naviget Navigate to this URL: https://api.slack.com/apps?new_app=1![img.png](img
 # 4. Send Notification
 
 Once you have  *Webhook URL*, you can simply use that URL in you app to send the notification from your Laravel app to Slack channel. 
-I have added below code on router to test the Notification
+I have added below code on router to test the Notification.
 
 {{< github-code-snippets b64a808009be0c4514b52707c44bec3d >}}
 
