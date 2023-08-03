@@ -59,7 +59,7 @@ public int add(int x, int y)
 }
 ```
 
-Where, `x` and `y` are parameters
+In `add(int x, int y)` we can see `x` and `y` integer variables, which are parameters.
 
 ## Arguments 
 
@@ -77,7 +77,7 @@ Where, 2 and 3 are arguments
 ## Working Example
 
 Here is the working example develop in `c#` to add the two numbers. In this example, we have a function `public int add(int x, int y)`
-which has `int x` and `int y` as parameters. And the function is invoked inside main method `obj.add(2, 3);` which has `2` and `3` as arguments.
+which has int `x` and int `y` as parameters. And the function is invoked inside main method `obj.add(2, 3);` which has `2` and `3` as arguments.
 
 ```c#
 using System;
@@ -98,4 +98,6 @@ public class Program
 }
 ```
 
-In this article,  we have understood the basic difference between parameter and argument used in the function. Understanding parameter and argument is also a part of understanding the fundamental concepts of programming, which take your coding skills to new level!
+In this article,  we have understood the basic difference between parameter and argument used in the function with example. 
+Understanding parameter and argument is also a part of understanding the fundamental concepts of programming.
+If you are good at fundamental that take your coding skills to new level!
