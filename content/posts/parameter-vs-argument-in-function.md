@@ -100,4 +100,4 @@ public class Program
 
 In this article,  we have understood the basic difference between parameter and argument used in the function with example. 
 Understanding parameter and argument is also a part of understanding the fundamental concepts of programming.
-If you are good at fundamental that take your coding skills to new level!
+If you are good at fundamental of programming you will be good at your programming skill.
