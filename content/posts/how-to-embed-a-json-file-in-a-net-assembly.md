@@ -1,7 +1,7 @@
 ---
-title: "How to Embed a Json File in a .Net Assembly"
+title: "How to Embed a Json File in a .Net Assembly?"
 date: 2023-08-20T08:22:58+10:00
-draft: true
+draft: false
 tags : [
 "Software Development",
 ]
@@ -34,8 +34,8 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
     image: "images/posts/how-to-embed-a-json-file-in-a-net-assembly/how-to-embed-a-json-file-in-a-net-assembly.png"
-    alt: "Parameters vs arguments"
-    caption: "Parameters vs arguments"
+    alt: "How to Embed a Json File in a .Net Assembly"
+    caption: "How to Embed a Json File in a .Net Assembly"
     relative: false
 ---
 
