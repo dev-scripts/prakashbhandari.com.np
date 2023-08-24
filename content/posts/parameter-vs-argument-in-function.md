@@ -41,7 +41,7 @@ cover:
 # Parameter vs. argument
 
 As a beginner, two terms that often cause confusion to the developers are "parameters" and "arguments". 
-As a Joiner Engineer I was interchangeably using the terms parameter and argument. It took me a while to understand. Many of you also using these two term interchangeably.
+As a Junior Engineer I was interchangeably using the terms parameter and argument. It took me a while to understand. Many of you also using these two term interchangeably.
  
 In this article, I will try to explain the basic difference between parameter and arguments used in the function.
 
