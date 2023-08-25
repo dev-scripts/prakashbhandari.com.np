@@ -4,6 +4,10 @@ date: 2023-08-20T08:22:58+10:00
 draft: false
 tags : [
 "Software Development",
+"dotNet",
+"dotNET 7.0",
+"dotNET Web Application",
+"C Sharp"
 ]
 categories : [
 "Software Development",

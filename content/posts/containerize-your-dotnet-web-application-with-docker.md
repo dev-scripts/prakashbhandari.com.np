@@ -6,9 +6,9 @@ showToc: true
 TocOpen: true
 tags : [
 "Docker",
-".Net",
+"dotNet",
 "dotNET 7.0",
-".NET Web Application",
+"dotNET Web Application",
 "C Sharp"
 ]
 categories : [
@@ -33,17 +33,17 @@ cover:
 ---
 
 Dockerizing is the process of packing, deploying, and running applications using Docker containers.
-Docker is very popular among the developers. In this post, I am going to show you **"Containerize Your Dotnet Core Application With Docker"**.
+Docker is very popular among the developers. In this post, I am going to show you **"Containerize Your .NET 7.0 Web Application With Docker"**.
 for local development.
 
-Before that, I will briefly define what is docker and .NET
+Before that, I will briefly explain what is docker and .NET
 
 ## What Is Docker?
 **[Docker](https://www.docker.com/)** is an open source tool that combines your application with all
 the necessary dependencies and libraries as one portable package (docker image).
 That package can be shared to any one and run by anyone without much worrying about the operating system.
 
-## .NET
+## What Is .NET?
 
 .NET (pronounced as "dot net"; formerly named .NET Core) is a free and open-source, managed software framework for Windows, Linux, and macOS operating systems. 
 It is a platform independent and successor to .NET Framework.
@@ -56,7 +56,7 @@ If you don't have, please install form following link:
 1. Install docker form : https://docs.docker.com/engine/install/
 
 
-Dotnet application can be decorize in following steps.
+.NET 7.0 Web Application can be decorize in following steps.
 
 ### Step 1 : Create New .NET 7.0 Web Application
 
@@ -64,9 +64,11 @@ Either your can use existing .NET 7.0 web application or create new .NET 7.0 web
 
 I will be creating small .NET 7.0 web application to access the default API end point provided by the framework.
 
-I am using visual studio to create the Application to create .NET 7.0 web application.
+I am using visual studio to create the .NET 7.0 web application. I am assuming you know how to create the .NET we Application.
 
-By default, the app will give us a `WeatherForecastController.cs`
+
+Once you create the application. By default, the app will give us a `WeatherForecastController.cs` file, which will have default API 
+to list the Weather Forecast. I will be testing the Weather Forecast API after containerizing the app.
 
 Here is the structure of my Dotnet application.
 
@@ -111,7 +113,8 @@ ENTRYPOINT ["dotnet", "dockerizeDotNet7App.dll"]
 
 Add a `docker-compose.yml` in your project root. Please check in the attached project structure image. This `docker-compose.yml` is not necessary, but it helps to build abd
 run the docker image and container easily.
-I have used following instruction in the docker file.
+
+I have used following instruction in the `docker-compose.yml` file.
 
 ```yaml
 version: '3.8'
@@ -142,7 +145,7 @@ Here, `WeatherForecast` is the default API provided by .NET 7.0.
 
 To stop the containers, press Ctrl+C in the terminal.
 
-### Step 6 - Test the Application
+### Step 6 - Test The Application
 
 You should be able to access your application locally at port number `9000`.
 Y
@@ -152,9 +155,10 @@ ou can browse `http://localhost:9000/WeatherForecast` in your web browser, and y
 
 ## Conclusion
 
-Finally, done. That’s it!
+Finally, we are done. That's it!
 
-We have locally created .NET 7.0 web application, dockarize and run the app by using the docker-compose tool. Hope this steps helped you
+We have locally created .NET 7.0 Web Application, containerize the app using docker and ran with the help of docker-compose tool.
+Hope this steps helped you
 to skill up.
 
 
