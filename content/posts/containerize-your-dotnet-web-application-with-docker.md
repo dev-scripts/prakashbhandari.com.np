@@ -134,7 +134,8 @@ In this project I am exposing port `80` internally in side Docker and mapped to 
 
 ### Step 4 - Build Docker Image
 To build docker image, you have to run `docker compose build` command. This command will take few minutes to
-pull the dotnet image, install dependencies, copy files, and create app image.
+pull the dotnet image, install dependencies, copy files, and create app image. May be you can skip this step and directly
+jump tp step 5
 
 ### Step 5 - Start the containers
 Now, you can run `docker compose up` command. This command will start project in the container and
@@ -144,6 +145,46 @@ Once `docker compose up` is successful, you can access your app locally via web 
 Here, `WeatherForecast` is the default API provided by .NET 7.0.
 
 To stop the containers, press Ctrl+C in the terminal.
+
+Here is the output log for docker compose up
+
+```
+prakash@ip-192-168-1-2 dockerizeDotNet7App % docker compose up
+[+] Building 0.3s (16/16) FINISHED                                                                                                                                                                                              docker:desktop-linux
+ => [web_app internal] load build definition from Dockerfile                                                                                                                                                                                    0.0s
+ => => transferring dockerfile: 820B                                                                                                                                                                                                            0.0s
+ => [web_app internal] load .dockerignore                                                                                                                                                                                                       0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                 0.0s
+ => [web_app internal] load metadata for mcr.microsoft.com/dotnet/aspnet:7.0                                                                                                                                                                    0.3s
+ => [web_app internal] load metadata for mcr.microsoft.com/dotnet/sdk:7.0                                                                                                                                                                       0.2s
+ => [web_app build 1/7] FROM mcr.microsoft.com/dotnet/sdk:7.0@sha256:926b9337622ccc594ed051d3559f1c4544686c9fd5f4656f09d1fe37d9a5ace2                                                                                                           0.0s
+ => [web_app final 1/3] FROM mcr.microsoft.com/dotnet/aspnet:7.0@sha256:54a3864f1c7dbb232982f61105aa18a59b976382a4e720fe18b4af98fcd663a6                                                                                                        0.0s
+ => [web_app internal] load build context                                                                                                                                                                                                       0.0s
+ => => transferring context: 5.85kB                                                                                                                                                                                                             0.0s
+ => CACHED [web_app final 2/3] WORKDIR /app                                                                                                                                                                                                     0.0s
+ => CACHED [web_app build 2/7] WORKDIR /app                                                                                                                                                                                                     0.0s
+ => CACHED [web_app build 3/7] COPY [dockerizeDotNet7App.csproj, .]                                                                                                                                                                             0.0s
+ => CACHED [web_app build 4/7] RUN dotnet restore dockerizeDotNet7App.csproj                                                                                                                                                                    0.0s
+ => CACHED [web_app build 5/7] COPY . .                                                                                                                                                                                                         0.0s
+ => CACHED [web_app build 6/7] RUN dotnet build dockerizeDotNet7App.csproj -c Release -o /app/build                                                                                                                                             0.0s
+ => CACHED [web_app build 7/7] RUN dotnet publish dockerizeDotNet7App.csproj -c Release -o /app/publish                                                                                                                                         0.0s
+ => CACHED [web_app final 3/3] COPY --from=build /app/publish .                                                                                                                                                                                 0.0s
+ => [web_app] exporting to image                                                                                                                                                                                                                0.0s
+ => => exporting layers                                                                                                                                                                                                                         0.0s
+ => => writing image sha256:7910fa8621179b0adbfc024c8207a48c632c250386f85373cfaf381dcd6a97f3                                                                                                                                                    0.0s
+ => => naming to docker.io/library/dockerizedotnet7app-web_app                                                                                                                                                                                  0.0s
+[+] Running 1/1
+ ✔ Container dockerizedotnet7app-web_app-1  Created                                                                                                                                                                                             0.0s 
+Attaching to dockerizedotnet7app-web_app-1
+dockerizedotnet7app-web_app-1  | info: Microsoft.Hosting.Lifetime[14]
+dockerizedotnet7app-web_app-1  |       Now listening on: http://[::]:80
+dockerizedotnet7app-web_app-1  | info: Microsoft.Hosting.Lifetime[0]
+dockerizedotnet7app-web_app-1  |       Application started. Press Ctrl+C to shut down.
+dockerizedotnet7app-web_app-1  | info: Microsoft.Hosting.Lifetime[0]
+dockerizedotnet7app-web_app-1  |       Hosting environment: Production
+dockerizedotnet7app-web_app-1  | info: Microsoft.Hosting.Lifetime[0]
+dockerizedotnet7app-web_app-1  |       Content root path: /app
+```
 
 ### Step 6 - Test The Application
 
@@ -160,7 +201,6 @@ Finally, we are done. That's it!
 We have locally created .NET 7.0 Web Application, containerize the app using docker and ran with the help of docker-compose tool.
 Hope this steps helped you
 to skill up.
-
 
 
 
