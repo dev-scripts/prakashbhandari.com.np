@@ -129,14 +129,14 @@ services:
 
 #### Port mapping
 
-Port mapping is very important here step. In Stage 2 of `Dockerfile`, where I have open a port on the Docker container. You might be thinking port 80 is default or common port and should be open by default, But in docker, it is not. By default, Docker doesn’t allow inbound requests to your container unless you explicitly tell Docker to open a port.
+Port mapping is very important here step. In Stage 2 of `Dockerfile`, where I have open a port on the Docker container. You might be thinking port 80 is default or common port and should be open by default, But in docker, it is not. By default, Docker doesn't allow inbound requests to your container unless you explicitly tell Docker to open a port.
 In this project I am exposing port `80` internally in side Docker and mapped to port `9000` of host machine form `docker-compose.yml` file. So that I can run my application in `http://localhost:9000/`
 
 
 ### Step 4 - Build Docker Image
 To build docker image, you have to run `docker compose build` command. This command will take few minutes to
 pull the dotnet image, install dependencies, copy files, and create app image. May be you can skip this step and directly
-jump tp step 5
+jump to step 5.
 
 ### Step 5 - Start the containers
 Now, you can run `docker compose up` command. This command will start project in the container and
