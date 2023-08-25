@@ -6,19 +6,21 @@ showToc: true
 TocOpen: true
 tags : [
 "Docker",
-"Dot Net",
-"Dot Net 7.0",
-".NET Web Application"
+".Net",
+"dotNET 7.0",
+".NET Web Application",
+"C Sharp"
 ]
 categories : [
-"Docker"
+"Docker",
+"C Sharp"
 ]
 keywords: [
 "Containerize Your .NET Web Application With Docker",
 "How to Dockerize Your .NET Web Application",
-"How to Dockerizing a Your .NET Web Application",
-"Docker and Dot Net",
-"Containerize Your .NET 7.0 Web Application With Docker"
+"Containerize Your .NET 7.0 Web Application With Docker",
+"containerize your net 7.0 web application with docker",
+"containerize your .net 7.0 web application with docker"
 ]
 cover:
     image: "images/posts/containerize-your-dotnet-web-application-with-docker/containerize-your-dotnet-web-application-with-docker.png"
@@ -43,9 +45,8 @@ That package can be shared to any one and run by anyone without much worrying ab
 
 ## .NET
 
-.NET (pronounced as "dot net"; formerly named .NET Core) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a platform independent and successor to .NET Framework
-The project is mainly developed by Microsoft employees by way of the .NET Foundation, and released under an MIT License.
-
+.NET (pronounced as "dot net"; formerly named .NET Core) is a free and open-source, managed software framework for Windows, Linux, and macOS operating systems. 
+It is a platform independent and successor to .NET Framework.
 
 >Dockerizing is the process of packing, deploying, and running applications using Docker containers.
 
