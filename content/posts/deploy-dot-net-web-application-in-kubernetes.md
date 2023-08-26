@@ -55,7 +55,7 @@ You need to install following tools in your machine:
 ## Create Docker Image 
 Fist, step to deploy app in Kubernetes is build the image of web app that you want to run in Kubernetes.
 
-I ma building image form **[Containerize Your .NET 7.0 Web Application With Docker](https://www.prakashbhandari.com.np/posts/containerize-your-dotnet-web-application-with-docker/)**
+I am building image form **[Containerize Your .NET 7.0 Web Application With Docker](https://www.prakashbhandari.com.np/posts/containerize-your-dotnet-web-application-with-docker/)**
 
 Go inside project folder.
 
@@ -96,11 +96,7 @@ I will deploy an application in `minikube` using Kustomize on a Kubernetes clust
 
 Kustomize is an open-source configuration management tool for Kubernetes.
 
-It allows you to define and manage Kubernetes objects such as deployments, Daemonsets, services, configMaps, etc for multiple environments in a declarative manner without modifying the original YAML files. 
-
-To put it simply, you have a single source of truth for YAMLs, and you patch required configurations on top of the base YAMLs as per the environment requirements.
-
-Suppose you want to deploy applications to Kubernetes and you have multiple environments i.e. dev, uat, prod etc. In each environment, you might have different configurations for the deployments.
+It allows you to define and manage Kubernetes objects such as deployments, Daemonsets, services, configMaps, etc for multiple environments in a declarative manner without modifying the original YAML files.
 
 The kustomize module is built into kubectl. You can use customize directly via kubectl. You can verify it using the following command.
 
@@ -109,7 +105,7 @@ You can verify with below command:
 kubectl kustomize --help
 ```
 I will not go in details about Kustomize. I am using it here because it makes our deployment very easy
-or we can simply deploy image with single command.
+or we can simply deploy image with single command in minikube.
 
 Let me create following folders and files in the root of the project
 
@@ -123,6 +119,17 @@ Let me create following folders and files in the root of the project
 | | - overlays
 | | | - kustomization.yaml
 ```
+
+Let me simplify this with the process with below diagram.
+
+![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes/customized-manifest.png#center)
+
+Here, we are deploying into single minikube cluster. 
+
+Suppose you want to deploy applications to Kubernetes and you have multiple environments i.e. dev, uat, prod etc. 
+In each environment, you might have different configurations for the deployments.
+
+In this case you required more configurations on top of the base YAMLs as per the environment requirements.
 
 ### Deployment (deployment.yaml)
 A deployment allows you to describe an application's life cycle, 
