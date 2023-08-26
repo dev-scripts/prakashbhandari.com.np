@@ -96,7 +96,7 @@ docker push thebhandariprakash/dockerizedotnet7app-web_app
 I will deploy an application in Mac OS `minikube` local development Kubernetes cluster.
 
 
-### 1. Deployment (deployment.yaml)
+### 1. Create Deployment (deployment.yaml)
 A deployment allows you to describe an application's life cycle, 
 such as which images to use for the app, the number of pods that we want. Update pods and replica sets, rollback to previous deployment versions, 
 scale a deployment , pause or continue a deployment, etc
@@ -137,7 +137,7 @@ pod "web-app-586b96bbb-2rjkf" deleted
 
 Again, if you run `kubectl get pods`, you will see new pod.
 
-### 2. Service (service.yaml)
+### 2. Create Service (service.yaml)
 Services provide a way to expose your application's Pods to the network 
 or other services within the cluster, and they play a very important role in enabling communication between different parts of your application.
 
