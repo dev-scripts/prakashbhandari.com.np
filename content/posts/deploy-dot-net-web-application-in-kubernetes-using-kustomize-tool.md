@@ -45,7 +45,7 @@ I have created the deployment files and image in previous post. I will use the s
 
 Kustomize is an open-source configuration management tool for Kubernetes.
 
-It allows you to define and manage Kubernetes objects such as deployments, Daemonsets, services, configMaps, etc for multiple environments in a declarative manner without modifying the original YAML files.
+It allows you to define and manage Kubernetes objects such as deployments, services, jobs, configMaps, etc for multiple environments in a declarative manner without modifying the original YAML files.
 
 The kustomize module is built into kubectl. You can use customize directly via kubectl. 
 
@@ -53,14 +53,48 @@ You can verify with below command:
 ```
 kubectl kustomize --help
 ```
+Kustomize has two fundamental concepts:
+
+### 1  Base
+**Base** are the reusable files(YAML files) across all environments
+
+### 2. Overlays
+**Overlay** also called patches. These files are environment specific files.
+
+Kustomize will generate final customized manifest from **Base** files and **Overlay** files as shown in the below diagram.
+
+![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/customized-manifest.png#center)
+
+If you want to deploy app into multiple environments i.e. dev, uat and prod.
+The common files are reside in base folder and environment specific files will reside in
+environment specific folders. Like in below example:
+
+```
+| - k8s
+| | - base
+| | | - deployment.yaml
+| | | - ingress.yaml
+| | | - service.yaml
+| | | - kustomization.yaml
+| | - overlays
+| | | - dev
+| | | | - kustomization.yaml
+| | | - dev
+| | | | - kustomization.yaml
+| | | - prod
+| | | | - kustomization.yaml
+```
+Below diagram shows that above base and overlays for dev, uat and prod  will generate final customized manifest and 
+deploy in each environment.
+
+![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest-for-more-than-one-environment.png#center)
+
 
 ## Deploying Your App in Kubernetes Kustomize Tool
 
-I will deploy an application in `minikube` using Kustomize on a Kubernetes cluster with the help of Kustomize
+I will deploy an application in `minikube` using Kustomize on a Kubernetes cluster with the help of Kustomize.
 
-Kustomize makes our deployment very easy
-
-Let me create following folders and files in the root of the project
+Let me create following folders and files in the root of the project. That was discussed in **[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**
 
 ```
 | - k8s
@@ -75,24 +109,26 @@ Let me create following folders and files in the root of the project
 
 Let me simplify this with the process with below diagram.
 
-![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/customized-manifest-arc.png#center)
+![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest.png#center)
 
 Here, we are deploying into single minikube cluster. 
 
 Suppose you want to deploy applications to Kubernetes and you have multiple environments i.e. dev, uat, prod etc. 
+
 In each environment, you might have different configurations for the deployments.
 
 In this case you required more configurations on top of the base YAMLs as per the environment requirements.
 
-I have following files in desired folders.
-
 ### 1. Create Deployment
+ First, step is to create deployment file. I have already discussed what is [deployment](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/#1-deployment-deploymentyaml) in previous post. 
  
 Create `deployment.yaml` file like below:
 
 {{< github-code-snippets e49a0fe4dd5ef1b6856d70f2177ccbb6 >}}
 
 ### 2. Create Service 
+
+First, step is to create Service file. I have already discussed what is [Service](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/#2-service-serviceyaml) in previous post.
 
 Create `service.yaml` file like below:
 {{< github-code-snippets 9cd5c91abc9ec1a2aa145081eed23cbf >}}
@@ -192,7 +228,6 @@ Here is my output form custom domain `http://kubernete.local/WeatherForecast`
 ![output](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/output2.png#center)
 
 If you are using **M1 with the docker driver**. You need to enable minikube tunnel. Keep in mind that your `etc/hosts` file needs to map to `127.0.0.1`, instead of the output of `minikube ip` or `kubectl get ingress`
-This is an very important.
 
 ## Conclusion
 
