@@ -106,8 +106,8 @@ Let me create following folders and files in the root of the project. That was d
 | | - overlays
 | | | - kustomization.yaml
 ```
-
-Let me simplify this with the process with below diagram.
+Let me simplify this process with below diagram. Below diagram shows that how Kustomize will generate final customized manifest and deploy in 
+minikube cluster.
 
 ![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest.png#center)
 
@@ -117,10 +117,10 @@ Suppose you want to deploy applications to Kubernetes and you have multiple envi
 
 In each environment, you might have different configurations for the deployments.
 
-In this case you required more configurations on top of the base YAMLs as per the environment requirements.
+In that case you required more configurations on top of the base YAMLs as per the environment requirements.
 
 ### 1. Create Deployment
- First, step is to create deployment file. I have already discussed what is [deployment](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/#1-deployment-deploymentyaml) in previous post. 
+First, step is to create deployment file. I have already discussed what is [deployment](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/#1-deployment-deploymentyaml) in previous post. 
  
 Create `deployment.yaml` file like below:
 
@@ -231,10 +231,5 @@ If you are using **M1 with the docker driver**. You need to enable minikube tunn
 
 ## Conclusion
 
-In this article, I explained the basics of how to deploy a .NET Web application in Kubernetes.
-We created image of app using docker, push it to the Docker Hub and deploy in minikube.
-
-We also used **Kustomize** configuration management tool for Kubernetes to simplify the deployment process.
-
-
-
+In this article, I explained the basics of Kustomize and how to deploy a .NET Web application in minikube.
+with the help of Kustomize tool.
