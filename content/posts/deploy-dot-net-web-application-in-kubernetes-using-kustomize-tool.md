@@ -90,7 +90,7 @@ deploy in each environment.
 ![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest-for-more-than-one-environment.png#center)
 
 
-## Deploying Your App in Kubernetes Kustomize Tool
+## Deploying Your App in Kubernetes Using Kustomize Tool
 
 I will deploy an application in `minikube` using Kustomize on a Kubernetes cluster with the help of Kustomize.
 
