@@ -114,7 +114,7 @@ Here is a `kustomization.yaml` file that I am using:
 
 {{< github-code-snippets da75cb22cb9a8d29060124777266e918 >}}
 
-## 5 Deploy your app in Kubernetes
+### 5 Deploy your app in Kubernetes
 
 Now, you can run below command to deploy app in the  Kubernetes cluster.
 
@@ -126,7 +126,7 @@ Once deployment is successful you can verify that your pods is running by runnin
 kubectl get pods
 ```
 
-### Accessing an app via browser
+### 6. Accessing an app via browser
 
 To check the app via browser or form any HTTP client. First you need to find 
 the URL in which app is accessible.
@@ -146,7 +146,7 @@ Now, you are ready to access you app via browser. For my app I can use
 
 ![output](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/output.png#center)
 
-### Create an Ingress and use custom domain to access App via browser
+### 7. Create an Ingress and use custom domain to access App via browser
 
 Ingress is important in k8s it exposes `HTTP` and `HTTPS` routes from outside the cluster to services within the cluster.
 Traffic routing is controlled by rules defined on the Ingress resource.
