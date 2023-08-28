@@ -38,8 +38,9 @@ cover:
 In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes by using Kustomize Tool.
 I will use minikube to deploy app in the local machine.
 
-I have created the deployment files and image in previous post. I will use the same artifacts that are used in the article.
-**[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**
+In previous articel **[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**, I have build docker image and pushed to the Docker Hub registry. I will use the same artifacts that are used in that article. 
+
+In this article, I will more focus on how to deploy into minikube using Kustomize Tool.
 
 ## Kustomize Tool
 
@@ -59,11 +60,12 @@ Kustomize has two fundamental concepts:
 **Base** are the reusable files(YAML files) across all environments
 
 ### 2. Overlays
-**Overlay** also called patches. These files are environment specific files.
+**Overlay** also called patches. These files are environment specific files. It also overwrites the original files.
 
 Kustomize will generate final customized manifest from **Base** files and **Overlay** files as shown in the below diagram.
 
 ![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/customized-manifest.png#center)
+
 
 If you want to deploy app into multiple environments i.e. dev, uat and prod.
 The common files are reside in base folder and environment specific files will reside in
@@ -88,7 +90,6 @@ Below diagram shows that above base and overlays for dev, uat and prod  will gen
 deploy in each environment.
 
 ![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest-for-more-than-one-environment.png#center)
-
 
 ## Deploying Your App in Kubernetes Using Kustomize Tool
 
@@ -142,6 +143,22 @@ Here is a `kustomization.yaml` file that I am using:
 
 {{< github-code-snippets 7f52357de8527b097dc8839413dba539 >}}
 
+In above `yaml` file we can see `namePrefix: dotnet7-` . This will add a common prefix to all resource
+like to pod, service etc. In my case pod and other resources will be something like this `dotnet7-web-app-<some hash>`
+
+#### Transformers
+Transformers will convert one config into another. Following are some common transformer:
+
+`commonLabel` adds a common label to all Kubernetes resources.
+
+`namePrefix` adds a common prefix to all resource names.
+
+`nameSuffix` adds a common suffix to all resource.
+
+`namespace` adds a common namespace to all resources.
+
+`commonAnnotations` adds a common annotation to all resources.
+
 ### 4. Kustomization in Overlays folder (kustomization.yaml)
 
 It  contains all the customizations that we want to apply to generate the customized manifest and reside in `overlays` folder.
@@ -160,6 +177,11 @@ Once deployment is successful you can verify that your pods is running by runnin
 
 ```
 kubectl get pods
+```
+Here is the output:
+```
+NAME                                READY   STATUS    RESTARTS     AGE
+dotnet7-web-app-586b96bbb-nq8sq      1/1    Running      0          2s
 ```
 
 ### 6. Accessing an app via browser
