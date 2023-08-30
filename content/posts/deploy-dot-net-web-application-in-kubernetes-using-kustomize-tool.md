@@ -35,22 +35,23 @@ cover:
 ---
 
 ## Introduction 
-In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes by using Kustomize Tool.
-I will use minikube to deploy app in the local machine.
+n this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes using the Kustomize Tool. 
 
-In previous articel **[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**, I have build docker image and pushed to the Docker Hub registry. I will use the same artifacts that are used in that article. 
+I will use Minikube to deploy the app on the local machine. **[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**, 
 
-In this article, I will more focus on how to deploy into minikube using Kustomize Tool.
+I have built a Docker image and pushed it to the Docker Hub registry. I will use the same artifacts that were used in that previous article.
+
+In this article, I will focus more on how to deploy into Minikube using the Kustomize Tool.
 
 ## Kustomize Tool
 
 Kustomize is an open-source configuration management tool for Kubernetes.
 
-It allows you to define and manage Kubernetes objects such as deployments, services, jobs, configMaps, etc for multiple environments in a declarative manner without modifying the original YAML files.
+It enables you to define and manage Kubernetes objects, such as deployments, services, jobs, configMaps, etc., for multiple environments in a declarative manner, without modifying the original YAML files.
 
-The kustomize module is built into kubectl. You can use customize directly via kubectl. 
+The Kustomize module is built into kubectl. You can directly use Kustomize via kubectl.
 
-You can verify with below command:
+You can verify this with the following command:
 ```
 kubectl kustomize --help
 ```
@@ -112,13 +113,13 @@ minikube cluster.
 
 ![customized manifest](/images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/example-of-customized-manifest.png#center)
 
-Here, we are deploying into single minikube cluster. 
+Here, we are deploying to a single Minikube cluster.
 
-Suppose you want to deploy applications to Kubernetes and you have multiple environments i.e. dev, uat, prod etc. 
+Suppose you want to deploy applications to Kubernetes, and you have multiple environments such as development (dev), user acceptance testing (uat), production (prod), etc.
 
-In each environment, you might have different configurations for the deployments.
+In each environment, you may have different configurations for the deployments.
 
-In that case you required more configurations on top of the base YAMLs as per the environment requirements.
+In such cases, you will need additional configurations on top of the base YAMLs to accommodate the specific environment requirements.
 
 ### 1. Create Deployment
 First, step is to create deployment file. I have already discussed what is [deployment](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/#1-deployment-deploymentyaml) in previous post. 
@@ -253,5 +254,4 @@ If you are using **M1 with the docker driver**. You need to enable minikube tunn
 
 ## Conclusion
 
-In this article, I explained the basics of Kustomize and how to deploy a .NET Web application in minikube.
-with the help of Kustomize tool.
+In conclusion, the article successfully guides you through the process of deploying a .NET Web application in Kubernetes using the Kustomize tool. It covers essential concepts, provides clear instructions, and includes visual aids to helps you to understand and implement the deployment process effectively.
