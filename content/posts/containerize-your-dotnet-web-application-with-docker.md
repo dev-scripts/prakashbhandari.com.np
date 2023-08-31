@@ -20,7 +20,37 @@ keywords: [
 "How to Dockerize Your .NET Web Application",
 "Containerize Your .NET 7.0 Web Application With Docker",
 "containerize your net 7.0 web application with docker",
-"containerize your .net 7.0 web application with docker"
+"containerize your .net 7.0 web application with docker",
+"Dockerizing applications", 
+"Docker containers", 
+".NET 7.0 Web Application", 
+"Containerization process", 
+"Dockerfile creation",
+"Docker Compose integration", 
+"Application packaging", 
+"Portable application deployment", 
+"Docker benefits", 
+".NET framework", 
+"Cross-platform development", 
+"Containerization guide", 
+"Application consistency", 
+"Docker image creation", 
+"Docker container deployment", 
+"Local application testing", 
+"Development environment setup", 
+"Docker tools", 
+"Container orchestration", 
+"Application encapsulation", 
+"Docker efficiency",
+"Deployment simplicity", 
+"Application dependencies", 
+"Application portability", 
+"Docker image optimization",
+"Docker Compose commands",
+".NET application containerization", 
+"Docker success", 
+"Development best practices", 
+"Containerization advantages"
 ]
 cover:
     image: "images/posts/containerize-your-dotnet-web-application-with-docker/containerize-your-dotnet-web-application-with-docker.png"
@@ -28,8 +58,7 @@ cover:
     caption: "Containerize Your .NET 7.0 Web Application With Docker"
     relative: false
     author: "Prakash Bhandari"
-    description: "Dockerizing is the process of packing, deploying, and running applications using Docker containers.
-    Docker is very popular among the developers."
+    description: "Learn how to containerize your .NET 7.0 web application with Docker in this comprehensive guide. Discover the process of packaging, deploying, and running applications using Docker containers. Understand the benefits of Dockerization, and follow step-by-step instructions to create a Dockerfile, integrate Docker Compose, and efficiently run your application locally. Explore the advantages of cross-platform development and application consistency while gaining insights into Docker tools and deployment simplicity. Dive into the world of containerization with this practical tutorial for optimizing your development workflow."
 ---
 
 Dockerizing is the process of packing, deploying, and running applications using Docker containers.
@@ -61,15 +90,13 @@ If you don't have, please install form following link:
 
 ### Step 1 : Create New .NET 7.0 Web Application
 
-Either your can use existing .NET 7.0 web application or create new .NET 7.0 web application.
+You have two options: you can either use an existing .NET 7.0 web application or create a new one.
 
-I will be creating small .NET 7.0 web application to access the default API end point provided by the framework.
+For demonstration purposes, I will create a small .NET 7.0 web application that accesses the default API endpoint provided by the framework.
 
-I am using visual studio to create the .NET 7.0 web application. I am assuming you know how to create the .NET we Application.
+I will utilize Visual Studio to create the .NET 7.0 web application, assuming that you are already familiar with the process.
 
-
-Once you create the application. By default, the app will give us a `WeatherForecastController.cs` file, which will have default API 
-to list the Weather Forecast. I will be testing the Weather Forecast API after containerizing the app.
+Upon creating the application, it will automatically generate a `WeatherForecastController.cs` file by default. This file includes the default API to list the Weather Forecast. After containerizing the application, I will proceed to test the Weather Forecast API.
 
 Here is the structure of my Dotnet application.
 

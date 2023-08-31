@@ -48,8 +48,7 @@ cover:
   description: "Learn how to deploy a .NET Web application in Kubernetes using the Kustomize Tool. This comprehensive guide walks you through the deployment process using Minikube on your local machine. Understand the concepts of Kustomize, a powerful configuration management tool for Kubernetes, that enables declarative management of objects for various environments. Discover how to create a customized Kubernetes deployment, services, and ingress configurations using Kustomize overlays. Dive into step-by-step instructions, code snippets, and visual aids to efficiently deploy and access your .NET Web application in a Kubernetes cluster"
 ---
 
-## Introduction 
-n this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes using the Kustomize Tool. 
+In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes using the Kustomize Tool. 
 
 I will use Minikube to deploy the app on the local machine. **[Deploy .NET Web Application In Kubernetes](https://www.prakashbhandari.com.np/posts/deploy-dot-net-web-application-in-kubernetes/)**, 
 
