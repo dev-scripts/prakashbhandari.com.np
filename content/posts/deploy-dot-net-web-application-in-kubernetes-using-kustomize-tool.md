@@ -18,12 +18,26 @@ categories : [
   "Kubernetes"
 ]
 keywords: [
-  "Deploy .NET Web Application in Kubernetes",
-  "Deploy .NET Web Application in k8s",
-  "Docker and Kubernetes",
-  "Deploy .NET Web Application In Kubernetes Using Kustomize Tool",
-  "Deploy Web App In Kubernetes Using Kustomize Tool",
-  "Deploy Web App In Kubernetes"
+  ".NET Web application deployment",
+  "Kubernetes deployment tutorial",
+  "Kustomize Tool for Kubernetes",
+  "Minikube deployment guide",
+  "Kubernetes configuration management",
+  "Kustomize overlays",
+  "Customized Kubernetes manifests",
+  "Deploying .NET app with Kustomize",
+  "Kubernetes deployment strategies",
+  "Kubernetes service setup",
+  "Ingress configuration in Kubernetes",
+  "Kubectl and Kustomize",
+  "Local Kubernetes development",
+  "DevOps with Kubernetes",
+  "Kubernetes deployment best practices",
+  ".NET app scalability in Kubernetes",
+  "Kustomize and environment-specific configurations",
+  "Minikube and Kustomize workflow",
+  "Managing Kubernetes objects with Kustomize",
+  "Custom domain setup with Kubernetes"
 ]
 cover:
   image: "images/posts/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool/deploy-dot-net-web-application-in-kubernetes-using-kustomize-tool.png"
@@ -31,7 +45,7 @@ cover:
   caption: "Deploy .NET Web Application in Kubernetes"
   relative: false
   author: "Prakash Bhandari"
-  description: "In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes by using Kustomize Tool"
+  description: "Learn how to deploy a .NET Web application in Kubernetes using the Kustomize Tool. This comprehensive guide walks you through the deployment process using Minikube on your local machine. Understand the concepts of Kustomize, a powerful configuration management tool for Kubernetes, that enables declarative management of objects for various environments. Discover how to create a customized Kubernetes deployment, services, and ingress configurations using Kustomize overlays. Dive into step-by-step instructions, code snippets, and visual aids to efficiently deploy and access your .NET Web application in a Kubernetes cluster"
 ---
 
 ## Introduction 

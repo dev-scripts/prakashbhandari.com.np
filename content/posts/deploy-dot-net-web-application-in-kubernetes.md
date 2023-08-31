@@ -19,7 +19,27 @@ categories : [
 keywords: [
   "Deploy .NET Web Application in Kubernetes",
   "Deploy .NET Web Application in k8s",
-  "Docker and Kubernetes"
+  "Docker and Kubernetes",
+  "Kubernetes deployment",
+  "NET Web application deployment",
+  "Minikube deployment",
+  "Containerization with Docker",
+  "Kubernetes basics", 
+  "Docker image creation",
+  "Container orchestration",
+  "Kubernetes tutorial",
+  "Kubernetes for .NET",
+  "Microservices deployment",
+  "Kubernetes scalability",
+  "Kubernetes services",
+  "Ingress controllers",
+  "Local Kubernetes development",
+  "DevOps with Kubernetes",
+  "Docker registry",
+  "Kubernetes best practices",
+  ".NET application containerization",
+  "Kubernetes cluster management",
+  "Deployment strategies in Kubernetes",
 ]
 cover:
   image: "images/posts/deploy-dot-net-web-application-in-kubernetes/deploy-net-web-application-in-kubernetes.png"
@@ -27,7 +47,7 @@ cover:
   caption: "Deploy .NET Web Application in Kubernetes"
   relative: false
   author: "Prakash Bhandari"
-  description: "In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes."
+  description: "Learn how to deploy and scale your .NET Web applications effectively using Kubernetes and Docker. This comprehensive guide covers the basics of containerization, Kubernetes deployment strategies, and utilizing tools like Minikube for local development. Explore the power of Kubernetes services, ingress controllers, and best practices for deploying resilient and highly available applications. Elevate your DevOps game with this step-by-step tutorial on deploying .NET applications in a Kubernetes environment."
 ---
 
 ## Introduction 
