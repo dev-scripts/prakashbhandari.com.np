@@ -31,20 +31,21 @@ cover:
 ---
 
 ## Introduction 
-In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes.
-I will use minikube to deploy app in the local machine.
+In this article, I will explain the basics of how to deploy a .NET Web application in Kubernetes. I will use Minikube to deploy the app on the local machine.
 
-Either your can use existing .NET Web Application or create new .NET Web Application and containerize it.
+You can either use an existing .NET Web Application or create a new .NET Web Application and containerize it.
 
-I am going to use the app that was created in my previous
+I am going to use the app that was created in my previous article.
+
+I've made some minor adjustments for clarity and proper capitalization.
 **[Containerize Your .NET 7.0 Web Application With Docker](https://www.prakashbhandari.com.np/posts/containerize-your-dotnet-web-application-with-docker/)**
 
-Kubernetes(k8s) can only deploy containers because Kubernetes only knows how to deploy containers.
+Kubernetes (k8s) can only deploy containers because it only knows how to deploy containers.
 
-In, previous article I have already containerize the application using Docker.
+In the previous article, I have already containerized the application using Docker.
 
-There are many other tools to containerize the application like **LXC**, **Podman**, **Containerd** etc, 
-But Docker is the most popular tool to create and run containers.
+There are many other tools to containerize the application, such as LXC, Podman, Containerd, etc.
+However, Docker is the most popular tool for creating and running containers.
 
 ## Prerequisites
 You need to install following tools in your machine:
@@ -240,5 +241,4 @@ This is an very important.
 
 ## Conclusion
 
-In this article, I explained the basics of how to deploy a .NET Web application in Kubernetes.
-We created image of app using docker, push it to the Docker Hub and deploy in minikube.
+This article has provided a  guide to deploying a .NET Web application in Kubernetes. Throughout the process, I've covered essential steps from creating Docker images to setting up Kubernetes deployments and services. By utilizing tools like Minikube, Docker, and Kubernetes, I've successfully containerized and deployed the application for local Minikube Kubernetes. Additionally, I have explored advanced concepts such as creating an Ingress to enable custom domain access.
