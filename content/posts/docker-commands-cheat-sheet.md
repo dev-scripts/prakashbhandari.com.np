@@ -121,7 +121,7 @@ docker restart <container-name/id>
 docker rm <container-name/id>
 ```
 
-# Docker Volume Commands
+# Docker Volume Management Commands
 1. Create a named volume
 
 ``` dockerfile
@@ -145,7 +145,7 @@ docker volume ls
 docker volume rm <volume-name>
 ```
 
-# Docker Network Commands
+# Docker Network Management Commands
 
 1. Create a user-defined network
 ```
@@ -172,7 +172,7 @@ docker network disconnect <network-name> <container-name/id>
 ```
 docker network prune
 ```
-# Docker Image Commands
+# Docker Image Management Commands
 
 1. Build a Docker image from a Dockerfile
 ```
@@ -201,7 +201,7 @@ docker exec -it <container-name/id> /bin/bash
 docker stats <container-name/id>
 ```
 
-# Cleanup commands
+# Cleanup Commands
 1. Remove all stopped containers, unused networks, and images
 ```
 docker system prune
@@ -224,7 +224,7 @@ docker network prune
 ```
 
 # Docker Registry/Hub Commands
-1. Log in to a Docker registry/Docker Hub.
+1. Log in to a Docker registry.
 ```
 docker login
 ```
@@ -236,6 +236,16 @@ docker push <image-name>
 ```
 docker pull <image-name>
 ```
+4. Search an image of official registry
+```
+docker search <search-text>
+```
+
+5. Logout from a Docker registry
+```
+docker logout
+```
+
 # Docker Composer Commands
 1. Start services defined in a `docker-compose.yaml` file
 ```
