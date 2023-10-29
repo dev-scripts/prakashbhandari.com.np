@@ -164,6 +164,14 @@ docker network connect <network-name> <container-name/id>
 ```
 docker network disconnect <network-name> <container-name/id>
 ```
+4. Disconnect a container from a network
+```
+docker network disconnect <network-name> <container-name/id>
+```
+5.  Remove all unused networks (docket network does not take andy disk space)
+```
+docker network prune
+```
 # Docker Image Commands
 
 1. Build a Docker image from a Dockerfile
@@ -209,6 +217,10 @@ docker image prune
 4. Remove all unused volumes
 ```
 docker volume prune
+```
+5.  Remove all unused networks (docket network does not take andy disk space)
+```
+docker network prune
 ```
 
 # Docker Registry/Hub Commands
