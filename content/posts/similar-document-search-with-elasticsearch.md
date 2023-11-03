@@ -17,7 +17,18 @@ keywords: [
   "Elasticsearch More Like This query",
   "How to create elasticsearch index",
   "content-based recommendation systems",
-  ""
+  "Elasticsearch document searches",
+  "Similar document searches",
+  "Content similarity",
+  "'more_like_this' query",
+  "Min_term_freq",
+  "Max_query_terms",
+  "Min_doc_freq",
+  "Fine-tuning similarity search",
+  "Content similarity in Elasticsearch",
+  "Elasticsearch content recommendation",
+  "Elasticsearch product recommendation",
+  "Elasticsearch news article recommendation",
 ]
 cover:
   image: "images/posts/similar-document-search-with-elasticsearch/elastic-search.webp" 
