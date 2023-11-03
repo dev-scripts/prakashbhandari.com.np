@@ -15,7 +15,7 @@ keywords: [
   "Similar Document Search With Elasticsearch",
   "k-nearest neighbor (kNN) search",
   "Elasticsearch More Like This query",
-  "How to create elasticsearch index",
+  "How to create Elasticsearch index",
   "content-based recommendation systems",
   "Elasticsearch document searches",
   "Similar document searches",
@@ -57,8 +57,8 @@ instead, I will clone the project from GitHub, which I have already created.
 
 You can also clone it from my GitHub public repo. [dockerize-elasticsearch](https://github.com/dev-scripts/dockerize-elasticsearch)
 
-Or you can just use the below `docker-compose.yml` file to run elasticsearch and kibana locally
-```dockerfile
+Or you can just use the below `docker-compose.yml` file to run Elasticsearch and kibana locally
+```
 version: '3.7'
 services:
   elasticsearch:
@@ -99,7 +99,6 @@ Once your Elasticsearch and Kibana project is up you can browse Kibana via `http
 
 **Kibana** is an open source analytics and visualization platform designed to work with Elasticsearch.
 
-
 # Similar Document Search With Elasticsearch
 In this post, I will focus on content similarity with an example in Elasticsearch.
 
@@ -125,27 +124,23 @@ from an input.
 
 It works from a new query built from the relevant terms present in the input.
 
-
 In this post, I will be focusing on *More-like-this query*. I will write new blog post for *k-nearest neighbor (kNN) search*
-
 
 You can find the full Elasticsearch documentation at [elastic.co](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)
 for input parameters, term selection parameters, and query formation parameters. I will not delve into the details of these aspects.
 
-In this post, I will demonstrate product reviews for Apple and recommend similar reviews.
+In this post, I will demonstrate recommend similar reviews for Apple products.
 
-For this demo I will use `like` Document Input Parameters and 
+For this demo, I will use `like` Document Input Parameters and 
 `min_term_freq`, `max_query_terms`, and  `min_doc_freq` Term Selection Parameters.
 
 **min_term_freq:** This sets the minimum term frequency, below which terms will be ignored from the input document. 
 In our case, `min_term_freq` is set to `2`, indicating that the main document must have a term occurring two or more times.
 
 
-
 **max_query_terms:** This  defines the maximum number of query terms that will be included in the generated query. 
 It imposes a limit on the number of terms in the query. 
 In our case, max_query_terms is set to **12**, which means that if a documents contains more than **12** terms, it will not be considered related document and ignored.
-
 
 **min_doc_freq:** This specifies the minimum document frequency that a term must have to be considered when generating a query. 
 Document frequency refers to the number of documents in which a term appears. 
@@ -187,10 +182,9 @@ Once index is successfully created, you will be able to see 200 response code wi
 Result of create index is attached blow.
 ![Create elasticsearch index](/images/posts/similar-document-search-with-elasticsearch/create-index.png#center)
 
-
 ### Store date in Field
-We have already created the index with `review` field. Now in the `apple-review-index` we have `review` field.
-In `apple-review-index`  I will be storing below 7 reviews.
+We have already created the index with `review` field. Now, in `apple-review-index` Elasticsearch index, we have `review` text field.
+In `apple-review-index` I will be storing below 7 reviews.
 
 ```
 "Love apple AirPods, the sound and quality are amazing as always with Apple"
@@ -201,7 +195,7 @@ In `apple-review-index`  I will be storing below 7 reviews.
 "Products are expensive "
 "Nice packaging."
 ```
-Let's store all the reviews one by one.
+Let's store all the reviews one by one in the Elasticsearch index
 
 ```
 POST /apple-review-index/_doc
@@ -209,7 +203,7 @@ POST /apple-review-index/_doc
     "review" : "Love apple AirPods, the sound and quality are amazing as always with Apple"
 }
 ```
-Once record  is successfully created in the index, you will be able to see 200 response code with below response
+Once record is successfully created in the index, you will be able to see 200 response code with below response.
 ```
 {
   "_index": "apple-review-index",
@@ -225,10 +219,10 @@ Once record  is successfully created in the index, you will be able to see 200 r
   "_primary_term": 1
 }
 ```
-The create index screenshot is attached below.
+Create index by using Kibana UI to the Elasticsearch screenshot is attached below.
 ![Create elasticsearch index](/images/posts/similar-document-search-with-elasticsearch/insert.png#center)
 
-### Retrieve all the data form index
+### Retrieve all the data from index
 
 We have already inserted all 7 reviews in the `apple-review-index`. 
 Let's retrieve all of them to confirm whether all the reviews are in the Elasticsearch index.
@@ -241,7 +235,7 @@ GET /apple-review-index/_search
   }
 }
 ```
-You will see response like below. 
+You will see the response below. 
 Where you will be able to see all the reviews that we have created before.
 ```
 {
@@ -321,17 +315,17 @@ Where you will be able to see all the reviews that we have created before.
 }
 ```
 
-The search results in the index screenshot is attached below.
+The search result in the index screenshot is attached below.
 
 ![Search](/images/posts/similar-document-search-with-elasticsearch/search.png#center)
 
 ### Apply more_like_this Query
-Certainly, let's proceed with finding similar reviews in the `apple-review-index` by applying a "more_like_this" query.
+Certainly, let's proceed with finding similar reviews in `apple-review-index` by applying a "more_like_this" query.
 To do this, you'll need to provide the actual review content that you want to use as a source for finding similar reviews. 
 
 Let's create a query for Elasticsearch using the "more_like_this" query. Here are the details:
 
-1. **Actual review content:**  "Love apple AirPods, the sound and quality are amazing as always with Apple"
+1. **Actual review content:**  "Love Apple AirPods, the sound and quality are amazing as always with Apple"
 2. **min_term_freq** : 2 (indicating that a term in the actual review content must occur two or more times)
 3. **max_query_terms** : 12 (indicating that a term in the actual review content must not occur more than 12 times)
 4. **max_doc_freq**: 5 (indicating that a term should appear in a maximum of 5 reviews)
@@ -427,7 +421,7 @@ Let's see the response
 
 In the above search response, we have observed only five hits, which is as expected. :)
 
-The search results for similar reviews from the index screenshot is attached below.
+The search result for similar reviews from the index screenshot is attached below.
 
 ![More like this Search](/images/posts/similar-document-search-with-elasticsearch/more-like-this.png#center)
 
