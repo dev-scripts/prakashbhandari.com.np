@@ -54,7 +54,7 @@ params:
     iconHeight: 35
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title:   > 
       👋 I’m Prakash,
     subtitle: > 
@@ -86,9 +86,17 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: " \U0001F44B  I'm Prakash Bhandari, "
-    Content: I have 10+ years of professional experience in software engineering space.
-
+    Title: " \U0001F44B  I'm Prakash, "
+    Content:  >
+        I am a Software Engineer with a passion for lifelong learning, problem-solving, and always improving oneself 📚
+         >
+        I help caring software crafters achieve technical excellence by using the best software engineering practices.
+         >
+        I have a solid background in using language-agnostic engineering practices such as Extreme Programming, peer programming, domain driven design and clean code. 
+         >
+        Over the last decade, I successfully applied these practices in many kinds of industries such as E-commerce, logistics, warehousing systems, ICT Projects, content sharing etc. 💪
+         >
+        Beyond software engineering, I love reading books, and travelling. And occasionally writing the blog posts 😊.
   socialIcons:
     - name: github
       url: "https://github.com/dev-scripts"
