@@ -17,7 +17,7 @@ keywords: [
   "Dockerize Node.js app with Elasticsearch",
   "Kibana log visualization Node.js",
   "Node.js logging tutorial with Docker", 
-  "Elasticsearch Kibana integration with Node.js",
+  "Elasticsearch and Kibana integration with Node.js",
   "Real-world logging setup Node.js Elasticsearch", 
   "Monitor Node.js app logs Kibana", 
   "Set up Elasticsearch and Kibana for Node.js", 
@@ -34,9 +34,21 @@ author: "Prakash Bhandari"
 description: "Logging and monitoring play a very important role in software development. They help to identify bugs and understand the application's health."
 ---
 
-Logging and monitoring play a very important role in software development. It helps to debug and understand the application's health.
+Logging play a very important role in software development. It helps monitoring, troubleshooting, debugging, event tracing, request tracing, security, and also can be used by Business Intelligence(BI) for reporting purpose.
 
-Logging and monitoring has numerous benefits, in this blog post, we will focus on building a real-world example to store application logs in Elasticsearch via a Node.js app  by using the Winston js library and visualize them using Kibana. Additionally, we will dockerize the entire application.
+Logging has numerous benefits. But in this blog post, we will focus on building a real-world example to store application logs in Elasticsearch via a Node.js app  by using the Winston NPM package and visualize them using Kibana. Additionally, we will dockerize the entire application.
+
+Let me briefly describe what is Node Js, Elasticsearch and Kibina.
+
+## Node Js
+Node.js an asynchronous event-driven JavaScript runtime, which is designed to build scalable network applications.
+
+## Elasticsearch
+Elasticsearch is a distributed, RESTful search and analytics engine which can be used for many purpose. It can centrally stores all your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. In this post we are using elasticsearch to store applocation's logs.
+
+## Kibina
+Run data analytics at speed and scale for observability, security, and search with Kibana. Powerful analysis on any data from any source, from threat intelligence to search analytics, logs to application monitoring, and much more.
+In this post we are using the visulize and search the applaction's logs.
 
 # Prerequisite 
 Following tools need to be installed in your machine.
@@ -44,7 +56,13 @@ Following tools need to be installed in your machine.
 2. Node
 
 # Create a Node.js App and install required packages
-Here are the steps to create a node.js app
+You many already know how to create node app. But I will guide you to bootstrap basic node app. 
+
+I will show you the project structure that I have set up locally. Here is the screenshot: 
+
+![project structure](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/project-structure.png#center)
+
+Here are the steps to create a node.js app.
 
 Create a new folder and run below command to initiate the node.js app. 
 ```
@@ -89,7 +107,7 @@ Now, you can browse at `http://localhost:8000/` leter on the port number will be
 
 # Dockerize the App
 
-To Dockerize the first step is to create `Dockerfile` with belwo defination.
+I am not going to explain how Docker works. I assume that you are familiar with Docker, and will directly jump into the implementation. To Dockerize the the application, first step is to create `Dockerfile` with belwo defination. I am placing all the files in the root of the project.
 
 ```js
 FROM node:20
@@ -129,7 +147,7 @@ networks:
  Above command will take few minute to build the docker image and run the container. Once, docker container is up and running the app can be browsed at port number `3002` (`http://localhost:8000/` ) because internal docker port `8000` is bind to external host machine `3002` port number.
 
  # Add Elasticsearch image to the `docker-compose.yml` file
- Add below configuration to the `docker-compose.yml` file so that when you run the `docker compose up` command it will pull image form docker hub and buld elasticsearch container.
+ Add below configuration to the `docker-compose.yml` file so that when you run the `docker compose up` command it will pull image form docker hub and build elasticsearch container in your machine within same network where node app container is running.
 ```js
 elasticsearch:
     image: 'docker.elastic.co/elasticsearch/elasticsearch:8.10.2'
@@ -150,7 +168,7 @@ elasticsearch:
 Elasticsearch container will be running at port number `9300` of host machine. You can browse at `http://localhost:9300/` 
 
 # Kibina image to the `docker-compose.yml` file
-Add the following configuration to the `docker-compose.yml` file so that when you run the `docker compose up` command, it will pull the image from Docker Hub and build the Kibana container. Kibana is the tool used to visualize logs and interface to the Elasticsearch.
+Add the following configuration to the `docker-compose.yml` file so that when you run the `docker compose up` command, it will pull the image from Docker Hub and build the Kibana container in your machine within same network where node app container and elasticsearch containers are running
 ```js 
 kibana:
     image: 'docker.elastic.co/kibana/kibana:8.10.2'
@@ -164,7 +182,7 @@ kibana:
       - elasticsearch-kibana-node-js-logging
 ```
 
-kibana container will be running at port number `5701` of host machine. You can browse at `http://localhost:5701/` 
+Kibana container will be running at port number `5701` of host machine. You can browse at `http://localhost:5701/` 
 
 Here is the full `docker-compose.yml` file.
 
@@ -220,6 +238,10 @@ npm i winston --save
 npm i winston-elasticsearch --save
 ```
 
+[winston]( https://www.npmjs.com/package/winston) is designed to be a simple and universal logging library with support for multiple transports. A transport is essentially a storage device for your logs. Each winston logger can have multiple transports. 
+
+[winston-elasticsearch](https://www.npmjs.com/package/winston-elasticsearch) is an elasticsearch transport for the winston logging toolkit.
+
 After that, here is how you need to create a new logger object. You can crete logger object in the `index.js` file or you can create new file so that you can import it into `index.js` file. I am createing new `logger.js` file with belwo configuration.
 ```js
 const winston = require('winston');
@@ -259,7 +281,7 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = logger;
 ```
 
-You need to keep few things in mind whicke creating the logger object.
+You need to keep few things in mind while creating the logger object.
 
 **index** :  is the index name where you will be storing all the logs that are sent form node app.
 
@@ -285,6 +307,7 @@ app.listen(8000, function () {
 ```
 
 Now finally you can run the belwo command 
+
 ```
 docker compose up
 ```
@@ -292,9 +315,6 @@ docker compose up
  Above command will take few minute to build the docker images and run the containers. Once, docker containers are up and running, following containers endpoint should be accessable via browser.
  
 1. Node App URL: `http://localhost:3002/`
-
-
-
 ![Node App](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/app.png#center)
 2. Elasticsearch: `http://localhost:9300/`
 ![Elasticsearch](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/elasticsearch.png#center)
