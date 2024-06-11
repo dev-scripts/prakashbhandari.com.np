@@ -35,7 +35,7 @@ keywords: [
 cover:
     image: "images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/implementing-logging-using-node-js-elasticsearch-kibina-and-docker.svg" # image path/url
     alt: "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker"
-   
+    caption: "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker"
     relative: false
 author: "Prakash Bhandari"
 description: "Logging and monitoring play a very important role in software development. They help to identify bugs and understand the application's health."
