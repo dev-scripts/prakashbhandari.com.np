@@ -1,5 +1,5 @@
 ---
-title: "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker"
+title: "Implementing Logging Using Node.Js, Elasticsearch, Kibana and Docker"
 date: 2024-06-10T16:23:03+10:00
 showToc: true
 TocOpen: true
@@ -30,12 +30,11 @@ keywords: [
   "Node.js logging and Elastic stack integration",
   "Application Logging and its importance",
   "Store Logs on Elasticsearch using Winston and Nodejs: Elasticsearch, Kibana",
-  "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker",
+  "Implementing Logging Using Node.Js, Elasticsearch, Kibana and Docker",
 ]
 cover:
-    image: "images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/implementing-logging-using-node-js-elasticsearch-kibina-and-docker.svg" # image path/url
-    alt: "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker"
-    caption: "Implementing Logging Using Node.Js, Elasticsearch, Kibina and Docker"
+    image: "images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/implementing-logging-using-node-js-elasticsearch-kibana-and-docker.svg" # image path/url
+    alt: "Implementing Logging Using Node.Js, Elasticsearch, Kibana and Docker"
     relative: false
 author: "Prakash Bhandari"
 description: "Logging and monitoring play a very important role in software development. They help to identify bugs and understand the application's health."
@@ -58,7 +57,7 @@ You many already know how to create node app. But I will guide you to bootstrap 
 
 I will show you the project structure that I have set up locally. Here is the screenshot of the project structure: 
 
-![project structure](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/project-structure.png#center)
+![project structure](/images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/project-structure.png#center)
 
 Here are the steps to create a Node.js app.
 
@@ -104,7 +103,7 @@ app.listen(8000, function () {
 Now, you can browse at `http://localhost:8000/` leter on the port number will be different once we dockrize the app.
 
 # Dockerize the App
-Docker is an open source tool that combines your application with all the necessary dependencies and libraries as one portable package (docker image). That package can be shared to any one and run by anyone without much worrying about the operating system. In this post we are using Docker to combines node app, Elasticsearch, and Kibina. 
+Docker is an open source tool that combines your application with all the necessary dependencies and libraries as one portable package (docker image). That package can be shared to any one and run by anyone without much worrying about the operating system. In this post we are using Docker to combines node app, Elasticsearch, and Kibana. 
 
 In this post, I am not going to explain how Docker works. I assume that you are familiar with Docker, and will directly jump into the implementation. To Dockerize the the application, first step is to create `Dockerfile` with belwo defination. I am placing all the files in the root of the project.
 
@@ -169,16 +168,16 @@ elasticsearch:
 ```
 Elasticsearch container will be running at port number `9300` of host machine. You can browse at `http://localhost:9300/` 
 
-# Setting up Kibina
+# Setting up Kibana
 Run data analytics at speed and scale for observability, security, and search with Kibana. Powerful analysis on any data from any source, from threat intelligence to search analytics, logs to application monitoring, and much more.
 In this post we are using the visulize and search the applaction's logs.
 
-Add the following configuration to the `docker-compose.yml` file to setup the Kibina in the project. So, that when you run the `docker compose up` command, it will pull the image from Docker Hub and build the Kibana container in your machine within same network where node app container and elasticsearch containers are running.
+Add the following configuration to the `docker-compose.yml` file to setup the Kibana in the project. So, that when you run the `docker compose up` command, it will pull the image from Docker Hub and build the Kibana container in your machine within same network where node app container and elasticsearch containers are running.
 
 ```js 
 kibana:
     image: 'docker.elastic.co/kibana/kibana:8.10.2'
-    container_name: kibina-logging
+    container_name: kibana-logging
     environment:
       - 'ELASTICSEARCH_HOSTS=http://elasticsearch:9200'
       - 'XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=d1a66dfd-c4d3-4a0a-8290-2abcb83ab3aa'
@@ -212,7 +211,7 @@ services:
       - elasticsearch-kibana-node-js-logging
   kibana:
     image: 'docker.elastic.co/kibana/kibana:8.10.2'
-    container_name: kibina-logging
+    container_name: kibana-logging
     environment:
       - 'ELASTICSEARCH_HOSTS=http://elasticsearch:9200'
       - 'XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=d1a66dfd-c4d3-4a0a-8290-2abcb83ab3aa'
@@ -321,17 +320,17 @@ docker compose up
  Above command will take few minutes to build the docker images and run the containers. Once, docker containers are up and running, following containers endpoint should be accessable via browser.
  
 1. Node App URL: `http://localhost:3002/`
-![Node App](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/app.png#center)
+![Node App](/images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/app.png#center)
 2. Elasticsearch: `http://localhost:9300/`
-![Elasticsearch](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/elasticsearch.png#center)
-3. Kibina: `http://localhost:5701/`
-![Kibina](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/kibina.png#center)
+![Elasticsearch](/images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/elasticsearch.png#center)
+3. Kibana: `http://localhost:5701/`
+![Kibana](/images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/kibana.png#center)
 
 
-# Visulize the logs in Kibina
-You can do many things in the Kibina. But, here we will be only visulizing the logs that are sent form node app.
-Open Kibina URL `http://localhost:5701/` and go to discover from left menu. Here you can visulize the logs that are sent form the node app and stored in the elastic search.
-![Kibina Logs](/images/posts/implementing-logging-using-node-js-elasticsearch-kibina-and-docker/kibina-logs.png#center)
+# Visulize the logs in Kibana
+You can do many things in the Kibana. But, here we will be only visulizing the logs that are sent form node app.
+Open Kibana URL `http://localhost:5701/` and go to discover from left menu. Here you can visulize the logs that are sent form the node app and stored in the elastic search.
+![Kibana Logs](/images/posts/implementing-logging-using-node-js-elasticsearch-kibana-and-docker/kibana-logs.png#center)
 
 In above image we can see the log message that are sent form node js app inside the red circle.
 
@@ -343,4 +342,4 @@ This post covers setting up the development environment, creating a Node.js app,
 
 The post serves as a concise resource for developers aiming to implement robust logging solutions in their Node.js applications.
 
-You can access the full working example at Github Repository : https://github.com/dev-scripts/implementing-logging-using-nodejs-elasticsearch-kibina-and-docker
+You can access the full working example at Github Repository : https://github.com/dev-scripts/implementing-logging-using-nodejs-elasticsearch-kibana-and-docker
