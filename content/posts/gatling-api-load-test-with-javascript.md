@@ -61,6 +61,14 @@ People may say that if your application is running in the cloud, you don’t nee
  Load testing is the non-functional software testing technique which determines the stability, speed, scalability, and responsiveness of an application under a specified workload.
 
 Load testing involves simulating the production environment with virtual users to identify bottlenecks in the application, analyze response times, and determine the appropriate infrastructure size for a given workload.
+## Types of Load test
+There are three types of load tests:
+### Capacity Test 
+This kind of test is generally used to identify the maximum capacity of your application and how it scales. Keep increasing the number of users per second to find application's breaking point.
+### Stress Test 
+Identify how the application behaves after sudden load peaks. Does it completely crash, return to normal, or experience latency?
+### Soak test 
+In a soak test, you will run a high or steady load for a long time and observe how the application behaves. This kind of test helps you identify memory leaks, resource leaks, or degradation that could happen over time.
 
 # Gatling
 
