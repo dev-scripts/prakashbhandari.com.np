@@ -1,7 +1,7 @@
 baseURL: "https://www.prakashbhandari.com.np"
 title: Prakash's Blog 👨‍💻
 paginate: 10
-theme: PaperMod
+theme: hugo-PaperMod
 
 enableRobotsTXT: false
 buildDrafts: false
