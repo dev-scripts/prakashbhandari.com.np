@@ -18,17 +18,17 @@ keywords: [
   "Gatling API Load Test With JavaScript",
   "Load Testing", 
   "Gatling Load Test",
+  "Gatling Load Test using Scala",
+  "Gatling Load Test using Java",
   "JavaScript API Load Testing", 
   "Performance Testing for Applications", 
-   "Scalability Testing",
-   "Application Stability Testing", 
+  "Scalability Testing",
+  "Application Stability Testing", 
   "Production Environment Testing", 
-    "Gatling Installation Guide", 
-    "Gatling Project Setup", 
-    "Virtual Users in Gatling", 
-    "Handling Seasonal Peaks in Applications",
-      "Cloud Application Performance Issues", 
-      "API Response Time Analysis"
+  "Gatling Installation Guide", 
+  "Gatling Project Setup", 
+  "Cloud Application Performance Test", 
+  "API Response Time Analysis",
 ]
 cover:
     image: "images/posts/gatling-api-load-test-with-javascript/gatling-api-load-test-with-javascript.svg" # image path/url
@@ -72,8 +72,13 @@ In a soak test, you will run a high or steady load for a long time and observe h
 
 # Gatling
 
-Gatling is a highly flexible load-testing platform. You can write load tests in Java, Kotlin, Scala and, JavaScript|TypeScript or use no-code feature with Gatling Enterprise. JavaScript Gatling load-testing is only avilabe form Gatling version 3.11.3.
+Gatling is a highly flexible load-testing platform. You can write load tests in Java, Kotlin, Scala and, JavaScript/TypeScript or use no-code feature with Gatling Enterprise. JavaScript Gatling load-testing is only avilabe form Gatling version 3.11.3.
 
+Java, Kotlin, and Scala are very popular languages for Gatling scripting, but I chose JavaScript because it is one of the most popular languages among developers.
+
+
+## Why Gatling?
+People may ask why not JMeter and why Gatling? Both have their own advantages and disadvantages. For me, it's a personal choice, and the simple answer is that I am a developer and I like to Load-Test-As-Code, which is only possible in Gatling. You must have skills in Scala, Kotlin, Java, or JavaScript/TypeScript.
 
 ## Prerequisites
 - Node.js v18 or later (LTS versions only) and npm v8 or later.
@@ -143,7 +148,7 @@ import { http } from "@gatling.io/http";
 The simulation function takes the setUp function as an argument, which is used to write a script. To add the simulation function, after the import statements, add:
 ```js
 export default simulation((setUp) => {
-
+ // Add the HttpProtocolBuilder here
 });
 ```
 ### Configuring the Protocol
@@ -155,8 +160,8 @@ Here, I am hardcoing `baseUrl` value to `http://localhost:8000` which is the end
 
 ```js
 export default simulation((setUp) => {
-  // Add the HttpProtocolBuilder:
  const httpProtocol = http
+      //Write the scenario here 
       .baseUrl("http://localhost:8000")
       .acceptHeader("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
       .acceptLanguageHeader("en-US,en;q=0.5")
@@ -212,6 +217,8 @@ const feeder = csv("users.csv").random();
       .exec(getAccessToken)
       .pause(1)
     );
+
+     //Define the injection profile here.
 });
 ```
 ### Define the injection profile
@@ -220,8 +227,8 @@ The final step of a Gatling simulation is the injection profile. setUp function 
 
 ```js
 export default simulation((setUp) => {
-    const feeder = csv("users.csv").random();
-  
+    const feeder = csv("users.csv").random(); // load data form users.csv in random order
+
     const login = exec(
       feed(feeder),
       http("Login")
