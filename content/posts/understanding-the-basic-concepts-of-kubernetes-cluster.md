@@ -38,8 +38,8 @@ description: "As a beginner, understanding a Kubernetes (k8s) cluster might be a
 In this blog post, I will try to simplify the basic concepts  and components of a Kubernetes (k8s) cluster."
 ---
 
-As a beginner, understanding a Kubernetes (k8s) cluster might be a little bit complicated. 
-In this blog post, I will try to simplify the basic concepts  and components of a Kubernetes (k8s) cluster.
+Learning any new tool and technology starts withAs a beginner, understanding a Kubernetes (k8s) cluster might be a little bit complicated. If you go through the k8s official documentation its overwhelming 
+In this blog post, I will try to simplify the basic concepts and components of a Kubernetes (k8s) cluster. I will be covering the theoretical 
 
 # What is a Kubernetes Cluster?
 The simplest definition of a Kubernetes(k8s) cluster is a set of nodes that run containerized applications. Kubernetes cluster has two types on nodes
@@ -48,9 +48,9 @@ The simplest definition of a Kubernetes(k8s) cluster is a set of nodes that run 
    
 A cluster can be simple, with one master node and one worker node, or it can be complex, with many master nodes and many worker nodes.
 
-I have presented a Kubernetes cluster architecture diagram, this diagram presented a Kubernetes cluster architecture with two master nodes
-and four worker nodes. Each node is running four pods. Some pods are running one container
-inside, while others are running more than two containers inside the pod.
+I have presented a Kubernetes cluster architecture diagram, this diagram presented a Kubernetes cluster architecture with one master nodes
+and two worker nodes. Each node is running two pods. One pods is running one container
+inside, while another one is running more two containers inside the pod.
 
 ![Kubernetes Cluster Architecture](/images/posts/understanding-the-basic-concepts-of-kubernetes-cluster/understanding-the-basic-concepts-of-kubernetes-cluster.png#center)
 
@@ -75,9 +75,9 @@ The scheduler will select the worker node with 30% CPU utilization to run the ne
 t detects changes in the cluster state and tries to restore it as soon as possible. 
 For example, if a pod dies, it will detect the state change by reading the information stored in etcd and create a new pod as soon as possible.
 #### etcd
-etcd is the key-value store for the cluster state, often referred to as the cluster's brain. 
-It stores the configuration information of the Kubernetes cluster and records changes in the cluster, 
-such as which pods are scheduled and which pods die.
+
+etcd is the key-value store for cluster information such as its current state, desired state, configuration of resources, and runtime data, often referred to as the cluster's brain. 
+Kubernetes interacts with etcd through its API server.
 
 ## Worker/Slave Node
 A worker node, also known as a slave node, is the machine where applications run or where application pods run. 
