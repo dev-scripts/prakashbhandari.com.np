@@ -50,7 +50,7 @@ In this blog post, I will try to simplify the basic concepts and common componen
 # What is a Kubernetes Cluster?
 The simplest definition of a Kubernetes(k8s) cluster is a set of nodes that run containerized applications. Kubernetes cluster has two types on nodes
 1. Master Node
-2. Worker/Slave Node
+2. Worker Node
    
 A cluster can be simple, with one master node and one worker node, or it can be complex, with many master nodes and many worker nodes.
 
