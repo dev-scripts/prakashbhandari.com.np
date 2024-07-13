@@ -69,11 +69,17 @@ For example, if one worker node fails, the master node moves the workload to ano
 
 And also master node exposes the API to the developer or operator via cli tool (kubectl) or admin UI.
 
-At least one master node is required in a Kubernetes (k8s) cluster, but in reality, 
-there can be more than one master node for high availability and fault tolerance.
-In a nutshell, high availability and fault tolerance means the system or network which has minimum the downtime.
+At least one master node is required in a Kubernetes (k8s) cluster, but in practice,
+there can be more than one master node for high availability and fault tolerance. 
+In a nutshell, high availability and fault tolerance mean having a system or network with minimal downtime.
 
-It is always suggested to add redundancy to the master node. If one master node goes down another will automatically come up.
+It is always recommended to add redundancy to the master node. 
+If one master node goes down, another will automatically take over.
+
+The architecture of the high availability and fault tolerance kubernetes cluster can be like below diagram.
+
+![The architecture of the high availability and fault tolerance Kubernetes cluster](/images/posts/understanding-the-basic-concepts-of-kubernetes-cluster/architecture-of-the-high-availability-and-fault-tolerance-kubernetes-cluster.png#center)
+
 
 ### Master Components
 When you install Kubernetes, the four components will be installed on the master node to manage and run the worker nodes.
