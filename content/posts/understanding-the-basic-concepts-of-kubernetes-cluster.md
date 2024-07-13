@@ -67,10 +67,13 @@ It maintains the overall state of the cluster, coordinating tasks such as schedu
 
 For example, if one worker node fails, the master node moves the workload to another healthy worker node.
 
-And also master node exposes the API to the developer or operator via cli tool (kubectl) or UI.
+And also master node exposes the API to the developer or operator via cli tool (kubectl) or admin UI.
 
 At least one master node is required in a Kubernetes (k8s) cluster, but in reality, 
 there can be more than one master node for high availability and fault tolerance.
+In a nutshell, high availability and fault tolerance means the system or network which has minimum the downtime.
+
+It is always suggested to add redundancy to the master node. If one master node goes down another will automatically come up.
 
 ### Master Components
 When you install Kubernetes, the four components will be installed on the master node to manage and run the worker nodes.
