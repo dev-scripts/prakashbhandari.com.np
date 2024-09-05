@@ -8,6 +8,7 @@ tags : [
   "Software Development",
   "JavaScript",
   "Testing",
+  "Load Test",
 ]
 categories : [
   "Software Development",
