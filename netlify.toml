@@ -14,8 +14,8 @@ command = "npm install && hugo --minify --theme=hugo-PaperMod"
 [context.production.environment]
 HUGO_ENV = "production"
 
-#[context.deploy-preview]
-#command = "npm install && hugo --minify --theme=hugo-PaperMod -b=$DEPLOY_PRIME_URL"
+[context.deploy-preview]
+command = "npm install && hugo --minify --theme=hugo-PaperMod -b=$DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "/*"
