@@ -357,6 +357,7 @@ This suggests excellent performance, as all requests responded very quickly, wit
 > 800 ms <= t < 1200 ms      0 (0%)
 > t >= 1200 ms               0 (0%)
 > failed                     0 (0%)
+
 ```
 For same test if we had metric like below:
 ```
@@ -415,4 +416,5 @@ If 90th, 95th, and 99th percentile latency is less than 800 ms threshold for a
 given proportion of users, that means system is highly stable for 100 concurrent users over 10 seconds.
 
 Gatling load testing is an efficient way to ensure your application's stability, speed, and scalability 
-under real-world conditions. By simulating high traffic, analyzing response times, and monitoring percentile latency metrics, you can identify performance bottlenecks and optimize your system.
+under real-world conditions. By simulating high traffic, analyzing response times, and monitoring percentile latency metrics, you can identify 
+performance bottlenecks and optimize your system.
