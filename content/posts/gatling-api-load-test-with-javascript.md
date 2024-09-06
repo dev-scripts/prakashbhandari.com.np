@@ -335,13 +335,13 @@ Run following command to run the simulation/test
 ```js
 npx gatling run --simulation login
 ```
-When the test has finished you will see below result in the termainal.
+When the test has finished you will see below result in the terminal.
 
-![simulation output](/images/posts/gatling-api-load-test-with-javascript/simulation-output.png#center)
+![simulation output](/images/posts/gatling-api-load-test-with-javascript/simulation-output.png#center "Simulation Output")
 
 There is an HTML link in the terminal that you can use to access the static report via browser.
 
-![html report](/images/posts/gatling-api-load-test-with-javascript/html-report.png#center)
+![html report](/images/posts/gatling-api-load-test-with-javascript/html-report.png#center "Simulation Chart")
 
 Congrats! You have written your first Gatling simulation or API load test for 100 concurrent users over 10 seconds.
 
@@ -374,7 +374,11 @@ For same test if we had metric like below:
 
 **Failures:** 12.5% of the requests failed, which is a critical issue. The system has a noticeable failure rate, meaning every eighth request does not complete successfully. This needs immediate attention to ensure reliability and stability
 
+Response time distribution chart will be generated as below.
+![Response Time Distribution](/images/posts/gatling-api-load-test-with-javascript/response-time-distribution.png#center "Response Time Distribution")
 # Latency Percentiles Analysis
+
+![Latency Percentiles Analysis](/images/posts/gatling-api-load-test-with-javascript/response-time-percentiles-over-time.png#center "Latency Percentiles Analysis")
 
 In a load test, a percentile is a statistical measure that indicates the percentage of requests that are completed within a certain response time.
 It helps you understand how your system is performing for a given proportion of users. 
