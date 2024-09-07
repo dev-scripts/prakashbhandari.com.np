@@ -107,7 +107,7 @@ I am using VS code, my project sctuture is like below :
 
 ![project structure](/images/posts/gatling-api-load-test-with-javascript/app-structure.png#center)
 
-## Create a Login API Load Test Script
+## Create API Load Test Script
 
 - describing a scenario,
 - setting up the injection profile (virtual users profile).
@@ -347,7 +347,7 @@ Congrats! You have written your first Gatling simulation or API load test for 10
 
 Let's analysis the result.
 
-# Response Time Distribution Analysis
+### Response Time Distribution Analysis
 In above screenshot we can see below response time. Which means for all the request response time was less than 800 milliseconds.
 This suggests excellent performance, as all requests responded very quickly, within 800 ms. This shows that the system handles all requests efficiently.
 
@@ -377,7 +377,7 @@ For same test if we had metric like below:
 
 Response time distribution chart will be generated as below.
 ![Response Time Distribution](/images/posts/gatling-api-load-test-with-javascript/response-time-distribution.png#center "Response Time Distribution")
-# Latency Percentiles Analysis
+### Latency Percentiles Analysis
 
 ![Latency Percentiles Analysis](/images/posts/gatling-api-load-test-with-javascript/response-time-percentiles-over-time.png#center "Latency Percentiles Analysis")
 
