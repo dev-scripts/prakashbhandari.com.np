@@ -138,6 +138,8 @@ Old height of Mount Everest was read from `knowledge-base.txt` text file and new
 
 **Congratulations!** You have successfully learned how to use Large Multimodal Model (LMM) prompting with Google Gemini and Vertex AI
 
+One more thing: after completing the lab, don't forget to delete your project; otherwise, Google may charge you.
+
 In this post, we explored the capabilities of Large Multimodal Models (LMM) 
 and demonstrated how Google Gemini processes different data modalities to generate meaningful outputs. 
 By using text and image inputs, we saw how the model effectively interprets and 
