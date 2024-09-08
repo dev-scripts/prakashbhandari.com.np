@@ -128,17 +128,23 @@ The height of Mount Everest was 8,848 meters
 Let me try with only text prompt, what will be the output?
 ![Vertex AI studio](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/prompting-with-freeform-only-with-text-prompt.png#center "Vertex AI studio")
 
-Look at the response. Model did not find the information and output is `Please provide me with the text file and the image so I can read the information and tell you the old and new heights.`
+Look at the response. Model did not find the information that we asked for.
+
+**Output is:**
+> Please provide me with the text file and the image so I can read the information and tell you the old and new heights.
+
 
 Let's try with the files (`knowledge-base.txt` text file and `mount-everest.png` image file) and supply same prompt used before.
 ![prompting with freeform](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/prompting-with-freeform-only-with-files.png#center "prompting with freeform")
 
 Now, look at the output. 
 The model is reading both the `knowledge-base.txt` text file and the `mount-everest.png` image file, and is responding the correct result.
-Output is:
-**The old height of Mount Everest was 8,848 meters. The new height of Mount Everest is 8,849 meters.**
 
-Old height of Mount Everest was read from `knowledge-base.txt` text file and new height from the `mount-everest.png` image file.
+**Output is:**
+
+>The old height of Mount Everest was 8,848 meters. The new height of Mount Everest is 8,849 meters.
+
+Old height of Mount Everest was read from `knowledge-base.txt` text file and new height from the `mount-everest.png` image file, which is the expected output.
 
 **Congratulations!** You have successfully learned how to use Large Multimodal Model (LMM) prompting with Google Gemini and Vertex AI
 
