@@ -155,3 +155,7 @@ In this post, we explored the capabilities of Large Multimodal Models (LMM)
 and demonstrated how Google Gemini processes different data modalities to generate meaningful outputs. 
 By using text and image inputs, we saw how the model effectively interprets and 
 combines multimodal data to provide accurate results
+
+**Recorded YouTube video for the demonstration:**
+
+{{< youtube juHbhJzxZ6c >}}
