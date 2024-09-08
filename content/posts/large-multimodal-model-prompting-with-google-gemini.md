@@ -106,12 +106,13 @@ Once the Vertex API is enabled, your browser window will display the screen show
 
 Now let's go to the Vertex AI studio.
 
-Search for Vertex AI and click on Vertex AI.
+Search for Vertex AI and click on Vertex AI **(Red Box 12)**.
 ![Vertex AI studio](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/vertex-ai-studio-1.png#center "Vertex AI studio")
 Next step is to clink on `freeform` menu **(Red Box 13)**
 ![Vertex AI studio](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/prompting-with-freeform-1.png#center "Vertex AI studio")
 From the screen above, you can choose the LMM model **(Red Box 14)**, upload files **(Red Box 15)** and input prompts.
 
+#### Example
 I have below text prompt and multimodal inputs (a text file `knowledge-base.txt` and an image `mount-everest.png`).
 
 **Text prompt is :** 
