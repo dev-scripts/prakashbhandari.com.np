@@ -1,7 +1,6 @@
 ---
 title: "Large Multimodal Model(LMM) Prompting With Google Gemini and Vertex AI"
 date: 2024-09-07T17:26:54+10:00
-url: "/large-multimodal-model-prompting-with-google-gemini-vertex-ai/"
 showToc: true
 TocOpen: true
 tags : [
