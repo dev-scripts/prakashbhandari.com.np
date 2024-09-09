@@ -1,6 +1,7 @@
 ---
 title: "Large Multimodal Model(LMM) Prompting With Google Gemini and Vertex AI"
 date: 2024-09-07T17:26:54+10:00
+url: "/large-multimodal-model-prompting-with-google-gemini-vertex-ai/"
 showToc: true
 TocOpen: true
 tags : [
@@ -43,13 +44,6 @@ Vertex AI Studio and Vertex AI to showcase a simple example of using multimodal 
 A Large Multimodal Model (LMM) is an Artificial Intelligence (AI) model capable of processing and understanding multiple types of input data modalities simultaneously and providing outputs based on this information. 
 The input data can include a mix of audio, video, text, images, and even code.
 
-Multimodal means one or more of the following:
-1. Input and output are of different modalities (example: text-to-image, image-to-text, audio-to-text)
-2. Inputs are multimodal (example: can process both text and images)
-3. Outputs are multimodal (example: can generate both text and images)
-
-An LMM is an advanced form of AI, which can be considered a step toward Artificial General Intelligence (AGI).
-
 ## Data modalities of LMM
 ### Audio
 The model can understand sound, music, spoken language, and any other form of auditory inputs.
@@ -62,6 +56,31 @@ Text includes any form of content such as books, PDF files, text files, online n
 The model understands the textual context, processes it, and generates outputs.
 ### Code
 The model also takes programming language code as input.
+
+## Multimodal examples
+Multimodal means one or more of the following:
+
+### Input and output are of different modalities
+Can take one type of input modality and generate one type of modality output (example: text-to-image, image-to-text, audio-to-text). Here is the example diagram:
+![Input and output are of different modalities](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/input-and-output-are-of-different-modalities.png#center "Input and output are of different modalities")
+
+### Inputs are multimodal
+Can take more than one type of inputs and generate one type output. Here is the example diagram:
+![Inputs are multimodal](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/inputs-are-multimodal.png#center "Inputs are multimodal")
+In above, diagram we can see that LMM is taking three types of modalities (Audio, text and image) and generating one modality output (video)
+
+### Outputs are multimodal
+Can take one type of input and generate more than one output. Here is the example diagram:
+![Outputs are multimodal](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/outputs-are-multimodal.png#center "Outputs are multimodal")
+In above, diagram we can see that LMM is taking one type of modality (video) and generating three types of output (audio, text, and video)
+
+### Inputs and Outputs are multimodal
+Can take more than one of inputs and generate more than one output. Here is the example diagram:
+
+![Inputs and Outputs are multimodal](/images/posts/large-multimodal-model-prompting-with-google-gemini-and-vertex-ai/inputs-and-outputs-are-multimodal.png#center "Inputs and Outputs are multimodal")
+
+In above, diagram we can see that LMM is taking more than one types of modalities (audio, video, image, text and code) and generating more than one types of output modalities (audio, video, image, text and code)
+
 
 ## Large Multimodal Model(LMM) Prompting With Google Gemini
 I will show you the steps to use the Goolge Gemini multimodal.
