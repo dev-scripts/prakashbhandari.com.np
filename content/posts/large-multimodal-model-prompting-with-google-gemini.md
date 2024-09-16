@@ -4,13 +4,13 @@ date: 2024-09-07T17:26:54+10:00
 showToc: true
 TocOpen: true
 tags : [
-  "Large Multimodal Model",
+  "GCP",
   "LMM",
-  "Artificial Intelligence",
-  "AI",
+  "GenAI",
 ]
 categories : [
-  "Artificial Intelligence"
+  "Artificial Intelligence",
+  "GenAI"
 ]
 keywords: [
   "Large Multimodal Model Prompting With Google Gemini",
