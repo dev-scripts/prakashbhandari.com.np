@@ -14,7 +14,7 @@ tags : [
 categories : [
 "AI",
 "Artificial Intelligence",
-"GenAI"
+"GenAI",
 "NodeJS",
 "ReactJS"
 ]
