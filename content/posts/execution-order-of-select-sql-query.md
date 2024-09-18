@@ -17,11 +17,10 @@ author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: true
-draft: false
+draft: true
 hidemeta: false
 description: "Execution Order of SELECT SQL Query"
 #canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
