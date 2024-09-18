@@ -1,7 +1,7 @@
 ---
 title: "Absolutely Free Open Source Resume Builder Without Watermarks or Any Other Limitations"
 date: 2022-12-29T12:22:18+11:00
-draft: false
+draft: true
 showToc: true
 TocOpen: true
 tags : [
