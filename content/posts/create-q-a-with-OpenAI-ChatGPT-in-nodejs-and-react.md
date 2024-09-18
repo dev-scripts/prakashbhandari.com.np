@@ -8,9 +8,13 @@ tags : [
 "NodeJS",
 "ReactJS",
 "AI",
+"GenAI",
+"OpenAI"
 ]
 categories : [
 "AI",
+"Artificial Intelligence",
+"GenAI"
 "NodeJS",
 "ReactJS"
 ]
@@ -22,6 +26,8 @@ keywords: [
 "Integrate OpenAI",
 "Integrate ChatGPT",
 "Prakash Bhandari",
+"GenAI",
+"LLM",
 ]
 cover:
    image: "images/posts/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react/create-q-a-with-OpenAI-ChatGPT-in-nodejs-and-react.png" 
@@ -211,21 +217,6 @@ This article is also publish in Medium. Here is the link.
 
 https://medium.com/@thebhandariprakash/create-q-a-with-openai-nodejs-and-react-e812933d9cd5
 
-## Public Response to CatGPT 
-
-### Elon Musk's Reaction 
-{{< tweet user="elonmusk" id="1599128577068650498" >}}
-
-### Impact of ChatGPT in Health
-{{< tweet user="StuartBlitz" id="1602834224284897282" >}}
-
-### Impact of ChatGPT in Education
-{{< tweet user="DanielPink" id="1600611580567293954" >}}
-{{< tweet user="ericbahn" id="1598507949638373376" >}}
-###  Views of Chamath Palihapitiya, Jason Calacanis, David Sacks and David Friedberg 
-Why OpenAI's new ChatGPT will change the future of every industry?
-
-{{< youtube XuHfzVkZGBU >}}
 
 
 
