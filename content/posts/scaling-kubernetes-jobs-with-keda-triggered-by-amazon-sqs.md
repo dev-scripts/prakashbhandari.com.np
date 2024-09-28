@@ -75,6 +75,8 @@ might need to process thousands of files, and processing multiple files
 within a single deployment may not be efficient. 
 In this case, it is better to have an individual jobs to process each file separately.
 
+>In my professional life, I have used KEDA to scale Kubernetes jobs as an alternative to Amazon Web Services(AWS) Lambda functions for processing long-running jobs.
+
 ## Steps
 
 ### Install Minikube
