@@ -175,6 +175,8 @@ spec:
 
 Run command `kubectl apply -f file-sqs-processor.yaml`
 
+Docker image was build form the  code publish in my GitHub repository : https://github.com/dev-scripts/kada-sqs.
+
 ### Verify Scaled job
 Once you completed above steps run below command to see the scaled job
 ```
@@ -212,6 +214,7 @@ Number of successful and failed jobs can be defined in ScaledJob Manifest file i
 
 New jobs will be created until you purge the SQS or delete the jobs after processing them from the app.
 
+
 ## Conclusion
 Scaling Kubernetes jobs with KEDA provides an efficient way to handle event-driven workloads,
 such as processing messages from an Amazon SQS queue.
@@ -220,4 +223,9 @@ This solution is ideal for scenarios where long-running tasks need to be process
 
 In this post, I have used Minikube local K*S cluster for demonstration and explained the steps, 
 which can be easily replicated in a production Kubernetes cluster to handle large volumes of long-running tasks as a individual jobs.
+
+## GitHub Repository
+Here is the GitHub Repository you can build in your local to test.
+https://github.com/dev-scripts/kada-sqs
+
 
