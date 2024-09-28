@@ -64,11 +64,10 @@ Here is the architectural diagram for our workflow.
 
 KEDA stands for Kubernetes (k8s) Event-Driven Autoscaling.
 With KEDA, you can scale any deployment or jobs in Kubernetes according to the number of events
-that need processed.
+that need to be processed.
 
-KEDA is used in k8s to enable event-driven scaling of workloads, making it easier to scale 
-based on custom events such as messages in a queue (SQS, RabbitMQ, Apache Kafka, etc), changes in a database,
-or event triggered from an external system.
+Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks, such as processing files in real-time after an upload.
+Your application might need to process thousands of files, and processing multiple files within a single deployment may not be efficient. In this case, it is better to have an individual job to process each file separately.
 
 Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks, 
 such as processing files in real-time after an upload. Your application 
@@ -80,22 +79,20 @@ In this case, it is better to have an individual jobs to process each file separ
 
 ### Install Minikube
 I will use Minikube to run the job locally on my machine. 
-If you don't have Minikube in your machine, download and install [download and install](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download)
+If you don't have Minikube on your machine, download and install [download and install](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download)
 
 ### Install KEDA 
-Once your minikube is running install KEDA via below command.
+Once your minikube is running install KEDA via the below command.
 ```
 kubectl apply -f https://github.com/kedacore/keda/releases/download/v2.10.0/keda-2.10.0.yaml
 ```
 
 ### Create SQS queue and IAM User
-In AWS, you need to crete SQS queue, IAM User and attach the AmazonSQSFullAccess policy.
-
-Once you create a IAM user you will get `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-You need to keep it safe and used in your Secret.
+In AWS, you need to create an SQS queue, IAM User, and attach the `AmazonSQSFullAccess` policy.
+Once you create an IAM user you will get `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. You need to keep it safe and used in your Secret.
 
 ### Secret manifest
-There are three type of [Authentication Parameters](https://keda.sh/docs/2.14/scalers/aws-sqs/) in KEDA:
+There are three types of [Authentication Parameters](https://keda.sh/docs/2.14/scalers/aws-sqs/) in KEDA:
 1. Pod identity based authentication
 2. Role based authentication
 3. Credential based authentication
@@ -120,7 +117,7 @@ you can use the terminal to encode the keys in `base64` as shown below.
 echo -n "51cjNnhA9Y1NLQVBicJ6sx+1IH2RY63spiGJtk10" | base64 
 ```
 
-Run command to create the secrets `kubectl apply -f keda-aws-secrets.yaml`
+Run the command to create the secrets `kubectl apply -f keda-aws-secrets.yaml`
 
 ### KEDA TriggerAuthentication Manifest
 Need to  create a Kubernetes manifest file `keda-trigger-auth-aws-credentials.yaml` to define a KEDA `TriggerAuthentication` resource,
@@ -173,16 +170,16 @@ spec:
         queueLength: "5"  # Scale up when there are at least 5 messages
 ```
 
-Run command `kubectl apply -f file-sqs-processor.yaml`
+Run the command `kubectl apply -f file-sqs-processor.yaml`
 
-Docker image was build form the  code publish in my GitHub repository : https://github.com/dev-scripts/keda-sqs.
+Docker image was built from the code published in my GitHub repository: https://github.com/dev-scripts/keda-sqs.
 
 ### Verify Scaled job
-Once you completed above steps run below command to see the scaled job
+Once you completed the above steps run the below command to see the scaled job.
 ```
 kubectl get scaledjob 
 ```
-You will see result like this in the terminal: 
+The result will be like this in the console:
 ```yaml
 NAME                     MIN   MAX   TRIGGERS        AUTHENTICATION                      READY   ACTIVE   AGE
 keda-sqs-processor-job   0     50    aws-sqs-queue   keda-trigger-auth-aws-credentials   True    True     15m
@@ -207,25 +204,27 @@ keda-sqs-processor-job-ft4jw   1/1           6s         41s
 keda-sqs-processor-job-nz56t   1/1           5s         11s
 keda-sqs-processor-job-qffk4   1/1           8s         41s
 ```
-If you have any GUI tool, you can also view it under Pods. 
-I can see it in Lens, as shown in the image below. Here you will see running jobs, failed jobs and successful jobs.
-Number of successful and failed jobs can be defined in ScaledJob Manifest file ie. `successfulJobsHistoryLimit: 5` `failedJobsHistoryLimit: 5`
+If you have any GUI tool, you can also view it under Pods. I can see it in Lens, as shown in the image below. Here you will see running jobs, failed jobs, and successful jobs.
+The number of successful and failed jobs can be defined in the ScaledJob Manifest file ie. `successfulJobsHistoryLimit: 5` `failedJobsHistoryLimit: 5`
 ![Publish Message from SQS](/images/posts/scaling-kubernetes-jobs-with-keda-triggered-by-amazon-sqs/keda-scaled-jobs.png#center)
 
 New jobs will be created until you purge the SQS or delete the jobs after processing them from the app.
 
 
 ## Conclusion
-Scaling Kubernetes jobs with KEDA provides an efficient way to handle event-driven workloads,
-such as processing messages from an Amazon SQS queue.
-By using  Kubernetes KEDA, you can dynamically scale jobs based on the number of incoming messages.
-This solution is ideal for scenarios where long-running tasks need to be processed individually. 
+Scaling Kubernetes jobs with KEDA provides an efficient way to handle event-driven 
+workloads, such as processing messages from an Amazon SQS queue.
+By using Kubernetes KEDA, you can dynamically scale jobs based on the number 
+of incoming messages. This solution is ideal for scenarios where long-running 
+tasks need to be processed individually.
 
-In this post, I have used Minikube local K*S cluster for demonstration and explained the steps, 
-which can be easily replicated in a production Kubernetes cluster to handle large volumes of long-running tasks as a individual jobs.
+In this post, I have used the Minikube local K*S cluster for
+demonstration and explained the steps, which can be easily replicated in 
+a production Kubernetes cluster to handle large volumes of long-running 
+tasks as an individual job.
 
 ## GitHub Repository
-Here is the GitHub Repository you can build in your local to test.
+Here is the GitHub Repository you can build your own image and publish on Docker Hub.
 https://github.com/dev-scripts/keda-sqs
 
 
