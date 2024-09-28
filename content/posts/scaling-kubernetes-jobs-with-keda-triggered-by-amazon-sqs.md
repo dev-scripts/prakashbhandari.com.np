@@ -174,8 +174,7 @@ Run the command `kubectl apply -f file-sqs-processor.yaml`
 
 Docker image was built from the code published in my GitHub repository: https://github.com/dev-scripts/keda-sqs.
 
-### Verify Scaled job
-Once you completed the above steps run the below command to see the scaled job.
+Once you completed the above steps run the below command to see the created scaled job.
 ```
 kubectl get scaledjob 
 ```
@@ -218,7 +217,7 @@ By using Kubernetes KEDA, you can dynamically scale jobs based on the number
 of incoming messages. This solution is ideal for scenarios where long-running 
 tasks need to be processed individually.
 
-In this post, I have used the Minikube local K*S cluster for
+In this post, I have used the Minikube local K8S cluster for
 demonstration and explained the steps, which can be easily replicated in 
 a production Kubernetes cluster to handle large volumes of long-running 
 tasks as an individual job.
