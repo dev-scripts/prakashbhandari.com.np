@@ -74,7 +74,7 @@ Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks,
 such as processing files in real-time after an upload. Your application 
 might need to process thousands of files, and processing multiple files 
 within a single deployment may not be efficient. 
-In this case, it is better to have an individual jobs to process each file separately
+In this case, it is better to have an individual jobs to process each file separately.
 
 ## Steps
 
