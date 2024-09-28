@@ -111,15 +111,20 @@ metadata:
 data:
   AWS_ACCESS_KEY_ID: {base64 encoded aws access key id}
   AWS_SECRET_ACCESS_KEY: {base64 encoded aws secret access key}
+  AWS_REGION: {base64-encoded-region}
+  SQS_QUEUE_URL: {base64-encoded-sqs-url}
 ```
 
 If you don’t know how to encode the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`,
 you can use the terminal to encode the keys in `base64` as shown below.
 ``` 
-echo -n "51cjNnhA9Y1NLQVBicJ6sx+1IH2RY63spiGJtk10" | base64 
+echo -n 'your-access-key-id' | base64
+echo -n 'your-secret-access-key' | base64
 ```
 
 Run the command to create the secrets `kubectl apply -f keda-aws-secrets.yaml`
+
+you will see this message `scaledjob.keda.sh/keda-sqs-processor-job created`
 
 ### KEDA TriggerAuthentication Manifest
 Need to  create a Kubernetes manifest file `keda-trigger-auth-aws-credentials.yaml` to define a KEDA `TriggerAuthentication` resource,
