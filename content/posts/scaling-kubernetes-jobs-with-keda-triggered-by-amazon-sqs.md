@@ -175,7 +175,7 @@ spec:
 
 Run command `kubectl apply -f file-sqs-processor.yaml`
 
-Docker image was build form the  code publish in my GitHub repository : https://github.com/dev-scripts/kada-sqs.
+Docker image was build form the  code publish in my GitHub repository : https://github.com/dev-scripts/keda-sqs.
 
 ### Verify Scaled job
 Once you completed above steps run below command to see the scaled job
@@ -226,6 +226,6 @@ which can be easily replicated in a production Kubernetes cluster to handle larg
 
 ## GitHub Repository
 Here is the GitHub Repository you can build in your local to test.
-https://github.com/dev-scripts/kada-sqs
+https://github.com/dev-scripts/keda-sqs
 
 
