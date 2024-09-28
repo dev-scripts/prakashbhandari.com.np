@@ -102,12 +102,12 @@ There are three types of [Authentication Parameters](https://keda.sh/docs/2.14/s
 Here, I am using 3rd one (Credential based authentication) which will require above created
 `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 
-Let me create a Kubernetes Secret manifest `keda-aws-secrets.yaml` to stores `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` (sensitive information) in a secure way.
+Let me create a Kubernetes Secret manifest `aws-secrets.yaml` to stores `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` (sensitive information) in a secure way.
 ```yaml
 apiVersion: v1
 kind: Secret
 metadata:
-  name: keda-aws-secrets
+  name: aws-secrets
 data:
   AWS_ACCESS_KEY_ID: {base64 encoded aws access key id}
   AWS_SECRET_ACCESS_KEY: {base64 encoded aws secret access key}
@@ -120,11 +120,12 @@ you can use the terminal to encode the keys in `base64` as shown below.
 ``` 
 echo -n 'your-access-key-id' | base64
 echo -n 'your-secret-access-key' | base64
+echo -n 'base64-encoded-region' | base64
+echo -n 'base64-encoded-sqs-url' | base64
 ```
 
-Run the command to create the secrets `kubectl apply -f keda-aws-secrets.yaml`
+Run the command to create the secrets `kubectl apply -f aws-secrets.yaml`
 
-you will see this message `scaledjob.keda.sh/keda-sqs-processor-job created`
 
 ### KEDA TriggerAuthentication Manifest
 Need to  create a Kubernetes manifest file `keda-trigger-auth-aws-credentials.yaml` to define a KEDA `TriggerAuthentication` resource,
@@ -138,16 +139,16 @@ metadata:
 spec:
   secretTargetRef:
     - parameter: awsAccessKeyID     # Required.
-      name: keda-aws-secrets        # Required.
+      name: aws-secrets             # Required.
       key: AWS_ACCESS_KEY_ID        # Required.
     - parameter: awsSecretAccessKey # Required.
-      name: keda-aws-secrets        # Required.
+      name: aws-secrets             # Required.
       key: AWS_SECRET_ACCESS_KEY    # Required.
 ```
 
 Run command to create the secrets `kubectl apply -f keda-trigger-auth-aws-credentials.yaml`
 ### ScaledJob Manifest
-Create a `file-sqs-processor.yaml` file 
+Create a `keda-sqs-processor.yaml` file 
 ```yaml
 apiVersion: keda.sh/v1alpha1
 kind: ScaledJob
@@ -159,25 +160,43 @@ spec:
       spec:
         containers:
           - name: sqs-processor
-            image: thebhandariprakash/keda-sqs-processor:latest # You can have your own Image
-            command: ["node", "index.js"] # Running script as after job triggred by SQS to process
+            image: thebhandariprakash/keda-sqs-processor:latest
+            command: ["node", "processor.js"]
+            env:
+              - name: SQS_QUEUE_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: aws-secrets
+                    key: SQS_QUEUE_URL
+              - name: AWS_ACCESS_KEY_ID
+                valueFrom:
+                  secretKeyRef:
+                    name: aws-secrets
+                    key: AWS_ACCESS_KEY_ID
+              - name: AWS_SECRET_ACCESS_KEY
+                valueFrom:
+                  secretKeyRef:
+                    name: aws-secrets
+                    key: AWS_SECRET_ACCESS_KEY
+              - name: AWS_REGION
+                value: "ap-southeast-2" # change your region
         restartPolicy: Never
   pollingInterval: 30  # Check the queue every 30 seconds
   successfulJobsHistoryLimit: 5
   failedJobsHistoryLimit: 5
-  minReplicaCount: 10  # Maximum number of concurrent jobs
+  minReplicaCount: 0  # Maximum number of concurrent jobs
   maxReplicaCount: 50  # Maximum number of concurrent jobs
   triggers:
     - type: aws-sqs-queue
       authenticationRef:
         name: keda-trigger-auth-aws-credentials
       metadata:
-        queueURL: 'https://sqs.{region}.amazonaws.com/{accountId}/{SQSName}'
-        awsRegion: 'region' # ie ap-southeast-2
+        queueURL: 'https://sqs.ap-southeast-2.amazonaws.com/{account no}/{que name}' # update the url to your URL
+        awsRegion: 'ap-southeast-2'
         queueLength: "5"  # Scale up when there are at least 5 messages
 ```
 
-Run the command `kubectl apply -f file-sqs-processor.yaml`
+Run the command `kubectl apply -f keda-sqs-processor.yaml`
 
 Docker image was built from the code published in my GitHub repository: https://github.com/dev-scripts/keda-sqs.
 
@@ -188,7 +207,7 @@ kubectl get scaledjob
 The result will be like this in the console:
 ```yaml
 NAME                     MIN   MAX   TRIGGERS        AUTHENTICATION                      READY   ACTIVE   AGE
-keda-sqs-processor-job   0     50    aws-sqs-queue   keda-trigger-auth-aws-credentials   True    True     15m
+sqs-processor-job        0     50    aws-sqs-queue   keda-trigger-auth-aws-credentials   True    True     15m
 ```
 
 ### Publish Message from SQS
@@ -205,10 +224,10 @@ kubectl get jobs
 Result will be like in console:
 ```text
 NAME                           COMPLETIONS   DURATION   AGE
-keda-sqs-processor-job-982kg   1/1           8s         11s
-keda-sqs-processor-job-ft4jw   1/1           6s         41s
-keda-sqs-processor-job-nz56t   1/1           5s         11s
-keda-sqs-processor-job-qffk4   1/1           8s         41s
+sqs-processor-job-982kg        1/1           8s         11s
+sqs-processor-job-ft4jw        1/1           6s         41s
+sqs-processor-job-nz56t        1/1           5s         11s
+sqs-processor-job-qffk4        1/1           8s         41s
 ```
 If you have any GUI tool, you can also view it under Pods. I can see it in Lens, as shown in the image below. Here you will see running jobs, failed jobs, and successful jobs.
 The number of successful and failed jobs can be defined in the ScaledJob Manifest file ie. `successfulJobsHistoryLimit: 5` `failedJobsHistoryLimit: 5`
