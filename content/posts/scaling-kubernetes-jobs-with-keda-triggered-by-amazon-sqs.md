@@ -8,7 +8,9 @@ tags : [
   "k8s",
   "Kubernetes",
   "DevOps",
-  "KEDA"
+  "KEDA",
+  "Event Driven",
+  "SQS"
 ]
 categories : [
   "DevOps",
@@ -44,7 +46,7 @@ cover:
   caption: "Scaling Kubernetes Jobs with KEDA: Triggered by Amazon SQS"
   relative: false
   author: "Prakash Bhandari"
-description: "Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks, such as processing files in real-time after an upload. Your application might need to process thousands of files, and processing multiple files within a single deployment may not be efficient. In this case, it is better to have an individual jobs to process each file separately"
+description: "KEDA stands for Kubernetes (k8s) Event-Driven Autoscaling. With KEDA, you can scale any deployment or jobs in Kubernetes according to the number of events that need to be processed."
 ---
 
 In this post, I will create a small Node.js app containing the publisher and message processor, 
@@ -74,11 +76,6 @@ that need to be processed.
 Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks, such as processing files in real-time after an upload.
 Your application might need to process thousands of files, and processing multiple files within a single deployment may not be efficient. In this case, it is better to have an individual job to process each file separately.
 
-Sometimes Kubernetes Jobs need to be scaled to handle long-running tasks, 
-such as processing files in real-time after an upload. Your application 
-might need to process thousands of files, and processing multiple files 
-within a single deployment may not be efficient. 
-In this case, it is better to have an individual jobs to process each file separately.
 
 >In my professional life, I have used KEDA to scale Kubernetes jobs as an alternative to Amazon Web Services(AWS) Lambda functions for processing long-running jobs.
 
