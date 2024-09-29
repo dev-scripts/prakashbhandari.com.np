@@ -337,7 +337,15 @@ echo -n 'base64-encoded-region' | base64
 echo -n 'base64-encoded-sqs-url' | base64
 ```
 
-Run the command to create the secrets `kubectl apply -f aws-secrets.yaml`
+Run the below command to create the secrets:
+```text
+kubectl apply -f aws-secrets.yaml
+```
+
+If successful, result will be like this:
+```text  
+secret/aws-secrets created
+```
 
 ### KEDA TriggerAuthentication Manifest
 Need to  create a Kubernetes manifest file `keda-trigger-auth-aws-credentials.yaml` to define a KEDA `TriggerAuthentication` resource,
@@ -358,7 +366,17 @@ spec:
       key: AWS_SECRET_ACCESS_KEY    # Required.
 ```
 
-Run command to create the secrets `kubectl apply -f keda-trigger-auth-aws-credentials.yaml`
+Run the below command to create the secrets:
+```text
+kubectl apply -f keda-trigger-auth-aws-credentials.yaml
+```
+
+If successful, result will be like this:
+
+```text
+kubectl apply -f keda-sqs-processor.yaml
+scaledjob.keda.sh/keda-trigger-auth-aws-credentials.yaml created
+``` 
 ### ScaledJob Manifest
 Create a `keda-sqs-processor.yaml` file that will pull the image we published earlier to Docker Hub and scale the processor job as soon as a message lands in Amazon SQS.
 ```yaml
@@ -374,7 +392,7 @@ spec:
           - name: sqs-processor
             image: thebhandariprakash/keda-sqs-processor:latest
             command: ["node", "processor.js"]
-            env: # these env value to the apps
+            env: # pass env value to container form secret
               - name: SQS_QUEUE_URL
                 valueFrom:
                   secretKeyRef:
@@ -408,13 +426,21 @@ spec:
         queueLength: "5"  # Scale up when there are at least 5 messages
 ```
 
-Run the command `kubectl apply -f keda-sqs-processor.yaml`
+Run the command to create the processor scaled job:
+```text
+kubectl apply -f keda-sqs-processor.yaml
+```
+
+If successful, result will be like this:
+```text
+scaledjob.keda.sh/keda-trigger-auth-aws-credentials.yaml created
+``` 
 
 Once you completed the above steps run the below command to see the created scaled job.
 ```
 kubectl get scaledjob 
 ```
-The result will be like this in the console:
+If successful, the result will be like this in the console:
 ```yaml
 NAME                     MIN   MAX   TRIGGERS        AUTHENTICATION                      READY   ACTIVE   AGE
 sqs-processor-job        0     50    aws-sqs-queue   keda-trigger-auth-aws-credentials   True    True     15m
@@ -440,7 +466,7 @@ spec:
       containers:
       - name: sqs-publisher
         image: thebhandariprakash/keda-sqs-processor:latest
-        env:
+        env: # pass env value to container form aws-secrets that was created earlier
         - name: AWS_ACCESS_KEY_ID
           valueFrom:
             secretKeyRef:
@@ -460,6 +486,15 @@ spec:
               key: SQS_QUEUE_URL
 ```
 
+Run the command to create the sqs-publisher deployment :
+```text
+kubectl apply -f sqs-publisher.yaml
+```
+
+If successful, result will be like this:
+```text
+deployment.apps/sqs-publisher created
+```
 
 ### Verify Processor Scaled Jobs and  Publisher
 #### Verify Publisher
@@ -467,7 +502,7 @@ Publisher will be running in the pod. To see the running pods by executing the b
 ```cli
 kubectl get pods
 ```
-Result will be like in console:
+If successful, result will be like in console:
 ```text
 NAME                                 READY   STATUS      RESTARTS   AGE
 sqs-publisher-84b88dc649-b9g8f       1/1     Running     0          12h
@@ -483,7 +518,7 @@ root@sqs-publisher-84b88dc649-b9g8f:/usr/src/app# node publisher.js
 ```
 The above command will prompt you to input a message from the terminal that you want to publish to AWS SQS.
 
-You will see result like this:
+If successful, you will see result like this:
 ```text
 Enter the message to send to SQS: 
 message1
@@ -495,7 +530,7 @@ To see the running/successful/failed jobs you can run below command.
 ```cli
 kubectl get jobs
 ```
-Result will be like in console:
+If successful, result will be like in console:
 ```text
 NAME                                COMPLETIONS   DURATION   AGE
 keda-sqs-processor-job-982kg        1/1           8s         11s
@@ -513,7 +548,7 @@ you can see the logs from processor job by running the below command.
 ```
 kubectl logs keda-sqs-processor-job-982kg
 ```
-Reasult will be like this:
+If successful, result will be like this:
 ```
 kubectl logs keda-sqs-processor-job-qwd62-8kzgq
 Received message: message1
