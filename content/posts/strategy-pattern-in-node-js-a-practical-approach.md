@@ -68,24 +68,6 @@ Newer strategy can be easily added  without affecting the existing functionality
 
 Although this design pattern has many benefits, it also comes with some drawbacks. For instance, your application may end up with numerous classes, which could lead to confusion and complexity. It’s important to have proper documentation to manage this effectively.
 
-## Components of Strategy Design Pattern
-There are four componensts of the strategy desing pattern 
-1. **Context :** The Context is the main class that uses a strategy to perform tasks. It allows switching algorithms without modifying the existing code. In our case below piece of code is the context.
-```js
- const strategies = {
-            payPal: new PayPalStrategy(),
-            bankTransfer: new BankTransferStrategy(),
-            creditCard: new CreditCardStrategy(),
-            //add more payment Strategy if needed ....
-        };
-```
-2. **Strategy Interface :** Defines common methods that all strategies must implement. In JavaScript, interfaces cannot be defined directly, but in TypeScript, they can be used to achieve this.
-
-3. **Concrete Strategy :** Actual implementation of the algorithm. In our case `./BankTransferStrategy.js`;
-`PayPalStrategy.js` and `CreditCardStrategy.js` are the Concrete Strategy.
-
-4. **Client :** Interacts with the Context and triggers the use of a strategy. In our case clint would be API end point `http://localhost:3000/pay`
-
 # Strategy Pattern in Node.js
 
 Let's assume you already have installed Node in your machine.
@@ -281,6 +263,26 @@ Here is the full screenshot of the request and response:
 Instead of `payPal`, you can easily switch the payment provider to `bankTransfer` or `creditCard`, and it will automatically use the correct `PaymentStrategy` class.
 
 You can even add a new payment provider, such as `bitcoin`. To do this, simply create a new strategy class to handle Bitcoin payments and add context.
+
+## Components of Strategy Design Pattern
+There are four componensts of the strategy desing pattern 
+1. **Context :** The Context is the main class that uses a strategy to perform tasks. It allows switching algorithms without modifying the existing code. In our case below piece of code is the context.
+```js
+ const strategies = {
+            payPal: new PayPalStrategy(),
+            bankTransfer: new BankTransferStrategy(),
+            creditCard: new CreditCardStrategy(),
+            //add more payment Strategy if needed ....
+        };
+```
+2. **Strategy Interface :** Defines common methods that all strategies must implement. In JavaScript, interfaces cannot be defined directly, but in TypeScript, they can be used to achieve this.
+
+3. **Concrete Strategy :** Actual implementation of the algorithm. In our case `./BankTransferStrategy.js`;
+`PayPalStrategy.js` and `CreditCardStrategy.js` are the Concrete Strategy.
+
+4. **Client :** Interacts with the Context and triggers the use of a strategy. In our case clint would be API end point `http://localhost:3000/pay`
+
+![Components of Strategy Design Pattern](/images/posts/strategy-pattern-in-node-js-a-practical-approach/components-of-strategy-design-pattern.png#center "Components of Strategy Design Pattern")
 
 ## Conclusion
 In conclusion, the Strategy Pattern is a powerful design approach that enhances flexibility, maintainability, and adherence to SOLID principles. By decoupling algorithms into distinct strategy classes, it allows for easy extension of functionality without altering existing code. This makes it particularly well-suited for scenarios like dynamic payment processing, where seamless integration of multiple options is required.
