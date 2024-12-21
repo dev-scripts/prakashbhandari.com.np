@@ -173,8 +173,8 @@ export default class PayPalStrategy {
 }
 ```
 
-###  StripeStrategy class
-Finally, create a StripeStrategy class that simulates processing a payment through Stripe.
+###  CreditCardStrategy class
+Finally, create a CreditCardStrategy class that simulates processing a payment through Credit Card.
 
 ```js
 export default class CreditCardStrategy {
