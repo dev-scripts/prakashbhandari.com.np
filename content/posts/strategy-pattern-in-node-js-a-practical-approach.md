@@ -282,7 +282,9 @@ Instead of `payPal`, you can easily switch the payment provider to `bankTransfer
 
 You can even add a new payment provider, such as `bitcoin`. To do this, simply create a new strategy class to handle Bitcoin payments and add context.
 
-## conclusion
+## Conclusion
 In conclusion, the Strategy Pattern is a powerful design approach that enhances flexibility, maintainability, and adherence to SOLID principles. By decoupling algorithms into distinct strategy classes, it allows for easy extension of functionality without altering existing code. This makes it particularly well-suited for scenarios like dynamic payment processing, where seamless integration of multiple options is required.
 
 In this post, we also explored a practical implementation of the Strategy Pattern by integrating payment providers into a Node.js application.
+
+Github Reposatory : https://github.com/dev-scripts/nodejs-strategy-pattern
