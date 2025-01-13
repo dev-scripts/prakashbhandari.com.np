@@ -40,7 +40,7 @@ keywords: [
   "vector-based search"
 ]
 cover:
-  image: "images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-openai.jpg"
+  image: "images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-openai.png"
   alt: "Building a RAG Pipeline for Summarization and Q&A with Llamaindex"
   relative: false
 author: "Prakash Bhandari"
