@@ -1,5 +1,5 @@
 ---
-title: "Building a RAG Pipeline for Summarization and Q&A with Llamaindex"
+title: "Building a RAG Pipeline for Summarization and Q&A with Llamaindex and OpenAI"
 date: 2025-01-10T10:22:49+11:00
 showToc: true
 TocOpen: true
@@ -15,6 +15,7 @@ categories : [
 ]
 keywords: [
   "Building a RAG Pipeline for Summarization and Q&A with Llamaindex",
+  "Building a RAG Pipeline for Summarization and Q&A with Llamaindex and OpenAI",
   "Building a RAG Pipeline",
   "LlamaIndex and OpenAI",
   "Retrieval-Augmented Generation",
@@ -40,7 +41,7 @@ keywords: [
   "vector-based search"
 ]
 cover:
-  image: "images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-openai.png"
+  image: "images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-and-openai/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-and-openai.png"
   alt: "Building a RAG Pipeline for Summarization and Q&A with Llamaindex"
   relative: false
 author: "Prakash Bhandari"
@@ -65,7 +66,7 @@ RAG is the technique to query over both structured and unstructured documents us
 
 # Architecture
 Here, I will explain the architecture of a basic RAG (Retrieval-Augmented Generation) pipeline designed for summarization and Q&A tasks using query engines with below architecture diagram.
-![Building a RAG Pipeline for Summarization and Q&A with Llamaindex](/images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex.svg#center "Building a RAG Pipeline for Summarization and Q&A with Llamaindex")
+![Building a RAG Pipeline for Summarization and Q&A with Llamaindex](/images/posts/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-and-openai/building-rag-pipeline-for-summarization-and-q-and-a-with-llamaindex-and-openai.svg#center "Building a RAG Pipeline for Summarization and Q&A with Llamaindex")
 
 Here's an explanation of the components and the flow:
 ## Document
