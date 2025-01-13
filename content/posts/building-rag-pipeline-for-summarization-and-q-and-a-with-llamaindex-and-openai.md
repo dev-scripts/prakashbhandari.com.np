@@ -311,8 +311,9 @@ Process finished with exit code 0
 
 ```
 
-In this post, I built a basic Retrieval-Augmented Generation (RAG) pipeline using LlamaIndex to handle both summarization and Q&A tasks. I explored the concept of RAG through a step-by-step guide and demonstrated how to load documents, split them into chunks, create vector and summary indexes, and set up query engines. I then implemented a dynamic query router that selects the appropriate engine based on the user's query type.
-
-The post have given a Python implementation showing how the system processes queries for summarization and Q&A
+In this post, I built a basic Retrieval-Augmented Generation (RAG) pipeline using LlamaIndex to handle both summarization and Q&A tasks.
+I explored the concept of RAG through a step-by-step guide and demonstrated how to load documents, split them into chunks, 
+create vector and summary indexes, and set up query engines. 
+I then implemented a dynamic query router that selects the appropriate engine based on the user's query type.
 
 Github Repo : https://github.com/dev-scripts/Building-a-RAG-Pipeline-for-Summarization-and-Q-A-with-Llamaindex
