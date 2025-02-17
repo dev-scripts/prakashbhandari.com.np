@@ -107,12 +107,23 @@ You can run `ollama --help` command to see the all the available CLI commands th
 
 ![Run ChatGPT Like AI Models Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-commands.png#center)
 
-## 2. Run DeepSeek
-Once Ollama is up and running in your machine nw you can run any supported LLMs in you machine. 
-Here I am going to use the `deepseek-r1` to run this model we can run `ollama run deepseek-r1` command.
+There are a couple of very useful Ollama commands. I will explain them in step 2 after installing `deepseek-r1`
 
-Here, I am running `deepseek-r1` locally using Ollama. 
+## 2. Pull and Run deepseek-r1 model
+Once Ollama is up and running in your machine nw you can run any supported LLMs on you machine. 
+Here I am going to use the very popular LLM model called `deepseek-r1`. To run this model we can run `ollama run deepseek-r1` command.
+
+In this post, I am using `deepseek-r1` locally. 
 In real-life scenarios, you can run any LLM model available at [https://ollama.com/search](https://ollama.com/search) with same `ollama run {model name}` command.
+
+If your LLM model is locally installed, the command `ollama run {model name}` will instantly run the model; 
+otherwise, it will  pull a model from a registry, which may take a couple of minutes because it will perform `ollama pull {model name}` and `ollama run {model name}` together. 
+
+In our case, we are running `ollama run deepseek-r1`, which might take a couple of minutes because `deepseek-r1` is not available locally.
+
+Alternatively, you can do it in two steps :
+1. `ollama pull deepseek-r1`
+2. `ollama run deepseek-r1`
 
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1.png#center)
 
@@ -132,8 +143,50 @@ Instead of CLI you can also use `curl` to generate the response.
 ```
 Here is the response from LLM for curl request.
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1-interaction-curl.png#center)
-But, Web interface is always more interactive then CLI tools. So, in next step I will be installing and using
+But, Web interface is always more interactive than CLI tools. So, in next step I will be installing and using
 *[Open WebUI](https://openwebui.com/)* to interact with LLMs.
+
+### List all the running LLM models
+Below command will list all the locally running models.
+```
+ollama ps
+```
+Result of above command
+```
+NAME                  ID              SIZE      PROCESSOR    UNTIL              
+deepseek-r1:latest    0a8c26691023    6.0 GB    100% GPU     4 minutes from now  
+```
+### Stop running LLM Model
+Below command will stop  the locally running model.
+
+```
+ ollama stop {model name}
+```
+
+In our case I need to stop `deepseek-r1` I will be running below command. 
+
+```
+ ollama stop deepseek-r1
+```
+
+If I ran above command, locally running models will be empty. Something like this.
+```
+NAME    ID    SIZE    PROCESSOR    UNTIL 
+```
+
+I will not be stopping because I am going to demonstrate using `deepseek-r1`.
+
+### List all the models installed locally
+Below command will list all the models installed locally whether it's running or not.
+```
+ ollama lsit
+```
+Result of above command
+```
+NAME                  ID              SIZE      MODIFIED    
+deepseek-r1:latest    0a8c26691023    4.7 GB    5 hours ago    
+```
+
 ## 3. Install Open WebUI
 
 *[Open WebUI](https://openwebui.com/)* can be installed using pip, the Python package installer. Before proceeding, ensure you're using Python 3.11 to avoid compatibility issues.
