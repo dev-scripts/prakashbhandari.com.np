@@ -49,7 +49,7 @@ keywords: [
   "How to use Open WebUI with LLMs"
 ]
 cover:
-  image: "images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-web-ui.png"
+  image: "images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-web-ui.jpg"
   alt: "Building a Local AI Chatbot with Ollama, DeepSeek-R1, and Open WebUI"
   relative: false
 author: "Prakash Bhandari"
@@ -148,9 +148,12 @@ pip install open-webui
 ```
 open-webui serve
 ```
-This will start the Open WebUI server, which you can access at http://localhost:8080. 
-First, you need to set up the Admin account
+This will start the Open WebUI server, which you can access at [http://localhost:8080](http://localhost:8080).
 
+## 4. Test Chatbot Locally
+
+Once all above steps are successfully completed then you can access at [http://localhost:8080](http://localhost:8080).
+First, you need to set up the Admin account
 ![open-web-ui-login-page](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/open-web-ui-login-page.png#center)
 
 Once you have set up an admin account, you can interact with the LLMs. Here, 
