@@ -83,10 +83,10 @@ making it a versatile tool for deploying and interacting with language models.
 
 I will explain below how to build and run the Local AI Chatbot with Ollama, DeepSeek-R1, and Open WebUI in the following steps.
 ## 1. Install Ollama Locally
-To install Ollama locally you can go to https://ollama.com/, download and install appropriate version in your local machine.
+To install Ollama locally you can go to https://ollama.com/, download and install the appropriate version on your local machine.
 ![Run ChatGPT Like AI Models Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/install-ollama-locally-ui.png#center)
 
-I am using M1 Mac how I will be installing via `brew`
+I am using an M1 Mac and I will be installing it via `brew`
 ```
 brew install ollama
 ```
@@ -103,7 +103,7 @@ ollama --version
 ollama version is 0.5.11
 ```
 
-You can run `ollama --help` command to see the all the available CLI commands that is used to interact with LLMs 
+You can run `ollama --help` command to see the all the available CLI commands that are used to interact with LLMs 
 
 ![Run ChatGPT Like AI Models Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-commands.png#center)
 
@@ -150,8 +150,7 @@ You can do many more using REST API. Here is full documentation [https://github.
 Response generated from LLM for above REST API request:
 
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1-interaction-curl.png#center)
-But, Web interface is always more interactive than CLI tools. So, in next step I will be installing and using
-
+However, the Web interface is always more interactive than CLI tools. So, in the next step, I will be installing and using
 *[Open WebUI](https://openwebui.com/)* to interact with LLMs.
 
 Some of the useful Ollama commands: 
@@ -227,6 +226,7 @@ I have asked the LLM to `write a 'hello world' Node js app` and received this re
 
 This is how you can run the ChatGPT like AI Models locally. This helps you to maintain privacy, and control over your AI interactions.
 # Conclusion
-In this post we have learned to set up Ollama, DeepSeek-R1, and Open WebUI to run ChatGPT-like AI models locally with ease.
-This approach offers flexibility, privacy, and control over your AI interactions without relying on cloud-based services.
+This is how you can run the ChatGPT-like AI Models locally. This helps you to maintain privacy, and control over your AI interactions.
+
+In this post, we have learned to set up Ollama, DeepSeek-R1, and Open WebUI to run ChatGPT-like AI models locally with ease. This approach offers flexibility, privacy, and control over your AI interactions without relying on cloud-based services.
 
