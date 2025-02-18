@@ -11,7 +11,7 @@ tags : [
 "Tools"
 ]
 categories : [
-"Node",
+"NodeJS",
 ]
 keywords: [
 "Switch node versions windows",

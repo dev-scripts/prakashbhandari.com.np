@@ -11,7 +11,6 @@ tags : [
   "Load Test",
 ]
 categories : [
-  "Software Development",
   "JavaScript",
   "Testing",
 ]

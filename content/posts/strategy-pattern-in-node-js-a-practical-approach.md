@@ -10,7 +10,6 @@ tags : [
   "Strategy Pattern"
 ]
 categories : [
-  "Software Development",
   "NodeJS",
   "Software Engineering"
 ]

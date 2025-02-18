@@ -10,9 +10,7 @@ tags : [
   "DevOps",
   ]
 categories : [
-  "DevOps",
-  "k8s",
-  "Kubernetes"
+  "k8s"
 ]
 keywords: [
   "Understanding the Basic Concepts of Kubernetes(k8s) Cluster",

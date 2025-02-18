@@ -10,8 +10,7 @@ tags : [
   "GenAI",
 ]
 categories : [
-  "Artificial Intelligence",
-  "GenAI"
+  "AI"
 ]
 keywords: [
   "Building a RAG Pipeline for Summarization and Q&A with Llamaindex",

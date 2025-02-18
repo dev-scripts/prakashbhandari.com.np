@@ -15,7 +15,7 @@ tags : [
 categories : [
   "Docker",
   "C Sharp",
-  "Kubernetes"
+  "k8s"
 ]
 keywords: [
   ".NET Web application deployment",

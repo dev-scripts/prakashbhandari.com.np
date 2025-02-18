@@ -14,8 +14,7 @@ tags : [
 ]
 categories : [
   "DevOps",
-  "k8s",
-  "Kubernetes"
+  "k8s"
 ]
 keywords: [
   "Scaling Kubernetes Jobs with KEDA: Triggered by AWS SQS",

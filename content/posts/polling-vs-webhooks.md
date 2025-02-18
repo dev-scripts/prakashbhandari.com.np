@@ -10,8 +10,7 @@ tags : [
   "Software Development",
 ]
 categories : [
-  "System Design",
-  "Software Development"
+  "System Design"
 ]
 keywords: [
   "Polling vs Webhooks",

@@ -10,7 +10,7 @@ tags : [
 "C Sharp"
 ]
 categories : [
-"Software Development",
+"Programming",
 ]
 keywords: [
 "Embed a Files in a .Net Assembly",

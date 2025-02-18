@@ -9,8 +9,7 @@ tags : [
   "GenAI",
 ]
 categories : [
-  "Artificial Intelligence",
-  "GenAI"
+  "AI"
 ]
 keywords: [
   "Large Multimodal Model Prompting With Google Gemini",

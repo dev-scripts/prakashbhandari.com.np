@@ -9,9 +9,8 @@ tags : [
   "Database"
 ]
 categories : [
-               "Database",
-               "System Design",
-               "Software Development"]
+               "Database"
+               ]
 keywords: [
 "Find MySQL 8.3 keywords and reserved words used in column names, table names, procedures, or functions",
 "Find MySQL 8.3 keywords and reserved words used in column names, table names, procedures, or functions",

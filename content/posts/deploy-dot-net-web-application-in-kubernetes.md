@@ -14,7 +14,7 @@ tags : [
 categories : [
   "Docker",
   "C Sharp",
-  "Kubernetes"
+  "k8s"
 ]
 keywords: [
   "Deploy .NET Web Application in Kubernetes",

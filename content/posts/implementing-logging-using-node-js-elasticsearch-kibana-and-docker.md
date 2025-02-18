@@ -11,9 +11,7 @@ tags : [
 ]
 categories : [
   "System Design",
-  "JavaScript",
-  "Docker",
-  "Software Development",
+  "Docker"
 ]
 keywords: [
   "Logging and monitoring",

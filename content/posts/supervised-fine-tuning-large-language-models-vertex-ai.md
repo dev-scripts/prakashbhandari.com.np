@@ -9,8 +9,7 @@ tags : [
   "GenAI",
 ]
 categories : [
-  "Artificial Intelligence",
-  "GenAI"
+  "AI"
 ]
 keywords: [
   "Supervised Fine-Tuning Large Language Models (LLMs) With Vertex AI",
