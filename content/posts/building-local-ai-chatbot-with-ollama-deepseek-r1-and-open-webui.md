@@ -8,6 +8,7 @@ tags : [
   "GenAI",
   "Artificial Intelligence",
   "DeepSeek",
+  "DeepSeek-R1"
   "Ollama",
   "Open WebUI",
   "AI chatbot"
