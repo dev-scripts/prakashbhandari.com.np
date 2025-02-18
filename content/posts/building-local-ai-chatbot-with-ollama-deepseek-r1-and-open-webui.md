@@ -10,8 +10,7 @@ tags : [
   "DeepSeek",
   "Ollama",
   "Open WebUI",
-  "AI chatbot",
-  "Open WebUI"
+  "AI chatbot"
 ]
 categories : [
   "AI"
@@ -127,12 +126,15 @@ Alternatively, you can do it in two steps :
 
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1.png#center)
 
-Once you run the model you can see above screen, and you can directly interact with the `deepseek-r1` via CLI tool.
+## 3. Interact with  deepseek-r1/others model using Ollama
+Once you run the model you can see above screen (step 2), and you can directly interact with the `deepseek-r1` via CLI tool.
 You can ask any question. I have just tried with "hello".
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1-interaction-cli.png#center)
 In Right hand side you can also see the logs `tail -f ~/.ollama/logs/server.log`
 
-Instead of CLI you can also use `curl` to generate the response. 
+Instead of CLI you can also use REST API. Ollama has a REST API for running and managing models.
+
+Generate a response:
 ```
  curl http://localhost:11434/api/generate -d '{
   "model": "deepseek-r1", 
@@ -141,10 +143,17 @@ Instead of CLI you can also use `curl` to generate the response.
 }' | jq .
 
 ```
-Here is the response from LLM for curl request.
+
+You can do many more using REST API. Here is full documentation [https://github.com/ollama/ollama/blob/main/docs/api.md](https://github.com/ollama/ollama/blob/main/docs/api.md)
+
+Response generated from LLM for above REST API request:
+
 ![Run deepseek-r1 Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/ollama-run-deepseek-r1-interaction-curl.png#center)
 But, Web interface is always more interactive than CLI tools. So, in next step I will be installing and using
+
 *[Open WebUI](https://openwebui.com/)* to interact with LLMs.
+
+Some of the useful Ollama commands: 
 
 ### List all the running LLM models
 Below command will list all the locally running models.
@@ -187,7 +196,7 @@ NAME                  ID              SIZE      MODIFIED
 deepseek-r1:latest    0a8c26691023    4.7 GB    5 hours ago    
 ```
 
-## 3. Install Open WebUI
+## 4. Install Open WebUI
 
 *[Open WebUI](https://openwebui.com/)* can be installed using pip, the Python package installer. Before proceeding, ensure you're using Python 3.11 to avoid compatibility issues.
 
@@ -203,7 +212,7 @@ open-webui serve
 ```
 This will start the Open WebUI server, which you can access at [http://localhost:8080](http://localhost:8080).
 
-## 4. Test Chatbot Locally
+## 5. Test Chatbot Locally
 
 Once all above steps are successfully completed then you can access at [http://localhost:8080](http://localhost:8080).
 First, you need to set up the Admin account
