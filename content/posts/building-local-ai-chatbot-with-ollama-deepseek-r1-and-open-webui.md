@@ -57,10 +57,11 @@ description: "I will be building a local AI chat bot using Ollama, DeepSeek-R1, 
 This approach offers flexibility, privacy, and control over your AI interactions without relying on cloud-based services. Also saves the cost on long term"
 ---
 
-In this post, I will show you how to set up a local AI chatbot using Ollama, DeepSeek-R1, and the Open WebUI.
-This approach offers flexibility, privacy, and control over your AI interactions without relying on cloud-based services.
+In this post, I will guide you through setting up a local AI chatbot using Ollama, DeepSeek-R1, and Open WebUI. 
+This approach provides flexibility, privacy, and control over your AI interactions without relying on cloud-based services. Also saves cost in the long run.
 
-I’ll keep it simple and concise so we can quickly learn how to install Ollama, run LLM models like Llama 3.3 and DeepSeek-R1, and use the web interface to interact with the LLMs locally.
+We'll keep things simple and concise while covering the installation of Ollama, 
+running LLM models like DeepSeek-R1, and using the web interface to interact with them locally.
 
 # What is Ollama?
 Olama is an open-source tool that helps run Large Language Models (LLMs), like ChatGPT, on a self-hosted server or even on a local machine.
@@ -83,10 +84,14 @@ making it a versatile tool for deploying and interacting with language models.
 
 I will explain below how to build and run the Local AI Chatbot with Ollama, DeepSeek-R1, and Open WebUI in the following steps.
 ## 1. Install Ollama Locally
-To install Ollama locally you can go to https://ollama.com/, download and install the appropriate version on your local machine.
+
+To install Ollama, visit https://ollama.com/ and download the appropriate version for your system.
+
+
+
 ![Run ChatGPT Like AI Models Locally With Ollama](/images/posts/building-local-ai-chatbot-with-ollama-deepseek-r1-and-open-webui/install-ollama-locally-ui.png#center)
 
-I am using an M1 Mac and I will be installing it via `brew`
+For macOS users (like me, using an M1 Mac), install it via Homebrew:
 ```
 brew install ollama
 ```
