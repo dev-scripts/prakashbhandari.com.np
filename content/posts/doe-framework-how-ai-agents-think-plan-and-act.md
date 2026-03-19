@@ -4,14 +4,8 @@ date: 2026-03-19T08:00:00+10:00
 showToc: true
 TocOpen: true
 tags: [
-  "DOE Framework",
-  "Agentic AI",
-  "AI Agents",
-  "Machine Learning",
-  "LangGraph",
-  "AutoGen",
-  "CrewAI",
-  "AI Architecture"
+  "AI",
+  "GenAI"
 ]
 categories: [
   "Artificial Intelligence",
@@ -116,11 +110,60 @@ Final Output
 
 Each layer feeds into the next, and results bubble back up, creating a feedback loop that lets the system self-correct and adapt in real time.
 
-## Real-World Examples
+## Real-World Example: AI Travel Agent Scenario
+
+Let's walk through a concrete example of the DOE framework in action — booking a flight using an AI agent.
+
+### Directive (Role & Context)
+
+- **Goal:** Book a flight from Sydney to London under $2,000.
+- **Constraint:** Only flights with fewer than 1 stopover.
+- **Tools:** Flight Search API, User Calendar API.
+
+### Orchestration (Planning)
+
+The agent plans the following sequence of steps:
+
+1. Search for flights (Sydney to London).
+2. Filter results by price (< $2,000) and stopovers (< 1).
+3. Check user calendar for conflicts on available dates.
+4. Book the best flight.
+
+### Execution (Action & Observation Loop)
+
+**Step 1: Act & Observe**
+```
+Act:         FlightSearchAPI(from=SYD, to=LHR)
+Observation: API returns 50 flights, most over $2,500.
+Think:       Prices are too high. Need to search alternative dates or airline alliances.
+```
+
+**Step 2: Act & Observe (Revised Action)**
+```
+Act:         FlightSearchAPI(from=SYD, to=LHR, date=flexible)
+Observation: Found a flight for $1,900 with 1 stop on Feb 10th.
+```
+
+**Step 3: Act & Observe**
+```
+Act:         UserCalendarAPI(check=Feb 10th)
+Observation: Calendar is free.
+```
+
+**Step 4: Final Action**
+```
+Act:    BookingAPI(flight_id=123)
+Output: "Flight confirmed."
+```
+
+This loop — **Act → Observe → Think → Act** — is the heartbeat of any well-built execution layer. The agent doesn't just blindly follow the original plan; it re-evaluates and adapts based on what it observes at each step.
+ 
+---
+
+## More Real-World Examples
 
 | Directive | Orchestration | Execution |
 |---|---|---|
-| "Book me a flight to Sydney next Friday" | Search flights → compare prices → check calendar → select best option | Travel agent, calendar agent, and booking tool fire in sequence |
 | "Fix the bug causing checkout to fail" | Read error logs → identify affected code → generate fix → run tests | Code reader, code editor, and test runner each complete their task |
 | "Send a weekly performance report to the team" | Pull analytics → generate charts → write summary → format email → send | Analytics agent, writing agent, and email tool each handle their part |
 
