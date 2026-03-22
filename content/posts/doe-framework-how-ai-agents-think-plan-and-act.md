@@ -38,7 +38,7 @@ cover:
   alt: "The DOE Framework: How AI Agents Think, Plan & Act"
   caption: "The DOE Framework: How AI Agents Think, Plan & Act"
   relative: false
-author: "Your Name"
+author: "Prakash Bhandari"
 description: "Behind every smart AI agent is a three-layer engine, Directive, Orchestration, and Execution. Learn how the DOE Framework structures agentic AI systems to be more capable, resilient, and easier to reason about."
 ---
 
