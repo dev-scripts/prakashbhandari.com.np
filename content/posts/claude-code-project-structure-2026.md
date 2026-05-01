@@ -236,3 +236,32 @@ If your existing project has none of this, do not try to bolt it all on at once.
 Each step compounds. By the time you have a `CLAUDE.md`, a `settings.json`, three skills, two subagents, an MCP connection, and a few hooks, you are no longer prompting an assistant. You are running an environment.
 
 That is the shift the 2026 directory tree quietly encodes. The structure is the strategy.
+
+I have created an example project and pushed it to the GitHub repository. The project has below structure.
+```javascript
+node-mvc-api/
+├── CLAUDE.md                        ← Project Brain
+├── CLAUDE.local.md                  ← Personal overrides (gitignored)
+├── .mcp.json                        ← External tool connections (MySQL + filesystem)
+├── .claudeignore                    ← Context boundaries
+├── .gitignore
+├── .claude/
+│   ├── settings.json                ← Permissions + hooks + env vars
+│   ├── skills/
+│   │   ├── review/SKILL.md          ← /review slash command
+│   │   └── add-feature/SKILL.md     ← /add-feature slash command
+│   ├── agents/
+│   │   ├── code-reviewer.md         ← Read-only review subagent
+│   │   └── db-migrator.md           ← Migration generator subagent
+│   ├── hooks/
+│   │   ├── pre-tool.js              ← Blocks DROP TABLE, warns on rm
+│   │   ├── post-tool.js             ← Logs file writes, flags test failures
+│   │   └── session-start.js         ← Startup message + context
+│   ├── agent-memory/                ← Persistent knowledge (gitignored)
+│   └── worktrees/                   ← Parallel agent isolation (gitignored)
+├── plugins/
+│   └── logger.js                    ← Bundled logging plugin
+└── src/ tests/ ...                  ← All the app code
+```
+
+The the GitHub project link : https://github.com/dev-scripts/claude-node-app
