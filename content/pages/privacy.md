@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-date: 2025-07-7T05:30:56+11:00
+date: 2025-11-24T05:30:56+11:00
 draft: false
 comments: false
 ---

@@ -8,7 +8,6 @@ hidemeta: false
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 description: "A facade in Laravel is a wrapper around a `non-static` function that turns it into a `static` function."
 searchHidden: false

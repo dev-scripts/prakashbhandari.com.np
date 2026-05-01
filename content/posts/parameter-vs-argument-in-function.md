@@ -23,7 +23,6 @@ hidemeta: false
 description: "In this article, I will try to explain the basic difference between parameter and arguments used in the function"
 disableHLJS: true 
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true

@@ -22,12 +22,10 @@ author: "Prakash Bhandari"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: true
-draft: false
 hidemeta: false
 description: "In this article, I will explain what is assembly and how to include the files within your assembly. So, that you can assess those files in runtime. Such as running unit test to access `.json` file to mock API response."
 disableHLJS: true
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true
