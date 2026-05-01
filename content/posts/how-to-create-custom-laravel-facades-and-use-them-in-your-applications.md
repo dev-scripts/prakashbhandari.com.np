@@ -5,11 +5,10 @@ showToc: true
 TocOpen: true
 draft: false
 hidemeta: false
-#canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
+disableHLJS: true 
 disableShare: false
 hideSummary: false
-description: "A facade in Laravel is a wrapper around a `non-static` function that turns it into a `static` function."
+description: "A facade in Laravel is a wrapper around a non-static function that turns it into a static function."
 searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
@@ -29,13 +28,13 @@ keywords: [
 ]
 tags: [
 "Laravel",
-"PHP",
+"PHP"
 ]
 categories: [
 "PHP",
 ]
 cover:
-    image: "images/posts/how-to-create-custom-laravel-facades-and-use-them-in-your-applications/how-to-create-custom-laravel-facades-and-use-them-in-your-applications.png" # image path/url
+    image: "images/posts/how-to-create-custom-laravel-facades-and-use-them-in-your-applications/how-to-create-custom-laravel-facades-and-use-them-in-your-applications.png" 
     alt: "How to Create Custom Laravel Facades And Use Them In Your Laravel Applications?"
     caption: "How to Create Custom Laravel Facades And Use Them In Your Laravel Applications?"
     relative: false
