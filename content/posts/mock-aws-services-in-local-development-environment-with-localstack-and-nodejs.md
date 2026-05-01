@@ -470,7 +470,7 @@ Output demonstration on YouTube Video :
 {{< youtube r9RMT3bLEQ8 >}}
 
 Twitter Post : 
-{{< tweet user="ScriptPrakash" id="1594197783887872001" >}}
+{{< x user="ScriptPrakash" id="1594197783887872001" >}}
 
 # References
 1. https://github.com/localstack/localstack

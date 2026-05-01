@@ -212,4 +212,4 @@ Run `php artisan serve`. This will sever your app in your localhost at port no 8
 In this post, I have covered what is facades in Laravel, benefit of using facades, how to create your own custom facades and use them in Laravel applications in very simple steps with example. Also, I have discussed about `static` and `non-static` functions in PHP.
 
 Twitter Post :
-{{< tweet user="DailyLaravel" id="1608757309395664896" >}}
+{{< x user="DailyLaravel" id="1608757309395664896" >}}
