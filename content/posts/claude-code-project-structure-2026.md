@@ -50,6 +50,7 @@ my-project/
 ├── .mcp.json               # External tool connections
 ├── .claudeignore           # Files Claude should never read
 └── plugins/                # Bundled distribution
+└── src/                    # Core application modules and all the app code
 ```
 
 Every entry in that tree solves a specific problem. Let's go through them.
@@ -237,7 +238,7 @@ Each step compounds. By the time you have a `CLAUDE.md`, a `settings.json`, thre
 
 That is the shift the 2026 directory tree quietly encodes. The structure is the strategy.
 
-I have created an example project and pushed it to the GitHub repository. The project has below structure.
+I have created a sample project using Node.js and pushed it to GitHub. The structure of the project is outlined below.
 ```javascript
 node-mvc-api/
 ├── CLAUDE.md                        ← Project Brain
