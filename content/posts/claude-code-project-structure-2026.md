@@ -16,7 +16,7 @@ toc: true
 showToc: true
 TocOpen: true
 cover:
-    image: "images/posts/claude-code-project-structure-2026/claude-code-project-structure-2026.png" # image path/url
+    image: "images/posts/claude-code-project-structure-2026/claude-code-project-structure-2026.png"
     alt: "The Complete Anatomy of a Claude Code Project - 2026"
     caption: "The Complete Anatomy of a Claude Code Project - 2026"
     relative: false
