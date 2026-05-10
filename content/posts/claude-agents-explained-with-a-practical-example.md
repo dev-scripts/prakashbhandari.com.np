@@ -1,49 +1,51 @@
 ---
-title: "Skills in Claude: How a 30-Line Agent Beats a 3,000-Line One" 
+title: "Claude Agents Explained: With a Practical Example"
 date: 2026-05-10T08:06:33+11:00
 draft: false
 showToc: true
 TocOpen: true
 tags: ["claude", "agents", "skills", "ai", "node"]
 categories: ["AI", "Claude","Agentic AI"]
-description: "A beginner-friendly walkthrough of the 'skill' pattern in Claude agents - what it is, how it works, and a complete grading agent example from input CSV to final report."
+description: "A beginner-friendly guide to Claude agents and the skill pattern - explained through a complete, working grading agent that reads a CSV and produces letter grades, GPAs, and a class report."
 author: "Prakash Bhandari"
 toc: true
 showReadingTime: true
 cover:
-  image: "images/posts/skills-in-the-claude-30-line-agent-vs-3000-line-agent/skills-in-the-claude-30-line-agent-vs-3000-line-agent.png" 
-  alt: "Skills in Claude: How a 30-Line Agent Beats a 3,000-Line One"
-  caption: "Skills in Claude: How a 30-Line Agent Beats a 3,000-Line One"
+  image: "images/posts/claude-agents-explained-with-a-practical-example/claude-agents-explained-with-a-practical-example.png" 
+  alt: "Claude Agents Explained: With a Practical Example"
+  caption: "Claude Agents Explained: With a Practical Example"
   relative: false
   author: "Prakash Bhandari"
 ---
 
 ## What We Are Building
 
-By the end of this post you will have a working AI agent that:
+This post explains what a Claude agent is, how it works, and how **skills** let you write agents that are tiny, flexible, and easy to change - using a real, runnable example from start to finish.
+
+The example is a **grading agent**. By the end, you will have a working agent that:
 
 1. Reads a CSV of student marks
 2. Calculates a letter grade (A, B+, C−, etc.) and a GPA (4.0 scale) for each subject
 3. Computes each student's overall grade
 4. Writes a graded CSV and a formatted markdown report
 
-The entire agent is **thirty lines of JavaScript**. The grading rules, the output format, and the report layout all live in plain markdown files - not in the code. That separation is what this post is about.
+The entire agent is **thirty lines of JavaScript**. The grading rules, the output format, and the report layout all live in plain markdown files - not in the code. That separation is the core idea this post is built around.
 
 
-## Quick Concepts (Before We Dive In)
+## Key Concepts (Before We Dive In)
 
-**What is an AI agent?**
-An agent is a program that takes a plain-English instruction and figures out how to carry it out - reading files, writing output, running calculations. Unlike a chatbot that just responds to messages, an agent actually *does* things.
+**What is a Claude agent?**
+A Claude agent is a program that takes a plain-English instruction and carries it out - reading files, writing output, running calculations. Unlike a chatbot that just responds to messages, an agent actually *does* things. You give it a task; it figures out the steps.
 
 **What is the Claude Agent SDK?**
-It is a JavaScript/TypeScript library from Anthropic that makes it easy to build agents powered by Claude. It handles sending your prompt to Claude, letting Claude call tools (like reading or writing files), and streaming the response back to you. Install it with:
+The **Claude Agent SDK** is a JavaScript/TypeScript library from Anthropic that makes it straightforward to build agents powered by Claude. It handles sending your prompt to Claude, letting Claude call tools (like reading or writing files), and streaming the result back to you. Install it with:
 
 ```bash
 npm install @anthropic-ai/claude-agent-sdk
 ```
 
 **What is a skill?**
-A skill is a folder you drop into `.claude/skills/`. Inside is a `SKILL.md` file that tells Claude what the skill does and how to do it - written in plain markdown, not code. The SDK finds skills automatically at startup. You will see exactly how in the example below.
+A skill is a folder you drop into `.claude/skills/`. Inside is a `SKILL.md` file written in plain markdown that tells the agent what the skill does and how to do it. The SDK finds skills automatically at startup and loads the right one based on the user's prompt. You will see exactly how this works in the example below.
 
 
 ## The Problem Skills Solve
@@ -381,8 +383,8 @@ The agent routes to the new skill automatically. You did not change `index.js` a
 
 ## Conclusion
 
-The skill pattern has one real caveat: write specific descriptions. The model's matching is only as good as the front matter prose - vague descriptions misfire, concrete trigger phrases don't.
+Claude agents are not complicated once you see a full example. The agent itself is just plumbing - a prompt and a `query()` call. The skill is where all the domain knowledge lives: the rules, the workflow, the output format.
 
-Everything else is upside. Pull your embedded rules into a `SKILL.md`. Move your templates next to it. Replace the interpretation logic with `query({ skills: "all" })`. Keep going until your agent file is pure plumbing.
+The one thing to get right is your skill description. Write it to cover the natural ways a user might phrase the task, not just the technical term. Everything else follows from that.
 
-That's why a thirty-line agent outlives the three-thousand-line version every time.
+Once you have the pattern down, adding a new capability is just dropping a folder. That is what makes Claude agents worth learning.
