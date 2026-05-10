@@ -6,7 +6,8 @@ showToc: true
 TocOpen: true
 tags: ["claude", "agents", "skills", "ai", "node"]
 categories: ["AI", "Claude","Agentic AI"]
-description: "A beginner-friendly guide to Build Claude AI agents and the skill pattern - explained through a complete, working grading agent that reads a CSV and produces letter grades, GPAs, and a class report."
+description: "A beginner-friendly guide to building Claude AI agents and understanding agent design patterns — explained through a complete, working grading agent that processes CSV data, calculates letter grades and GPAs, and generates a full class performance report.
+"
 author: "Prakash Bhandari"
 toc: true
 showReadingTime: true
