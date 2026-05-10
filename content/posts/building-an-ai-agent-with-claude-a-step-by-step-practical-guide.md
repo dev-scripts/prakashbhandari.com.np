@@ -1,19 +1,19 @@
 ---
-title: "Claude Agents Explained: With a Practical Example"
+title: "Building an AI Agent with Claude: A Step-by-Step Practical Guide"
 date: 2026-05-10T08:06:33+11:00
 draft: false
 showToc: true
 TocOpen: true
 tags: ["claude", "agents", "skills", "ai", "node"]
 categories: ["AI", "Claude","Agentic AI"]
-description: "A beginner-friendly guide to Claude agents and the skill pattern - explained through a complete, working grading agent that reads a CSV and produces letter grades, GPAs, and a class report."
+description: "A beginner-friendly guide to Build Claude AI agents and the skill pattern - explained through a complete, working grading agent that reads a CSV and produces letter grades, GPAs, and a class report."
 author: "Prakash Bhandari"
 toc: true
 showReadingTime: true
 cover:
-  image: "images/posts/claude-agents-explained-with-a-practical-example/claude-agents-explained-with-a-practical-example.png" 
-  alt: "Claude Agents Explained: With a Practical Example"
-  caption: "Claude Agents Explained: With a Practical Example"
+  image: "images/posts/building-an-ai-agent-with-claude-a-step-by-step-practical-guide/building-an-ai-agent-with-claude-a-step-by-step-practical-guide.png" 
+  alt: "Building an AI Agent with Claude: A Step-by-Step Practical Guide"
+  caption: "Building an AI Agent with Claude: A Step-by-Step Practical Guide"
   relative: false
   author: "Prakash Bhandari"
 ---
