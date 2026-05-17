@@ -1,7 +1,7 @@
 ---
 title: "Are We Becoming Dumb in Age of AI? Software Engineering Decline"
 date: 2026-05-17T14:21:11+10:00
-draft: true
+draft: false
 author: "Prakash Bhandari"
 toc: true
 showToc: true
